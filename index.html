@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Picture Before a Thousand Frames: Storyboarding for Consistent and Controllable Video Generation</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --ink: #191919;
+    --muted: #787878;
+    --accent: #c43d2a;
+    --rule: #e3e3e3;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  main { max-width: 1000px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.1rem;
+    line-height: 1.25;
+    font-weight: 600;
+    margin: 0 0 0.6em;
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin: 3rem 0 0.8rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+  }
+  .authors { font-size: 1.15rem; margin: 0.2em 0; }
+  .affil { color: var(--muted); margin: 0.2em 0 1.2em; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 1.4em 0 0.4em; }
+  .btn {
+    display: inline-block;
+    padding: 0.45em 1.1em;
+    border: 1.5px solid var(--ink);
+    border-radius: 2em;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.92rem;
+  }
+  .btn:hover { background: var(--ink); color: #fff; }
+  .btn.accent { border-color: var(--accent); color: var(--accent); }
+  .btn.accent:hover { background: var(--accent); color: #fff; }
+  figure { margin: 1.4em 0; }
+  figure img { width: 100%; height: auto; border: 1px solid var(--rule); display: block; }
+  figcaption {
+    font-size: 0.88rem;
+    color: #3c3c3c;
+    line-height: 1.5;
+    margin-top: 0.7em;
+    text-align: left;
+  }
+  figcaption .lbl { font-weight: 600; }
+  .abstract p { text-align: justify; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; }
+  table {
+    border-collapse: collapse;
+    font-size: 0.86rem;
+    width: 100%;
+    min-width: 640px;
+  }
+  th, td { padding: 0.45em 0.7em; text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child,
+  th:nth-child(2), td:nth-child(2) { text-align: left; }
+  thead th { border-bottom: 1.5px solid var(--ink); }
+  tbody tr.mid td { border-top: 1px solid var(--rule); }
+  tfoot td { border-top: 1px solid var(--ink); font-size: 0.8rem; color: var(--muted); text-align: left; white-space: normal; }
+  td b { color: var(--accent); }
+  .caption-above { font-size: 0.95rem; margin: 0.6em 0 0.2em; font-weight: 600; }
+  .note { font-size: 0.85rem; color: var(--muted); }
+  pre.bibtex {
+    background: #f7f7f7;
+    border: 1px solid var(--rule);
+    padding: 1em;
+    overflow-x: auto;
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>A Picture Before a Thousand Frames: Storyboarding for Consistent and Controllable Video Generation</h1>
+  <p class="authors">Anonymous Authors</p>
+  <p class="affil">Anonymous submission &mdash; double-blind review</p>
+  <div class="buttons">
+    <a class="btn accent" href="static/teaser.pdf">Teaser figure (PDF)</a>
+    <a class="btn" href="static/qualitative.pdf">Qualitative results (PDF)</a>
+    <a class="btn" href="#bibtex">BibTeX</a>
+  </div>
+</header>
+
+<section class="abstract">
+  <h2>Abstract</h2>
+  <p>
+  Despite advances in single-shot text-to-video generation, maintaining appearance and
+  motion consistency across long-form videos remains challenging. We hypothesize that
+  these limitations stem, in part, from the underconstrained nature of direct
+  text-to-video generation, which attempts to jointly resolve visual appearance, scene
+  composition, and motion without explicit planning. Inspired by traditional filmmaking,
+  we introduce <strong>VisCraft</strong>, an end-to-end framework that explicitly plans
+  visual states through reference-conditioned storyboard generation
+  (<em>VisPlan</em>) and subsequently synthesizes their transitions using a
+  storyboard-anchored video generation model (<em>VisMotion</em>). This decomposition
+  grounds appearance and motion in shared visual anchors, enabling more consistent and
+  controllable generation across shots. To train these models, we augment a multi-shot
+  video dataset with structured visual references, storyboard panels, and temporally
+  aligned descriptions. We further introduce <strong>VisCraftBench</strong>, a benchmark
+  for evaluating appearance consistency, state coverage, instruction adherence, and
+  temporal execution, and systematically investigate the effects of reference
+  representations, anchor selection, conditioning strategies, and training formulations.
+  Our results demonstrate that explicit visual planning and anchor-conditioned motion
+  synthesis improve appearance and motion consistency over direct generation, while
+  revealing the importance of reference quality and anchor selection. Our code, enriched
+  multi-shot dataset, and evaluation benchmark will be released upon publication.
+  </p>
+</section>
+
+<section>
+  <h2>Method</h2>
+  <p>
+  VisCraft separates the two coupled problems that direct text-to-video generation
+  collapses into one mapping. <strong>VisPlan</strong> generates the storyboard: the key
+  visual states of each scripted event, planned jointly from factored panel captions and
+  conditioned on per-character reference sheets. <strong>VisMotion</strong> then generates
+  the video between those states, anchored to the panels at scheduled times and timed by
+  motion beats. The anchors constrain appearance, geometry, and state at selected moments
+  &mdash; multiple panels may belong to a single shot &mdash; while the video model is free
+  to synthesize the intervening motion. Both models are trained on a multi-shot video
+  dataset enriched with structured visual references, storyboard panels, and temporally
+  aligned descriptions.
+  </p>
+
+  <figure>
+    <img src="static/teaser.png"
+         alt="Teaser: a screenplay and character sheets are planned into three storyboard panels with factored captions, then realized as video frames anchored at three times with timed motion beats between them.">
+    <figcaption>
+      <span class="lbl">Overview.</span>
+      Given as input a screenplay and character sheets <em>R</em>, VisCraft first renders
+      the key visual states of the scripted handoff &mdash; here, a cheer that turns into a
+      kiss on the cheek &mdash; as a storyboard generated jointly from factored panel
+      captions <em>T<sub>S</sub></em>, then realizes the motion between them as video,
+      timed by anchor times and motion beats <em>T<sub>V</sub></em>. All caption text is
+      reproduced verbatim (gray italic parentheticals are added identity glosses): each
+      panel carries its complete factored <em>T<sub>S</sub></em> caption beneath it, and
+      beneath the video frames the motion caption <em>T<sub>V</sub></em> appears both in
+      its three timed beats &mdash; the intervals between anchors &mdash; and, quoted below
+      them, verbatim in its training form. Blue frames are the anchor states
+      (<em>t</em><sub>1</sub>, <em>t</em><sub>2</sub>, <em>t</em><sub>3</sub>) the video
+      reaches on schedule; gray frames are the generated motion between them. In this real
+      training example the three panels are the states of one continuous shot, not cuts.
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Qualitative results</h2>
+  <figure>
+    <img src="static/qualitative.png"
+         alt="Qualitative storyboard comparison: four example rows, each showing three panels from GPT Image 2.5, DreamShot, ground truth, and VisPlan-H3 (ours).">
+    <figcaption>
+      <span class="lbl">Storyboard generation.</span>
+      Three successive panels for four example cases (rows). Left to right: GPT Image 2.5,
+      DreamShot, ground truth, and VisPlan-H3 (ours). VisPlan-H3 most faithfully preserves
+      character identity and scene layout across the sequence while realizing the intended
+      state changes between panels.
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Results</h2>
+
+  <p class="caption-above">End-to-end video consistency on the matched multi-shot video set (735 windows from 140 source videos).</p>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Storyboard source</th><th>Video generator</th>
+          <th>GT-CIDS<br>CLIP</th><th>GT-CIDS<br>DINOv2</th><th>GT-CSD</th>
+          <th>CIDS-cross<br>CLIP</th><th>CIDS-cross<br>DINOv2</th>
+          <th>VBench<br>Subject</th><th>VBench<br>Background</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>None (direct)</td><td>MiniMax</td><td>0.8192</td><td>0.5968</td><td>0.6937</td><td>0.7775</td><td>0.5599</td><td>0.9432</td><td>0.9513</td></tr>
+        <tr class="mid"><td>DreamShot-SFT</td><td>MiniMax</td><td>0.8264</td><td>0.6139</td><td>0.7357</td><td>0.7808</td><td>0.5599</td><td>0.9398</td><td>0.9460</td></tr>
+        <tr><td>DreamShot-SFT</td><td>VisMotion&#8225;</td><td>0.8270</td><td>0.6052</td><td>0.7039</td><td>0.7837</td><td>0.5457</td><td>0.9069</td><td>0.9247</td></tr>
+        <tr class="mid"><td>GPT Image 2.5</td><td>MiniMax</td><td>0.8437</td><td>0.6510</td><td>0.7567</td><td>0.7888</td><td>0.5857</td><td><b>0.9583</b></td><td><b>0.9597</b></td></tr>
+        <tr><td>GPT Image 2.5</td><td>VisMotion&#8225;</td><td>0.8541</td><td>0.6555</td><td>0.7639</td><td>0.7918</td><td>0.5794</td><td>0.9368</td><td>0.9479</td></tr>
+        <tr class="mid"><td>VisPlan-Wan</td><td>MiniMax</td><td>0.8496</td><td>0.6682</td><td><b>0.7936</b></td><td><b>0.7989</b></td><td><b>0.6058</b></td><td>0.9417</td><td>0.9546</td></tr>
+        <tr><td>VisPlan-Wan</td><td>VisMotion&#8225;</td><td>0.8561</td><td>0.6622</td><td>0.7933</td><td>0.7980</td><td>0.5815</td><td>0.9149</td><td>0.9404</td></tr>
+        <tr class="mid"><td>VisPlan-H3</td><td>MiniMax</td><td>0.8548</td><td><b>0.6812</b></td><td>0.7859</td><td>0.7988</td><td>0.6005</td><td>0.9470</td><td>0.9573</td></tr>
+        <tr><td>VisPlan-H3</td><td>VisMotion</td><td><b>0.8662</b></td><td>0.6807</td><td>0.7911</td><td>0.7984</td><td>0.5804</td><td>0.9213</td><td>0.9426</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="9">
+        Best per column in bold. GT agreement measures appearance at the planned anchor
+        times against the source panels; CIDS-cross measures cross-reference character
+        consistency; VBench self-consistency does not establish target agreement or action
+        completion. &#8225; VisMotion pipelines use a rank-32, step-13,600 video decoder with
+        the same configuration. The direct baseline receives short text summaries and
+        identity cutouts &mdash; no storyboard images and no timestamped state blocks.
+        Intent-fidelity (VisCraftBench) scores are reported in the paper.
+      </td></tr></tfoot>
+    </table>
+  </div>
+
+  <p class="caption-above">Storyboard generation quality on 150 held-out cases (2,153 panel annotations).</p>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>GT-CIDS<br>CLIP</th><th>GT-CIDS<br>DINOv2</th><th>GT-CSD</th>
+          <th>Scene</th><th>Action</th><th>Camera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>VisPlan-Wan (seed 0)</td><td>0.8569</td><td>0.6829</td><td><b>0.8208</b></td><td>3.8152</td><td>3.8711</td><td>3.7775</td></tr>
+        <tr><td>DreamShot-SFT (seed 42)</td><td>0.8005</td><td>0.6060</td><td>0.7430</td><td>3.8339</td><td>3.7394</td><td>3.7318</td></tr>
+        <tr><td>VisPlan-Wan (joint; seed 0)</td><td>0.8575</td><td>0.6788</td><td>0.8113</td><td>3.7842</td><td>3.8096</td><td>3.7115</td></tr>
+        <tr><td>VisPlan-H3 (seed 0)</td><td><b>0.8712</b></td><td><b>0.7044</b></td><td>0.8148</td><td>3.8665</td><td>3.9178</td><td><b>3.8015</b></td></tr>
+        <tr><td>GPT Image 2.5</td><td>0.8168</td><td>0.6579</td><td>0.7829</td><td><b>3.9591</b></td><td><b>3.9484</b></td><td>3.7876</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="7">
+        Paired target agreement (CLIP / DINOv2 character identity, full-panel style) and
+        prompt adherence (Scene / Action / Camera) against ground-truth panels. Best per
+        column in bold.
+      </td></tr></tfoot>
+    </table>
+  </div>
+</section>
+
+<section id="bibtex">
+  <h2>BibTeX</h2>
+  <p class="note">A citation will be added upon publication.</p>
+  <pre class="bibtex">@misc{viscraft2027,
+  title        = {A Picture Before a Thousand Frames: Storyboarding for
+                  Consistent and Controllable Video Generation},
+  author       = {Anonymous},
+  howpublished = {Under review},
+  year         = {2027},
+}</pre>
+</section>
+
+<footer>
+  <p>
+  This is an anonymous project page prepared for double-blind review. It contains no
+  author, institutional, or contact information; please use the submission system for
+  correspondence. Figures include generated examples from the evaluated pipelines and
+  reference material from the benchmark corpora.
+  </p>
+</footer>
+
+</main>
+</body>
+</html>
