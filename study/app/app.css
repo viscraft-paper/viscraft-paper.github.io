@@ -47,9 +47,15 @@ h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .05em;
 .vcol { flex: 1 1 380px; min-width: 340px; }
 .vlabel { font-weight: 700; margin: 6px 0; }
 .vcol video { width: 100%; border: 1px solid #bbb; border-radius: 4px; background: #000; }
-.vcol img.strip { width: 100%; border: 1px solid #bbb; border-radius: 4px; margin-bottom: 6px;
+.stripcard { margin: 0 0 6px; }
+.vcol img.strip { display: block; width: 100%; border: 1px solid #bbb; border-radius: 4px;
   cursor: zoom-in; }
 .vcol img.strip:hover { border-color: #1a1a1a; }
+.stripcard figcaption { margin-top: 4px; padding: 5px 8px; text-align: center;
+  font-size: 12.5px; font-weight: 600; color: #1a1a1a;
+  background: #f0efec; border: 1px solid #bbb; border-radius: 12px;
+  cursor: zoom-in; }
+.stripcard:hover figcaption, .stripcard figcaption:hover { border-color: #1a1a1a; background: #e8e7e3; }
 img.filmstrip { width: 100%; border: 1px solid #bbb; border-radius: 4px; }
 
 table.likert { border-collapse: collapse; width: 100%; margin-top: 4px; }

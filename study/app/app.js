@@ -18,26 +18,23 @@ const LS_KEY = "vcstudy_v2_" + RATER;   // v2: 10-rater full-coverage design (20
 
 const CRITERIA = [
   ["identity",   "Identity fidelity",
-   "Do the characters look like the SAME individuals throughout the clip, and like the supplied character references?"],
+   "Do the characters look like the SAME individuals throughout the video — consistent within it, like the supplied character references, and distinct from each other? (A specified garment or mark change is not an identity change.)"],
   ["order",      "Action and event order",
-   "Are the requested actions all carried out, and in the requested order? Judge visible content against the specification: a plausible-looking clip need not execute the requested interaction."],
+   "Are the requested actions all carried out, and in the requested order? Judge visible content against the specification: a plausible-looking video need not execute the requested interaction."],
   ["adherence",  "Storyboard adherence",
-   "Does the video realize the shown six-panel storyboard — its visual states (actor configurations at each panel time) and staging? Shown with each clip's own supplied storyboard. The requested shot structure counts here too: when the specification calls for one continuous shot, any unexplained internal cut is a violation even if it hides nothing."],
+   "Does the video realize the storyboard shown with it — its visual states (who and what is present, where, and in what state, at each panel time) and its staging? The shot structure counts here too: every case is one continuous shot with a fixed camera, so any unexplained internal cut is a violation even if it hides nothing."],
   ["motion",     "Motion plausibility",
-   "Is the motion itself physically plausible and stable (no morphing, flicker, or disappearance; transfers have visible support)?"],
+   "Is the motion itself physically plausible and stable — no morphing or flicker, and nothing vanishing without a visible cause (leaving view or passing behind an occluder is fine)?"],
 ];
 
 const QUIZ = [
-  { q: "A clip looks smooth and beautiful, but the requested action never happens. On 'Action and event order' you should:",
+  { q: "A video looks smooth and beautiful, but the requested action never happens. On 'Action and event order' you should:",
     a: ["Rate it high — it looks right", "Rate it low — judge visible content against the specification", "Mark it unratable"],
     ok: 1 },
-  { q: "In the storyboard, a character holds a folder; in the video the folder floats unsupported during transfer. This counts against:",
-    a: ["Motion plausibility", "Nothing — it is a rendering detail", "Identity fidelity"],
-    ok: 0 },
   { q: "On a criterion, neither video can be judged at all (for example neither result resembles the specification). You should:",
     a: ["Pick the one that looks better", "Mark that criterion Unratable", "Rate both as Tie"],
     ok: 1 },
-  { q: "Two clips look equally good on a criterion. You should:",
+  { q: "Two videos look equally good on a criterion. You should:",
     a: ["Pick the first one", "Choose Tie", "Skip the question"],
     ok: 1 },
 ];
@@ -140,14 +137,14 @@ function renderQuiz() {
     const score = picks.reduce((s, p, i) => s + (p === QUIZ[i].ok ? 1 : 0), 0);
     state.quiz = { picks, score };
     save();
-    if (score >= 3) go("trials");
+    if (score >= QUIZ.length - 1) go("trials");
     else $("#screen").prepend(el("p", { class: "warn" },
-      `Score ${score}/4 — at least 3 correct answers are required to continue. Please re-read the instructions above and try again.`));
+      `Score ${score}/${QUIZ.length} — at least ${QUIZ.length - 1} correct answers are required to continue. Please re-read the instructions above and try again.`));
   } }, "Start the tasks");
   $("#screen").replaceChildren(
     el("div", { class: "card" },
       el("h1", {}, "Instructions"),
-      el("p", {}, "You will see short written specifications of intended visual events (scene, camera, actor roles, initial state, ordered actions), character reference images labeled with the character names used in the specification, and pairs of generated results. Each task compares two videos, each shown with the storyboard it was produced from. Characters in the panels and videos are the named characters from the references."),
+      el("p", {}, "You will see short written specifications of intended visual events (scene, camera, actor roles, initial state, ordered actions), character reference images labeled with the character names used in the specification, and pairs of generated results. Each task compares two videos, each shown with the storyboard it was produced from; click a storyboard to see its panels full size. Characters in the panels and videos are the named characters from the references."),
       el("h3", {}, "What each criterion means"),
       ...CRITERIA.map(([id, name, desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
       el("h3", {}, "Response options"),
@@ -155,10 +152,9 @@ function renderQuiz() {
                  el("b", {}, "Tie: "), "the two are indistinguishable on that criterion. ",
                  el("b", {}, "Unratable: "), "the criterion cannot be judged at all — for example neither result resembles the specification."),
       el("h3", {}, "Worked examples"),
-      el("p", {}, el("b", {}, "Transfer. "), "A folder handoff requires the receiver to establish support before the giver releases. If the folder is unsupported at release, count it against Action and event order, and against Motion plausibility as well."),
       el("p", {}, el("b", {}, "Concealment. "), "If a character must pass behind an occluder and re-emerge unchanged, look for the reappearance and for identity retention after it."),
       el("p", {}, el("b", {}, "Localized state change. "), "A cuff staining event: only the specified actor's cuff changes, and the change persists while the partner remains unchanged."),
-      el("p", {}, el("b", {}, "Shot structure. "), "When the specification calls for one continuous shot, an unexplained internal cut is a Storyboard adherence violation even when it hides nothing.")),
+      el("p", {}, el("b", {}, "Shot structure. "), "Every specification is one continuous shot with a fixed camera. An unexplained internal cut is a Storyboard adherence violation even if it hides nothing.")),
     form, btn);
 }
 
@@ -238,11 +234,15 @@ function panelUrls(key) {
 }
 
 function videoCol(label, src, stripSrc, panelSrcs) {
+  // storyboard strip: visible, permanent "click for full size" affordance —
+  // the caption is a button-like pill below the strip (never overlays the panels)
+  const openPanels = () => panelSrcs && openLightbox(panelSrcs, 0, (i, n) => `Panel ${i + 1} / ${n}`);
   return el("div", { class: "vcol" },
     el("div", { class: "vlabel" }, label),
-    stripSrc ? el("img", { class: "strip", src: stripSrc, alt: `${label} storyboard`,
-      title: "Click to see the panels full size",
-      onclick: () => panelSrcs && openLightbox(panelSrcs, 0, (i, n) => `Panel ${i + 1} / ${n}`) }) : null,
+    stripSrc ? el("figure", { class: "stripcard", onclick: openPanels },
+      el("img", { class: "strip", src: stripSrc, alt: `${label} storyboard — click to see the panels full size`,
+        title: "Click to see the panels full size" }),
+      panelSrcs ? el("figcaption", {}, "⤢ Click to see the panels full size") : null) : null,
     el("video", { src, controls: "controls", loop: "loop", playsinline: "playsinline", preload: "auto" }));
 }
 
@@ -284,7 +284,7 @@ function renderPreference(t) {
 
   const nStrips = [sides[0], sides[1]].filter((k) => stripFor(t.videos[k])).length;
   const head = nStrips === 2
-    ? "Two results, each with its own supplied storyboard. For 'Storyboard adherence', judge each video against the storyboard shown with it."
+    ? "Two results, each with its own supplied storyboard. For 'Storyboard adherence', judge each video against the storyboard shown with it. Click a storyboard to see its panels full size."
     : "Two results for the specification above.";
 
   $("#screen").replaceChildren(
