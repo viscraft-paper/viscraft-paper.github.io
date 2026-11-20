@@ -147,10 +147,9 @@ function renderQuiz() {
   $("#screen").replaceChildren(
     el("div", { class: "card" },
       el("h1", {}, "Instructions"),
-      el("p", {}, "You will see short written specifications of intended visual events (scene, camera, actor roles, initial state, ordered actions), character reference images, and pairs of generated results. Each task compares two videos. Under each video you may see the storyboard it was produced from; some videos were produced without a storyboard, in which case none is shown for them."),
+      el("p", {}, "You will see short written specifications of intended visual events (scene, camera, actor roles, initial state, ordered actions), character reference images, and pairs of generated results. Each task compares two videos, each shown with the storyboard it was produced from."),
       el("h3", {}, "What each criterion means"),
       ...CRITERIA.map(([id, name, desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
-      el("p", { class: "muted" }, "Most tasks ask all four questions. When one video in the pair was produced without a storyboard, the Storyboard adherence question is omitted and the task asks three questions."),
       el("h3", {}, "Response options"),
       el("p", {}, el("b", {}, "Prefer Video 1 / Prefer Video 2: "), "that video clearly does better on the criterion. ",
                  el("b", {}, "Tie: "), "the two are indistinguishable on that criterion. ",
@@ -243,7 +242,8 @@ function renderPreference(t) {
   const mk = (slot, key) => videoCol(labels[slot], mediaUrl(t.videos[key], "clip"),
     stripFor(t.videos[key]), panelUrls(t.videos[key]));
 
-  // criteria per trial: k3 (Direct) pairs omit the adherence item
+  // criteria per trial (all 4 since the Direct contrast was dropped; the list
+  // stays per-trial in the materials schema)
   const critIds = t.criteria || CRITERIA.map(([cid]) => cid);
   const critRows = CRITERIA.filter(([cid]) => critIds.includes(cid)).map(([cid, name]) => {
     const rowName = `c_${cid}`;
@@ -269,9 +269,7 @@ function renderPreference(t) {
   const nStrips = [sides[0], sides[1]].filter((k) => stripFor(t.videos[k])).length;
   const head = nStrips === 2
     ? "Two results, each with its own supplied storyboard. For 'Storyboard adherence', judge each video against the storyboard shown with it."
-    : nStrips === 1
-      ? "Two results for the specification above. One video was produced from the storyboard shown with it; the other was produced without a storyboard."
-      : "Two results for the specification above.";
+    : "Two results for the specification above.";
 
   $("#screen").replaceChildren(
     el("div", { class: "card" }, specBlock(t.case)),
