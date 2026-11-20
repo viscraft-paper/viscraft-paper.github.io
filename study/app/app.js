@@ -95,7 +95,7 @@ const el = (tag, attrs = {}, ...kids) => {
    avoid CORS preflight (Apps Script answers none).
    If the service is unreachable the page degrades to the manual slot picker.
    After the study: delete the Apps Script project + its spreadsheet. */
-const GAS_URL = "https://script.google.com/macros/s/AKfycbwMqcXuRh7YqB9inBWWc5NCBSmQM5DzZU8BD7MqVtodmVvSP2-vcUAnUpT8EfU8Ccg/exec";   // /exec URL from the Apps Script deploy
+const GAS_URL = "https://script.google.com/macros/s/AKfycbwP1S6JiPE5GWobYHvt9LZ1-jLTcnZznI-UFzIezyZK2p-TKYcr4kkbUguE3grOBaI/exec";   // /exec URL from the Apps Script deploy
 const claimsOn = () => /^https:\/\//.test(GAS_URL) && !GAS_URL.includes("__PASTE");
 
 function gasPost(body, keepalive) {
