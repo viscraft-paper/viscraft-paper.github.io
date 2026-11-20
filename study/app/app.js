@@ -156,11 +156,11 @@ function renderQuiz() {
       el("p", {}, el("b", {}, "Prefer Video 1 / Prefer Video 2: "), "that video is clearly better on this criterion. ",
                  el("b", {}, "Tie: "), "you cannot tell them apart. ",
                  el("b", {}, "Unratable: "), "the criterion cannot be judged at all (for example, neither video looks like the specification)."),
-      el("h3", {}, "Three traps to avoid"),
+      el("h3", {}, "Three examples"),
       el("ul", {},
-        el("li", {}, el("b", {}, "Hiding behind something. "), "If a character goes behind a screen and is supposed to come back, check that they do — and are still the same character."),
-        el("li", {}, el("b", {}, "Small requested changes. "), "If only one character's cuff should turn stained, check that only that cuff changes, the change lasts, and the other character stays unchanged."),
-        el("li", {}, el("b", {}, "Cuts. "), "Every case is one continuous shot with a fixed camera. A cut inside the video counts against Storyboard adherence."))),
+        el("li", {}, el("b", {}, "Behind a screen. "), "A character goes behind a screen and is supposed to come back out. Check that they do come back — and are still the same character."),
+        el("li", {}, el("b", {}, "A small requested change. "), "Say the specification asks for one character's cuff to turn stained. Check that only that cuff changes, the change lasts, and the other character stays the same."),
+        el("li", {}, el("b", {}, "A cut. "), "Every case is one continuous shot with a fixed camera. If the video cuts in the middle, that counts against Storyboard adherence."))),
     form, btn);
 }
 
