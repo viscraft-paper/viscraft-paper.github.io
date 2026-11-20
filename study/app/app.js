@@ -147,7 +147,7 @@ function renderQuiz() {
   $("#screen").replaceChildren(
     el("div", { class: "card" },
       el("h1", {}, "Instructions"),
-      el("p", {}, "You will see short written specifications of intended visual events (scene, camera, actor roles, initial state, ordered actions), character reference images, and pairs of generated results. Each task compares two videos, each shown with the storyboard it was produced from."),
+      el("p", {}, "You will see short written specifications of intended visual events (scene, camera, actor roles, initial state, ordered actions), character reference images labeled with the character names used in the specification, and pairs of generated results. Each task compares two videos, each shown with the storyboard it was produced from. Characters in the panels and videos are the named characters from the references."),
       el("h3", {}, "What each criterion means"),
       ...CRITERIA.map(([id, name, desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
       el("h3", {}, "Response options"),
@@ -182,15 +182,22 @@ function specBlock(caseId) {
   const s = c.spec;
   const body = s.text != null ? s.text
     : `Scene: ${s.scene}\nCamera: ${s.camera}\nRoles: ${s.roles.join(", ")}\nInitial state: ${s.initial}\nActions (in order):\n${s.actions.map((a, i) => `  ${i + 1}. ${a}`).join("\n")}`;
-  const srcs = c.refs.map(p => "../" + p);
+  // refs: [{name, path}] — the name is the one the specification uses
+  const refs = (c.refs || []).map(r => typeof r === "string" ? { name: "", src: "../" + r } : { name: r.name, src: "../" + r.path });
+  const srcs = refs.map(r => r.src);
   return el("div", {},
     el("h3", {}, "Specification"),
     el("div", { class: "spec" }, body),
     el("h3", {}, "Character references"),
-    el("div", { class: "refs" }, ...srcs.map((src, i) =>
-      el("img", { src, alt: "character reference", title: "Click to see full size",
-        onclick: () => openLightbox(srcs, i) }))),
-    el("p", { class: "muted" }, "Click a reference to see it full size."));
+    el("div", { class: "refs" }, ...refs.map((r, i) =>
+      el("figure", { class: "refcard" },
+        el("img", { src: r.src, alt: r.name ? `character reference: ${r.name}` : "character reference",
+          title: "Click to see full size",
+          onclick: () => openLightbox(srcs, i, (j, n) => refs[j].name ? `${refs[j].name} — ${j + 1} / ${n}` : `${j + 1} / ${n}`) }),
+        r.name ? el("figcaption", {}, r.name) : null))),
+    el("p", { class: "muted" },
+      "Each reference is labeled with the character name used in the specification; ",
+      "recognize those characters in the panels and videos. Click a reference to see it full size."));
 }
 
 /* Full-size image viewer (character references, storyboard panels).

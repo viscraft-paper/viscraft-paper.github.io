@@ -22,9 +22,11 @@ h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .05em;
 .spec { white-space: pre-wrap; font-size: 14px; background: #fafaf8;
   border-left: 3px solid #999; padding: 10px 14px; margin: 8px 0; }
 .refs { display: flex; gap: 12px; flex-wrap: wrap; }
-.refs img { height: 220px; border: 1px solid #ccc; border-radius: 4px;
-  cursor: zoom-in; background: #fff; }
-.refs img:hover { border-color: #1a1a1a; }
+.refcard { margin: 0; text-align: center; }
+.refcard img { height: 220px; border: 1px solid #ccc; border-radius: 4px;
+  cursor: zoom-in; background: #fff; display: block; }
+.refcard img:hover { border-color: #1a1a1a; }
+.refcard figcaption { font-weight: 600; font-size: 13px; margin-top: 4px; }
 
 #lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(15, 15, 15, .9);
   display: flex; align-items: center; justify-content: center; cursor: zoom-out; }
