@@ -14,7 +14,7 @@ const ENABLE_QUIZ = false;   // testing round: training questionnaire off (user 
 const PARAMS = new URLSearchParams(location.search);
 const RATER = PARAMS.get("rater") || "";
 const ACCESS_KEY = PARAMS.get("k") || "";   // unlisted-link token (anti-indexing)
-const LS_KEY = "vcstudy_v1_" + RATER;
+const LS_KEY = "vcstudy_v2_" + RATER;   // v2: 10-rater full-coverage design (2026-11-20)
 
 const CRITERIA = [
   ["identity",   "Identity fidelity",
@@ -115,10 +115,10 @@ function renderConsent() {
   $("#screen").replaceChildren(
     el("div", { class: "card" },
       el("h1", {}, "Consent"),
-      el("p", {}, "This study collects judgments of generated video clips. It is voluntary; you may withdraw at any time without consequence. No personal or sensitive data are collected. Your responses are recorded under a code, are anonymized, and any released data are de-identified. The session takes about 15–20 minutes in one sitting."),
+      el("p", {}, "This study collects judgments of generated video clips. It is voluntary; you may withdraw at any time without consequence. No personal or sensitive data are collected. Your responses are recorded under a code, are anonymized, and any released data are de-identified. The session takes about 45–60 minutes and includes one short break at the midpoint. Your progress is saved automatically: if you are interrupted, reopen the same link to continue where you left off."),
       el("p", {}, "Purpose (neutral description): we measure how people judge the execution of requested visual events in short generated clips, and how those judgments relate to automatic evaluation."),
       el("p", {}, "If you have questions, contact the study organizer (contact details were sent with your link)."),
-      el("p", { class: "warn" }, "Do not share your link. Please complete the study in one sitting."),
+      el("p", { class: "warn" }, "Do not share your link. Please finish each half of the session in one sitting."),
       el("div", { class: "row" },
         el("button", { class: "btn", onclick: () => go("quiz") }, "I agree, continue"),
       )));
@@ -163,6 +163,15 @@ function renderQuiz() {
 }
 
 /* ---------------- trial renderers ---------------- */
+function renderBreak(t) {
+  // short rest at the midpoint; no response recorded (id kept out of results)
+  $("#screen").replaceChildren(
+    el("div", { class: "card" },
+      el("h1", {}, "Short break"),
+      el("p", {}, "You are about halfway through. Feel free to stretch or rest your eyes for a minute — this screen will wait."),
+      el("p", { class: "muted" }, "When you are ready, continue. The remaining tasks are the same kind as before."),
+      el("button", { class: "btn", onclick: next }, "Continue")));
+}
 function mediaUrl(key, kind) {
   const s = state.materials.stimuli[kind === "strip" ? "strips" : kind === "filmstrip" ? "filmstrips" : "clips"][key];
   return s ? "../" + s.path : null;
@@ -363,6 +372,7 @@ function renderTrial() {
   state.lastEnter = Date.now();
   $("#progress").textContent = `Item ${state.trialIx + 1} of ${ts.length}`;
   if (t.type === "preference" || t.type === "gold" || t.type === "repeat") renderPreference(t);
+  else if (t.type === "break") renderBreak(t);
   else renderChecklist(t);
 }
 

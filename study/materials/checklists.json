@@ -19,6 +19,46 @@
   ],
   "requirements": []
  },
+ "T01.03": {
+  "family": "T01",
+  "spec": {
+   "text": "A locked full-body camera views a training room from a front three-quarter angle in one continuous, silent shot. Anika Sol stands centered on the mat, clearly identifiable, feet together and arms relaxed; she remains fully in frame throughout.\n\nShe steps her anatomical left foot backward, keeping her right foot planted forward. Bending both legs, she lowers her left knee onto the mat, right sole flat and left toes tucked behind her. Her medical coat hem clears the kneeling knee.\n\nSupported by her left knee and right foot, she extends her left arm comfortably diagonally upward, torso upright and untwisted. Her right hand crosses her chest and rests visibly on her left upper arm. She holds briefly.\n\nShe releases her right hand from her left upper arm, then lowers both arms to her sides before rising through her right foot and tucked left toes. She lifts the rear left foot and steps it forward beside the right, finishing upright on the mat with arms relaxed."
+  },
+  "refs": [
+   "media/refs/C03.jpg"
+  ],
+  "requirements": []
+ },
+ "T01.04": {
+  "family": "T01",
+  "spec": {
+   "text": "A continuous, locked full-body three-quarter view shows Noor Hale alone in the clear floor space of a field-station exercise room, fully visible throughout. She stands upright, feet beneath her hips and arms relaxed.\n\nNoor steps her anatomical left foot leftward, bending her left knee into a shallow side lunge while her right foot stays planted and her right knee remains softly unlocked. Leaning modestly toward her bent left leg without twisting her torso, she reaches her right hand across to rest on her left knee while extending her left arm leftward at shoulder height. She holds briefly, both boots flat on the floor.\n\nNoor lifts her right hand clear of her left knee and lowers her left arm, relaxing both arms by her sides. Only then does she straighten and step her left foot back beneath her hip, returning to neutral standing."
+  },
+  "refs": [
+   "media/refs/C04.jpg"
+  ],
+  "requirements": []
+ },
+ "T01.05": {
+  "family": "T01",
+  "spec": {
+   "text": "In a rehearsal hall, Ivo Sen stands fully visible, feet comfortably apart and arms relaxed at his sides. He is alone and stays in frame throughout this continuous, silent scene. The locked camera holds a full-body three-quarter view from his front-left.\n\nKeeping his feet planted and torso broadly steady, he raises both arms, bends his elbows and crosses his forearms before his chest. His anatomical left forearm is nearer the camera, briefly concealing a short section of his right forearm; his hands remain separate. He holds the crossed pose for a beat.\n\nHe smoothly uncrosses, revealing the concealed right-forearm section as the limbs separate. His anatomical left arm extends diagonally upward to his left; his anatomical right arm extends sideways to his right at shoulder height. He briefly settles into the open pose, then lowers both arms to a neutral position at his sides."
+  },
+  "refs": [
+   "media/refs/C05.jpg"
+  ],
+  "requirements": []
+ },
+ "T01.06": {
+  "family": "T01",
+  "spec": {
+   "text": "In a community room, a locked full-body camera frames Mara Vale from a front-right three-quarter angle, with space above her head and around both shoes. Mara is alone, identifiable from the opening and fully visible throughout one continuous shot.\n\nOn the clear, level floor, she stands with feet comfortably apart and arms at her sides. She extends her arms outward, then transfers weight onto her anatomical right foot, keeping its entire sole flat and supporting knee softly bent throughout the balance.\n\nKeeping her torso upright, she raises her anatomical left knee modestly until her shoe clears the floor. She holds briefly, making small arm and supporting-leg corrections without hopping, pivoting or changing support feet.\n\nShe lowers her left foot beside her right, settling its sole. Only after both feet support her does she relax her arms to her sides, finishing steady."
+  },
+  "refs": [
+   "media/refs/C06.jpg"
+  ],
+  "requirements": []
+ },
  "T02.01": {
   "family": "T02",
   "spec": {
@@ -36,6 +76,46 @@
   },
   "refs": [
    "media/refs/C01.jpg"
+  ],
+  "requirements": []
+ },
+ "T02.03": {
+  "family": "T02",
+  "spec": {
+   "text": "In a workshop inspection bay, a continuous, silent locked shot holds Ivo Sen alone and fully visible head to toe throughout, with clear floor around his shoes. He starts facing the camera. Several steps behind him, a waist-high inspection console has a tilted display showing a large illuminated inspection diagram without readable text; it never obscures him.\n\nWith arms relaxed at his sides, Ivo turns clockwise as viewed from above, head moving with torso through profile until his back faces the camera. He briefly studies the console.\n\nKeeping torso and feet rear-facing, he turns only his head comfortably toward his anatomical left shoulder to check the clear floor in his return direction. Only a partial side view of his face appears, never a frontal face above his rear-facing torso. He realigns his head with his torso toward the console; only then does he turn his whole body counterclockwise, retracing the same profile to face the camera."
+  },
+  "refs": [
+   "media/refs/C05.jpg"
+  ],
+  "requirements": []
+ },
+ "T02.04": {
+  "family": "T02",
+  "spec": {
+   "text": "Afternoon in the costume workroom. Tomas Reed sits facing his workstation toward the camera in a low-backed, armless swivel chair with a broad, nonrolling pedestal on the level floor. A large garment-pattern board stands behind him, clear of the chair's turning space. A continuous, fixed full-body view keeps Tomas, the pedestal and both feet visible under even overhead light.\n\nHe pauses, then uses small foot steps to swivel counterclockwise, viewed from above. The seat and low backrest rotate together over the stationary pedestal. He passes through a clear profile until his back faces the camera and he faces the board; his upper back remains visible above the backrest.\n\nAfter briefly inspecting the board's large shapes, Tomas reverses clockwise through the same profile to face his workstation and the camera again, ready to resume work. His feet reposition naturally throughout; his vest closure remains unchanged. There is no dialogue."
+  },
+  "refs": [
+   "media/refs/C07.jpg"
+  ],
+  "requirements": []
+ },
+ "T02.05": {
+  "family": "T02",
+  "spec": {
+   "text": "A rehearsal studio in one continuous, locked wide full-body view. Juno Pike stands alone, fully visible near the front-right of a taped route, facing the camera. The entire broad, open, oval-like curve is visible, with ample walking room, distinct endpoints and a finish farther camera-right than the start.\n\nJuno Pike takes short forward steps clockwise as viewed from above, turning naturally with the route rather than sliding sideways. They curve toward frame-left through a clear frame-left-facing profile, then continue around the left portion until their back faces the camera, revealing the jacket\u2019s back stripe.\n\nWithout pausing or reversing, they follow the far curve toward frame-right through the opposite, frame-right-facing profile, then round the final curve to face the camera again. Juno Pike stops front-facing at the separate finish and remains fully in frame from start to stop. No dialogue."
+  },
+  "refs": [
+   "media/refs/C10.jpg"
+  ],
+  "requirements": []
+ },
+ "T02.06": {
+  "family": "T02",
+  "spec": {
+   "text": "A locked, uncut full-body wide shot shows the compact wardrobe room. Kian Moss is alone, fully visible and front-facing beside the waist-high worktable at frame left. The rear garment display is a few clear steps behind him; the table is outside his path. Kian remains fully in frame and unobstructed; camera and zoom stay fixed throughout. There is no dialogue.\n\nKian turns counterclockwise, viewed from above, through profile until his back faces the camera. After completing the turn, he walks toward the display, gradually becoming smaller. He stops short of the garments and pauses to inspect them, sustaining the rear view. His hood stays down throughout, resting against his upper back; his cuff marker remains on his anatomical left wrist.\n\nKian reverses clockwise through profile to face the camera. Only after completing the turn does he walk back, gradually growing larger, and stop in his original work area beside the table."
+  },
+  "refs": [
+   "media/refs/C12.jpg"
   ],
   "requirements": []
  },
@@ -59,6 +139,46 @@
   ],
   "requirements": []
  },
+ "T03.03": {
+  "family": "T03",
+  "spec": {
+   "text": "A continuous fixed medium three-quarter view looks slightly down at Mara Vale at a pottery-workshop packing table, keeping her face, both hands and the mug's near rim readable during the reveal. Mara is already in frame and remains there throughout. No dialogue or cuts.\n\nNeutral, Mara looks down at the upright, paper-wrapped ceramic mug, its handle accessible beside folded wrapping. Her anatomical left hand steadies the handle while her right gently peels the paper down, below her face. The paper clears the near edge, revealing a pre-existing rim chip. No loose fragment is present; neither hand touches the chipped edge.\n\nHer gaze settles on the chip; her eyes widen in surprise and her hands stop. Surprise gives way to a disappointed frown with downturned mouth corners. Looking at the damaged rim, she holds the frown, left hand at the handle and right resting on the peeled-back paper."
+  },
+  "refs": [
+   "media/refs/C06.jpg"
+  ],
+  "requirements": []
+ },
+ "T03.04": {
+  "family": "T03",
+  "spec": {
+   "text": "Esme Park sits alone at a hobby table in a community craft room, already visible. One continuous fixed medium view keeps her face, hands, and small tabletop block arrangement visible throughout, without cuts or dialogue.\n\nNeutral-faced, she aligns one block with her left fingertips while her right hand rests nearby on the tabletop. The moving block lightly brushes an upright neighbor, causing a slow, slight tilt within easy reach.\n\nHer eyes widen in startlement. She stops adjusting and gently brings her right fingertips against the leaning block before it falls, easing it back until its base rests flat. The surrounding arrangement stays intact.\n\nHer expression softens with relief, her right fingertips still lightly touching the now-stable block and the arrangement undisturbed."
+  },
+  "refs": [
+   "media/refs/C08.jpg"
+  ],
+  "requirements": []
+ },
+ "T03.05": {
+  "family": "T03",
+  "spec": {
+   "text": "In a craft studio, a fixed medium three-quarter view shows Juno Pike\u2019s identifiable face and a storage desk\u2019s open shallow drawer together. Juno is alone and stays in frame throughout. No dialogue or cuts.\n\nJuno neutrally inspects the drawer, left hand on its edge, searching for a familiar keepsake: a palm-sized carved wooden bird already near the drawer\u2019s center, completely concealed beneath loose cloth. The drawer stays supported by its runners.\n\nWith their right hand, Juno catches a cloth corner and draws it toward the drawer\u2019s right side, uncovering the bird. Their hands stay low and their face unobstructed. Their gaze stops on it; eyebrows rise, eyes widen and lips part in surprised recognition.\n\nJuno releases the cloth, leaving it gathered beside the bird, then gently lifts the bird with their right hand. Surprise softens into a warm smile as they hold it just below chest height, angled for them to see, face fully visible."
+  },
+  "refs": [
+   "media/refs/C10.jpg"
+  ],
+  "requirements": []
+ },
+ "T03.06": {
+  "family": "T03",
+  "spec": {
+   "text": "In a sewing workroom, Bela Rowan stands at a repair table, holding an unworn fabric swatch loosely in both hands. A continuous, fixed medium view keeps her face, hands and swatch visible above the tabletop throughout, without cuts or dialogue.\n\nBela inspects it neutrally. A loose thread at the repaired seam catches her attention; her eyebrows draw together in a suspicious frown as she pauses over the stitching.\n\nPlacing her fingertips on opposite sides of the seam, Bela gently spreads its edges. Light tension reveals a small, preexisting gap; no fabric tears or stitches break. Her eyes widen slightly and her brow briefly lifts in realization.\n\nHer eyebrows then pull down into a deeper, frustrated frown, lips pressing firmly together. She holds the swatch steady with the gap visible, her disappointed gaze on the faulty seam."
+  },
+  "refs": [
+   "media/refs/C11.jpg"
+  ],
+  "requirements": []
+ },
  "T04.01": {
   "family": "T04",
   "spec": {
@@ -76,6 +196,46 @@
   },
   "refs": [
    "media/refs/C02.jpg"
+  ],
+  "requirements": []
+ },
+ "T04.03": {
+  "family": "T04",
+  "spec": {
+   "text": "A locked, continuous wide shot opens on an empty repair shop. A clear aisle leads from the left frame edge to the collection counter at screen right. Parallel to the back wall, the counter has its customer-facing front toward the camera and unobstructed standing room before it. Shelves of repaired appliances stand behind it.\n\nIvo Sen walks briskly into view from the left frame edge, heading screen right toward the counter. His whole body clears the left frame edge well before he approaches it.\n\nIvo Sen reaches the customer side and stops walking, still facing screen right. Only then does he make a quarter-turn to his anatomical left, facing the counter toward the back wall. He remains there, fully in frame. No one else appears. No dialogue."
+  },
+  "refs": [
+   "media/refs/C05.jpg"
+  ],
+  "requirements": []
+ },
+ "T04.04": {
+  "family": "T04",
+  "spec": {
+   "text": "One continuous, locked wide view holds on an empty community hall. A fully open doorway is at frame right, a practice mat toward frame left, with a generous stretch of clear, level floor between them.\n\nTomas Reed enters through the right doorway at a light jog, his sneakers clearing the threshold and his shoulders and vest passing without contact. Once his whole body is inside, he continues jogging left toward the mat. The camera stays fixed, keeping him fully visible from head to shoes throughout his movement inside the hall.\n\nStill several strides from the mat, Tomas eases into distinct, unhurried walking steps. He walks the remaining distance and stops just short of the mat, feet comfortably planted and posture alert, ready for his warm-up."
+  },
+  "refs": [
+   "media/refs/C07.jpg"
+  ],
+  "requirements": []
+ },
+ "T04.05": {
+  "family": "T04",
+  "spec": {
+   "text": "INT. MOVEMENT STUDIO - DAY\n\nA secured practice wall has a low, wide padded opening at screen-left. A clean padded strip runs through it onto the level floor; an open practice area lies at screen-right. The fixed wide camera covers the opening and full route in one continuous shot. Nobody is initially visible.\n\nRafi Dune's hands and head appear at the opening, followed by his shoulders. He crawls on hands and knees with comfortable head and shoulder clearance until his entire body clears the wall.\n\nRafi Dune pauses on his knees, brings one foot forward into a half-kneel, then pushes up to standing. He walks to the open practice area and stops upright with relaxed arms. His clothing remains clean and unchanged; the wall and opening stay fixed."
+  },
+  "refs": [
+   "media/refs/C09.jpg"
+  ],
+  "requirements": []
+ },
+ "T04.06": {
+  "family": "T04",
+  "spec": {
+   "text": "A locked, full-body wide view holds on an empty stage area in a rehearsal room. Clear floor extends from the right frame edge to a frame-left stopping position, leaving ample room to slow down.\n\nPracticing an enthusiastic arrival, Kian Moss jogs in from beyond the right frame edge with a neutral, focused expression. He becomes fully visible, head to toe, and continues right to left. Approaching the frame-left stopping position, he shortens his jogging steps, slows, and stops completely with space remaining before the frame edge.\n\nAfter stopping, he turns from his leftward heading to face the camera. His focused expression opens into a broad smile, which he holds. His hood stays down throughout. The wide view remains unchanged in one continuous shot, without cuts or dialogue."
+  },
+  "refs": [
+   "media/refs/C12.jpg"
   ],
   "requirements": []
  },
@@ -99,6 +259,46 @@
   ],
   "requirements": []
  },
+ "T05.03": {
+  "family": "T05",
+  "spec": {
+   "text": "A continuous locked wide shot holds an exhibition foyer with a seating alcove at right. Mara Vale stands fully visible and recognizable at left, arms relaxed at her sides. She is alone and stays in frame throughout. A broad display case stands in front of her unobstructed walking route. Its opaque body and backing conceal her torso and arms, relaxed or folded, leaving her head and shoulder tops visible. Recessed supports leave a narrow shoe-level gap. The bench stands beyond its right edge, clear of her route.\n\nMara walks left to right behind the case toward the alcove. Her relaxed arms and torso disappear progressively. Only once both arms are completely hidden does she fold them comfortably across her chest; neither hand nor forearm protrudes. Her head and shoulder tops keep moving above the case, her shoes visible through the lower gap.\n\nFrom their first appearance beyond the right edge, her arms are already folded. She clears the case without adjusting or unfolding them and stops beside the bench, arms still folded."
+  },
+  "refs": [
+   "media/refs/C06.jpg"
+  ],
+  "requirements": []
+ },
+ "T05.04": {
+  "family": "T05",
+  "spec": {
+   "text": "A fixed wide view spans a tram terminal concourse. Esme Park is fully visible right of a floor-mounted schedule board, with an open departure doorway farther left. No one else is present.\n\nThe broad, opaque board stands nearer the camera than her route. Its top rises above her head; its solid base meets the floor without a gap. Clear walking space remains between board and wall. The entire route and doorway remain within the fixed frame.\n\nEsme Park walks steadily right to left behind the board. Its right edge progressively conceals her until even her hair and shoes are hidden. She continues along the same path, physically within frame throughout the brief complete concealment. She emerges at its left edge, becomes fully visible again, continues left, and stops at the doorway threshold without passing through."
+  },
+  "refs": [
+   "media/refs/C08.jpg"
+  ],
+  "requirements": []
+ },
+ "T05.05": {
+  "family": "T05",
+  "spec": {
+   "text": "A continuous locked full-body wide three-quarter view holds a garden shed. Rafi Dune is clearly visible near-left, walking upright toward a workbench farther right and deeper inside.\n\nA tall, broad plywood partition between Rafi and the bench reaches the floor without a gap. Behind it, a clear passage allows bending and travel toward its right edge; beyond that edge is the bench\u2019s accessible low shelf.\n\nRafi moves left-to-right and away, still upright as he disappears completely behind the partition, head to shoes. He stays within the frame throughout. Only when fully hidden does he lower into a crouch.\n\nAt his first posture-readable reappearance at the farther-right edge, his torso is already lowered and both knees visibly bent. He clears the partition with short, alternating bent-knee steps, maintaining the crouch. Fully visible, he pauses crouched beside the lower shelf, looking into the storage beneath the bench."
+  },
+  "refs": [
+   "media/refs/C09.jpg"
+  ],
+  "requirements": []
+ },
+ "T05.06": {
+  "family": "T05",
+  "spec": {
+   "text": "INT. REHEARSAL ROOM \u2013 AFTERNOON\n\nIn an otherwise empty room, a secured opaque scenic panel spans the middle, with a clear, level walkway behind it. Its raised lower edge leaves passing shoes and lower legs visible while concealing torso and face.\n\nOne continuous, locked full-body wide shot frames Bela Rowan fully visible at screen-right, her readable face neutral in a comfortable three-quarter view, arms relaxed.\n\nShe walks leftward behind the panel, remaining neutral until her whole face is concealed. Her moving shoes and lower legs remain continuously visible beneath it. While her face is hidden, she forms a broad smile.\n\nAt the panel's left edge, her first readable face is already broadly smiling in a comfortable camera-facing three-quarter view, her head naturally angled to her path. Without stopping, she continues left until fully clear, maintaining the smile and relaxed arms. The panel and lighting remain unchanged."
+  },
+  "refs": [
+   "media/refs/C11.jpg"
+  ],
+  "requirements": []
+ },
  "T06.01": {
   "family": "T06",
   "spec": {
@@ -116,6 +316,46 @@
   },
   "refs": [
    "media/refs/C08.jpg"
+  ],
+  "requirements": []
+ },
+ "T06.03": {
+  "family": "T06",
+  "spec": {
+   "text": "Morning in the greenhouse potting room. Rafi Dune stands facing the dry potting bench against the rear wall. An empty tray lies flat on the worktop, a soft dry brush beside it. Space beside the bench stays clear.\n\nThe continuous fixed medium-wide three-quarter view keeps Rafi, both forearms, brush and tray visible. Daylight makes folds readable. Both sleeves initially reach his wrists.\n\nRafi uses his left hand to fold his right cuff upward, then folds it again. The roll stays below his elbow; his left sleeve stays down.\n\nHe releases the cuff and lowers his hands; the roll holds. Still facing the bench, he picks up the brush with his right hand and brushes the empty tray while his left steadies its edge. His right sleeve remains rolled, with no other clothing changes. He stays at the bench."
+  },
+  "refs": [
+   "media/refs/C09.jpg"
+  ],
+  "requirements": []
+ },
+ "T06.04": {
+  "family": "T06",
+  "spec": {
+   "text": "In a station vestibule, Juno Pike stands alone facing the fixed camera, clearly identifiable from the opening and continuously framed knees-up, with the jacket zipper clearly visible. The departure doorway is screen left, toward Juno's anatomical right.\n\nJuno lifts the open jacket's lower fastening slightly to waist level. The right hand steadies the box and slider while the left fully seats the pin, then holds the base steady. The right hand pulls the slider upward, progressively joining the teeth from the bottom to the upper chest.\n\nJuno releases the zipper, letting the hem settle over the hips, then smooths the closed front downward with both palms. With hands lowered, Juno turns only the head toward the doorway; the torso stays facing the camera and the jacket stays zipped closed."
+  },
+  "refs": [
+   "media/refs/C10.jpg"
+  ],
+  "requirements": []
+ },
+ "T06.05": {
+  "family": "T06",
+  "spec": {
+   "text": "In a utility washroom, Bela Rowan stands alone at the sink, clearly identifiable and in frame throughout. The continuous, silent, fixed medium three-quarter view includes her face, tap, hands, cuffs, basin and adjacent counter.\n\nBela holds a small reusable cup above the basin; her loose right cuff is dry and uniformly pale mint. With her left hand she opens the tap to a gentle stream, then holds the cup beneath it in her right hand. She rotates and tips the cup, rinsing its inside and emptying water into the basin. During rotation, her loose right cuff accidentally droops across the stream\u2019s edge, forming a darker wet patch. Ordinary rinsing motion carries the cuff clear without deliberate sleeve dipping.\n\nBela sets the cup upright on the counter, releases it, then closes the tap with her left hand. Noticing the dampness, she raises and slightly turns her right forearm over the basin to inspect the cuff; the darkened patch remains plainly visible."
+  },
+  "refs": [
+   "media/refs/C11.jpg"
+  ],
+  "requirements": []
+ },
+ "T06.06": {
+  "family": "T06",
+  "spec": {
+   "text": "In one continuous fixed medium three-quarter view, Kian Moss stands clearly identifiable behind an art-studio workbench, alone and in frame throughout. A drawing board rests fully supported, slightly askew to the worktop's straight front edge. Beside it, a wide horizontal wooden ledge on Kian's right is visibly dusted with dry white chalk.\n\nHis right sleeve is clean. He steadies the board with his left hand and uses his right hand to adjust it. During the adjustment, the underside of his right sleeve brushes the chalk-dusted ledge.\n\nHe lifts his right forearm clear and turns it slightly palm-up, revealing a chalk streak on the sleeve's underside where it touched the wood. He pauses to inspect it; his left hand keeps steadying the supported board, and his left cuff band remains unchanged.\n\nKian resumes adjusting the supported board with his right hand while his left steadies it, keeping his right forearm clear of the chalky ledge. The streak persists."
+  },
+  "refs": [
+   "media/refs/C12.jpg"
   ],
   "requirements": []
  },
@@ -141,6 +381,50 @@
   ],
   "requirements": []
  },
+ "T07.03": {
+  "family": "T07",
+  "spec": {
+   "text": "A locked wide three-quarter view holds a training ward: a sturdy foreground chair on the left, a glass-doored supply cabinet showing stacked medical supplies against the rear wall on the right, and a clear aisle between them. Anika Sol stands near the camera to the chair\u2019s right; Rafi Dune sits in it. Both are clearly identifiable at the opening and remain in frame throughout.\n\nRafi\u2019s feet rest on the floor. He already holds a cup by its handle in his right hand just above his lap, the grip unobstructed.\n\nAnika walks down the aisle toward the cabinet, receding and becoming smaller in the fixed view. During her walk, Rafi raises the cup to his mouth, pauses with the rim at his lips, then lowers it back to his lap without releasing the handle. He remains seated at the same location; the chair stays put. Anika stops directly before the cabinet only after he has lowered the cup."
+  },
+  "refs": [
+   "media/refs/C03.jpg",
+   "media/refs/C09.jpg"
+  ],
+  "requirements": []
+ },
+ "T07.04": {
+  "family": "T07",
+  "spec": {
+   "text": "A station room, in one continuous, locked, moderately distant full-body two-shot without zoom. Noor Hale stands rear left, facing the unoccupied foreground-left monitoring console. Juno Pike sits at the shallow right-side desk, looking down at its controls, both hands on the desk. Juno\u2019s orientation permits a head-only look toward Noor and a right-palm acknowledgement visible to Noor. Both are identifiable initially and stay in frame; Juno\u2019s legs and shoes remain visible beneath the desk.\n\nThe console angles beside Noor\u2019s unobstructed path. Noor walks to its operating position and stops, approach and arrival plainly visible.\n\nOnly then, Juno turns the head toward Noor and raises the right hand broadly from the desk, open palm at shoulder height where Noor can see it. After a brief hold, Juno lowers the hand onto the desk. Juno stays seated in the same chair, torso placement and orientation unchanged apart from incidental balance corrections, without deliberate leaning or turning. Noor remains at the console."
+  },
+  "refs": [
+   "media/refs/C04.jpg",
+   "media/refs/C10.jpg"
+  ],
+  "requirements": []
+ },
+ "T07.05": {
+  "family": "T07",
+  "spec": {
+   "text": "A locked wide view keeps Ivo Sen and Bela Rowan fully visible head to shoes at the opening and throughout. The repair room\u2019s workbench runs foreground to background, left of center; the tool rack is on the back wall beyond it. A clear aisle opens around the bench\u2019s near end along its right side.\n\nIvo Sen stands near the foreground-left corner. Bela Rowan waits against the right wall outside the aisle, arms at her sides, both feet planted.\n\nIvo Sen crosses in front of the bench\u2019s near end, clears its right corner, then turns away from the camera into the aisle, going around the bench rather than across its surface. He passes between the bench and Bela Rowan with ample clearance. Bela Rowan turns her head toward him, keeping both feet planted without following, then folds her arms across her chest, partially covering her anatomical right-chest pocket.\n\nIvo Sen continues to the tool rack and stops in front of it. Bela Rowan remains at the wall, arms folded. No dialogue or cuts."
+  },
+  "refs": [
+   "media/refs/C05.jpg",
+   "media/refs/C11.jpg"
+  ],
+  "requirements": []
+ },
+ "T07.06": {
+  "family": "T07",
+  "spec": {
+   "text": "Morning in a community room. The continuous, fixed wide three-quarter view shows a tall rear-right window admitting soft daylight, with no reflections of either person. No dialogue.\n\nMara Vale stands near the camera on the left. Kian Moss sits in a screen-left chair with an open book supported on his lap. The chair is outside the clear diagonal route to the window. Both remain in frame throughout.\n\nMara walks diagonally away toward the window; Kian stays seated with the book open. She stops beside the window and looks outside. Only then does Kian close the book with both hands, keeping it on his lap, then raise his head to look toward Mara.\n\nMara stays by the window. Kian remains seated holding the closed book; the chair never moves."
+  },
+  "refs": [
+   "media/refs/C06.jpg",
+   "media/refs/C12.jpg"
+  ],
+  "requirements": []
+ },
  "T08.01": {
   "family": "T08",
   "spec": {
@@ -160,6 +444,50 @@
   "refs": [
    "media/refs/C01.jpg",
    "media/refs/C04.jpg"
+  ],
+  "requirements": []
+ },
+ "T08.03": {
+  "family": "T08",
+  "spec": {
+   "text": "In a continuous, silent, locked full-body two-shot of the repair room, Ivo Sen stands screen-right and Mara Vale left of center, both fully visible and identifiable. A rear-right tool bench extends beyond the right frame edge; a reassembled desk lamp shines steadily beside laid-down tools. A clear aisle connects them to the bench.\n\nIvo approaches Mara with a focused neutral expression; she waits attentively, neutral-faced. Within arm\u2019s reach, they angle toward each other with both faces readable. They raise their anatomical right hands for one comfortable high-five, Mara reaching up to taller Ivo, their palms meeting beside their unobscured faces. Both keep their feet on the floor. They separate and lower their hands fully, then display broad, visible smiles.\n\nOnly after both have lowered their hands, Ivo turns toward the bench, reversing his approach. Still smiling, he walks along the clear aisle toward its far end and exits screen-right to return to his tools. Mara stays in her open position, smiling and fully visible through the end."
+  },
+  "refs": [
+   "media/refs/C05.jpg",
+   "media/refs/C06.jpg"
+  ],
+  "requirements": []
+ },
+ "T08.04": {
+  "family": "T08",
+  "spec": {
+   "text": "A locked, intermediate-distance full-body three-quarter view holds a community hall and clear rear-left exit, without cuts or dialogue. A closed folder rests on the right-hand table, chairs tucked beneath. Tomas Reed stands foreground-left; Esme Park stands near center beside the table. Both are clearly identifiable and visible head to toe initially and remain in frame throughout.\n\nTo conclude the meeting, Tomas walks diagonally toward Esme, stopping at comfortable arm\u2019s length facing diagonally rear-right. Esme faces him without relocating. Tomas, taller than Esme, offers his right hand at Esme\u2019s comfortable height; Esme takes it with the right hand. Their brief, gentle handshake of thanks allows natural balance adjustments without Tomas pulling Esme forward.\n\nTheir right hands separate completely and drop clear. Only then does Tomas visibly turn left roughly a quarter-turn to face the rear-left exit. With that heading established, he walks the unobstructed path to the doorway, remaining visible just inside the hall. Esme stays at the original table-side location."
+  },
+  "refs": [
+   "media/refs/C07.jpg",
+   "media/refs/C08.jpg"
+  ],
+  "requirements": []
+ },
+ "T08.05": {
+  "family": "T08",
+  "spec": {
+   "text": "A fixed camera frames the station lobby full-body. Juno Pike stands screen-left, a few paces from Rafi Dune at center-right; both are fully visible with clear faces. Rafi Dune faces Juno Pike, angled toward camera. An open rear-right exit has a clear route behind Rafi Dune.\n\nJuno Pike approaches and stops within arm\u2019s reach, face still visible. Both raise relaxed anatomical right fists. Their right knuckles meet gently once between them at lower-chest height, then separate without further contact. They lower their arms and smile at one another, both smiles clearly visible for a brief beat.\n\nOnly then does Juno Pike turn toward the exit, revealing the anatomical left-back diagonal stripe as their face turns out of sight. They walk toward the doorway along the clear route. Rafi Dune stays in his original place, still smiling, and does not follow. End before Juno Pike reaches the doorway; both remain fully within the fixed frame throughout."
+  },
+  "refs": [
+   "media/refs/C10.jpg",
+   "media/refs/C09.jpg"
+  ],
+  "requirements": []
+ },
+ "T08.06": {
+  "family": "T08",
+  "spec": {
+   "text": "In a continuous fixed, full-body three-quarter view of a maker room, Kian Moss stands left and Bela Rowan right, angled toward him. Both remain fully in frame throughout, initially with faces unobstructed; no one else is present. A clear aisle behind their meeting point leads to a waist-high workbench in the direction Kian will face after an anatomical-left quarter-turn. No dialogue.\n\nHolding a hand-sized wooden sample in both hands, Kian approaches Bela and stops at showing distance. He presents it at lower-chest height, below both faces. Bela looks down at it, her face visible at a three-quarter angle to camera, then lifts and turns her head toward Kian\u2019s face. Looking at him, she smiles broadly in approval, cheeks lifting and teeth showing.\n\nKian lowers the sample to waist height without releasing it, quarter-turns to his anatomical left, then walks away from Bela along the aisle toward the workbench. End during his departure, the sample still in both hands."
+  },
+  "refs": [
+   "media/refs/C12.jpg",
+   "media/refs/C11.jpg"
   ],
   "requirements": []
  },
@@ -185,6 +513,50 @@
   ],
   "requirements": []
  },
+ "T09.03": {
+  "family": "T09",
+  "spec": {
+   "text": "Day in a community corridor. A narrow aisle joins two doorways; a central camera-side passing bay fits one person entirely clear of the through-route. A continuous fixed wide three-quarter shot shows both faces and the bay. Mara Vale approaches from screen-left toward the right doorway. Tomas Reed approaches from screen-right toward the left doorway.\n\nAs they near, Mara steps into the bay and stops entirely clear of the aisle. She gives Tomas a broad friendly smile, readable throughout her wait and his pass. Tomas continues left behind her; their silhouettes briefly overlap, Mara in front, with separate floor space and no contact.\n\nOnly after Tomas clears her route does Mara step out and resume rightward. Both stop in frame at opposite doorways: Mara at screen-right, Tomas at screen-left. No dialogue or cuts."
+  },
+  "refs": [
+   "media/refs/C06.jpg",
+   "media/refs/C07.jpg"
+  ],
+  "requirements": []
+ },
+ "T09.04": {
+  "family": "T09",
+  "spec": {
+   "text": "Locked wide three-quarter view of a repair hall: a low, open-legged central workbench, end supply stations, and clear walkways behind and before it. The right station's rear-wall cabinet faces into the hall. Esme Park and Ivo Sen are identifiable at opening and stay in frame throughout. Esme stands left beside the far-side walkway entrance, looking toward the right station; Ivo stands right on the near side, looking toward the left station.\n\nSimultaneously, Esme curves screen-left to screen-right around the far side while Ivo walks straight screen-right to screen-left along the near side. They pass in projection near the middle, Ivo visibly in front; the bench separates their noncrossing routes. It briefly masks part of Esme's upper legs; her head and torso remain visible above, her lower legs through the open gap beneath the tabletop.\n\nEsme rounds the right end, reaches the right station, then turns from rightward travel to face the cabinet, her back angled toward camera. Ivo reaches the left station and stops, leaving their exchanged positions clear."
+  },
+  "refs": [
+   "media/refs/C08.jpg",
+   "media/refs/C05.jpg"
+  ],
+  "requirements": []
+ },
+ "T09.05": {
+  "family": "T09",
+  "spec": {
+   "text": "A locked wide three-quarter view holds a paved courtyard in one continuous, silent take. Juno Pike is already at left-near and Kian Moss at right-middle, both fully visible and recognizable. Two small worktables stand beside, not across, the clear paths: one at right-middle, another at left-far.\n\nJuno Pike walks toward right-middle along the nearer path; Kian Moss walks toward left-far along the farther path, with ample clearance. Approaching level, the coworkers comfortably turn their heads toward each other and smile, both facial responses clearly visible before their silhouettes overlap.\n\nJuno Pike passes in front of Kian Moss from the camera's viewpoint, briefly occluding him. As the overlap clears, both return their heads toward their routes and continue, Juno Pike toward right-middle and Kian Moss toward left-far. They are the only people present and remain within the fixed frame throughout, including the overlap."
+  },
+  "refs": [
+   "media/refs/C10.jpg",
+   "media/refs/C12.jpg"
+  ],
+  "requirements": []
+ },
+ "T09.06": {
+  "family": "T09",
+  "spec": {
+   "text": "One continuous, silent, locked wide three-quarter view holds the greenhouse, with only Bela Rowan and Rafi Dune present. A low oval seedling island, plants below knee height and clear walking space around it, separates the rear-left potting bench from the front-right demonstration table. Both are visible and identifiable: Bela stands rear-left; Rafi stands front-right, nearer the camera.\n\nThey simultaneously walk clockwise half-routes, viewed from above. Bela moves right along the rear arc, rounding the island\u2019s right end toward the foreground. Rafi moves left along the front arc, rounding its left end toward the rear. Midway, Rafi passes in front of both the island and Bela. Their paths remain separate without contact; both stay in frame throughout, never fully hidden by the island or seedlings.\n\nBela finishes front-right, turning toward the table and smiling, her face readable in three-quarter view toward the camera. Rafi finishes rear-left facing the potting bench, his heading visibly different from Bela\u2019s."
+  },
+  "refs": [
+   "media/refs/C11.jpg",
+   "media/refs/C09.jpg"
+  ],
+  "requirements": []
+ },
  "T10.01": {
   "family": "T10",
   "spec": {
@@ -204,6 +576,50 @@
   "refs": [
    "media/refs/C02.jpg",
    "media/refs/C10.jpg"
+  ],
+  "requirements": []
+ },
+ "T10.03": {
+  "family": "T10",
+  "spec": {
+   "text": "Morning in a greenhouse potting room. Ivo Sen stands at screen-left beside Sela Nori nearer the center, both identifiable. The bench and both people remain in frame throughout one continuous, fixed medium-wide three-quarter shot, without cuts or dialogue. One large flower is already open on the potting bench at lower-right, its bloom clear of surrounding leaves. Sela Nori initially looks toward Ivo Sen, not the plant.\n\nIvo Sen notices the flower, turns his attention down and right, then extends an arm to point toward it, keeping his hand clear of the bloom and both faces.\n\nOnly after his pointing gesture is established does Sela Nori turn her head down and right to follow it. Seeing the flower, she breaks into a broad, delighted smile while Ivo Sen continues pointing. Both stay in their original standing locations. The same bloom remains open and unchanged throughout."
+  },
+  "refs": [
+   "media/refs/C05.jpg",
+   "media/refs/C01.jpg"
+  ],
+  "requirements": []
+ },
+ "T10.04": {
+  "family": "T10",
+  "spec": {
+   "text": "A continuous fixed medium-wide view of a community hall shows Tomas Reed center-left and Bela Rowan center-right beside a closed exit door on the right. Both remain fully in frame throughout, their faces unobstructed in three-quarter view at the opening. A large metal keyring with several long keys hangs from an upper-left wall peg, slightly above their eye level, clearly silhouetted against the plain wall.\n\nThey silently search the nearby hall with their eyes. Tomas Reed\u2019s gaze settles on the keyring; he lifts his right hand and points directly toward it, keeping his arm clear of Bela Rowan\u2019s face and the keys.\n\nBela Rowan follows his pointing direction with her gaze. Only after her eyes settle on the keyring do her brows rise in recognition and she give one small nod. Tomas Reed remains pointing as both look at the keys."
+  },
+  "refs": [
+   "media/refs/C07.jpg",
+   "media/refs/C11.jpg"
+  ],
+  "requirements": []
+ },
+ "T10.05": {
+  "family": "T10",
+  "spec": {
+   "text": "A continuous fixed medium-wide shot shows an exhibition room with a broad banner at lower-left. Rafi Dune and Esme Park are both fully visible from the opening and remain in frame throughout. Rafi stands nearer the banner, with Esme just to his right; their faces remain visible in three-quarter view. No dialogue or cuts.\n\nThe banner hangs askew from a single wall fastener holding one upper corner. Its unsupported fabric drapes diagonally downward, its lowest corner resting on the floor. The settled drape stays motionless.\n\nRafi notices the crooked banner and points toward its attached corner. Esme follows his gesture, looks at the sagging display, then develops a concerned frown. Rafi keeps pointing while Esme holds the frown, with the banner and both faces clearly visible."
+  },
+  "refs": [
+   "media/refs/C09.jpg",
+   "media/refs/C08.jpg"
+  ],
+  "requirements": []
+ },
+ "T10.06": {
+  "family": "T10",
+  "spec": {
+   "text": "A fixed medium-wide view holds a hobby room. Kian Moss and Anika Sol stand side by side on the left, Anika nearer the drawing board at mid-right. Both are visible and identifiable from the opening and remain in frame throughout, faces unobscured in three-quarter view.\n\nThe board rests securely on an easel, angled toward them and the camera. A large sheet attached flat displays a bold, clearly visible drawing of a broad teapot with an exaggerated, comically elaborate spiral spout. There is no lettering or physical teapot.\n\nKian notices the curl, raises his right hand and points toward it without blocking the drawing. Anika follows his point with her eyes, then turns her head toward the sketch. After a brief look, her cheeks lift and her mouth spreads into an amused grin. Kian keeps pointing while Anika holds her grin and gaze on the picture."
+  },
+  "refs": [
+   "media/refs/C12.jpg",
+   "media/refs/C03.jpg"
   ],
   "requirements": []
  },
@@ -229,6 +645,50 @@
   ],
   "requirements": []
  },
+ "T11.03": {
+  "family": "T11",
+  "spec": {
+   "text": "An art room in a continuous fixed, slightly elevated medium two-shot without dialogue. A drawing board lies flat on a worktable. Mara Vale faces the tabletop from its long working side on screen-left. Lena Voss waits at the table's right-hand end, an arm's length outside Mara's working area. Both remain in frame, with their faces, Mara's wrists and the tabletop visible.\n\nSettled pale chalk dust lines the table edge closest to Mara. Her charcoal right cuff starts clean. She steadies the board with her right fingertips and nudges it square with her left hand. During the adjustment, the underside of her right cuff brushes the dusty edge.\n\nMara lifts and angles her right wrist, revealing a pale patch underneath. No dust cloud rises. Lena looks at the mark and briefly raises her eyebrows, keeping her hands away from Mara and the table. Mara continues adjusting the board with both hands, keeping her cuff clear of the edge. The patch persists; Lena's clothing stays chalk-free."
+  },
+  "refs": [
+   "media/refs/C06.jpg",
+   "media/refs/C02.jpg"
+  ],
+  "requirements": []
+ },
+ "T11.04": {
+  "family": "T11",
+  "spec": {
+   "text": "A fixed camera holds a full-body two-shot beneath a shelter on a covered path. Esme Park approaches from screen left; Kian Moss waits at screen right beside a sturdy worktable on a low, broad dry-paving pad. A shallow muddy puddle lies immediately before its shallow beveled edge facing Esme Park; Kian Moss stands well back. Both are fully visible and identifiable from the opening and remain in frame throughout.\n\nEsme Park inadvertently plants her anatomical right shoe in the puddle while approaching the table. A small splash muddies that shoe and her lower right trouser leg, brown against the pale right toe cap. She stays stable; none reaches Kian Moss.\n\nShe lifts her right foot clear and crosses the bevel, stopping securely with both feet on dry paving beside the table. Only then does Kian Moss look down at her muddy right shoe and hem. Esme Park follows his glance. Mud remains visible on her right toe cap and lower trouser leg."
+  },
+  "refs": [
+   "media/refs/C08.jpg",
+   "media/refs/C12.jpg"
+  ],
+  "requirements": []
+ },
+ "T11.05": {
+  "family": "T11",
+  "spec": {
+   "text": "Morning in the greenhouse potting room. An empty tray and soft dry brush rest on the dry rear-wall bench. Rafi Dune stands there, facing the bench; Tomas Reed sits beside him, outside the workspace, hands on thighs. Both are identifiable from the opening and stay in frame throughout.\n\nA continuous, silent, fixed medium-wide three-quarter view keeps Rafi's forearms, brush and tray unobstructed. Even daylight reveals the folds.\n\nBoth Rafi's cuffs begin at his wrists; Tomas's sleeves are down. With his left hand, Rafi folds his right cuff upward once, then again, leaving the roll below his right elbow and his left sleeve down. He releases it; the roll holds. Only then does Tomas briefly glance at it, his seated pose, hands and sleeves unchanged.\n\nStill facing the bench, Rafi picks up the brush right-handed and brushes the tray, steadying its edge left-handed. His right sleeve stays rolled below the elbow. They remain at the bench, with no other clothing changes."
+  },
+  "refs": [
+   "media/refs/C09.jpg",
+   "media/refs/C07.jpg"
+  ],
+  "requirements": []
+ },
+ "T11.06": {
+  "family": "T11",
+  "spec": {
+   "text": "In a community craft room, a continuous fixed knees-up three-quarter view keeps Bela Rowan and Juno Pike identifiable in frame throughout. Bela stands beside a wall hook at the table\u2019s near end; Juno waits at its far end, clear of Bela. The table leaves Bela\u2019s torso and front waist unobstructed; paper, brushes and paint tray await. A canvas front-tie apron hangs by its neck loop, long ties loose.\n\nBela lifts the loop off the hook, opens it with both hands and passes it over her head, settling the bib against her tunic. Holding one tie per hand, she draws them around her hips to her lower back, crosses them and exchanges ends between hands. She returns the ends around opposite hips, keeping the apron against her body.\n\nAt her visible front waist above and beside the table edge, Bela crosses the ends, tightens a first knot and ties a bow. Juno looks from the materials to the fastening. Bela lets go of the tied bow and smooths the apron front downward with both palms. The apron stays on Bela alone."
+  },
+  "refs": [
+   "media/refs/C11.jpg",
+   "media/refs/C10.jpg"
+  ],
+  "requirements": []
+ },
  "T12.01": {
   "family": "T12",
   "spec": {
@@ -248,6 +708,50 @@
   "refs": [
    "media/refs/C08.jpg",
    "media/refs/C01.jpg"
+  ],
+  "requirements": []
+ },
+ "T12.03": {
+  "family": "T12",
+  "spec": {
+   "text": "A continuous fixed wide three-quarter view shows a garden passage from near left, doglegging around a low central planter past an aisle corner, then a bench end, onto a clear final leg to the rear-right worktable. The bench stands outside the walking line with ample clearance.\n\nNoor Hale and Rafi Dune are plainly identifiable on the approach, Noor about three walking paces ahead. Both walk steadily around the same dogleg, clearing the corner then the bench end without contact or diagonal shortcuts. Their gap stays about three paces measured along the route through the bend.\n\nOnly after Rafi clears the bench onto the final leg does he take slightly quicker steps. Noor maintains the original pace as Rafi closes to less than one walking pace. At the worktable, Noor slows to a stop; Rafi stops just behind, both within the work area.\n\nThe planter and low planting conceal neither; both remain identifiable and in frame throughout. No one else appears; there are no cuts or dialogue."
+  },
+  "refs": [
+   "media/refs/C09.jpg",
+   "media/refs/C04.jpg"
+  ],
+  "requirements": []
+ },
+ "T12.04": {
+  "family": "T12",
+  "spec": {
+   "text": "Daylight in a movement room. A clear aisle runs rear-left to near-right past a low crate end, then a low soft foam rail across the aisle. The rail permits an ordinary walking step, with clear floor before and beyond.\n\nAnika Sol leads; Juno Pike follows behind, both identifiable. The continuous fixed wide three-quarter view keeps both, their feet, the crate end and rail visible throughout.\n\nAnika passes the crate end, steps over the rail one foot at a time without jumping, and continues beyond. Juno passes the same crate end and waits before the rail until Anika clears it, then steps over one foot at a time without jumping and resumes following.\n\nBoth stop beyond the rail toward the near-right, Juno still behind Anika with a visibly larger gap than initially. Neither changes roles or leaves the frame."
+  },
+  "refs": [
+   "media/refs/C10.jpg",
+   "media/refs/C03.jpg"
+  ],
+  "requirements": []
+ },
+ "T12.05": {
+  "family": "T12",
+  "spec": {
+   "text": "Bela Rowan and Mara Vale are already fully visible in the movement room, Mara a few paces ahead and to Bela\u2019s left, facing left. The continuous locked full-body wide three-quarter view frames the entire course and stopping space, keeping both fully visible throughout. No dialogue or cuts.\n\nTwo stable low tables are staggered: right farther from camera, left nearer, with broad clearance. Mara leads leftward at a deliberate training pace, curving toward camera around the right table\u2019s near end, then reversing away around the left table\u2019s far end. Bela watches and follows the same broad S-route without shortcuts, rounding each end after Mara passes; neither touches furniture.\n\nMara steps over the low foam rail beyond, clearing both feet without jumping or contact. Bela waits until Mara clears, then steps both feet over likewise, never around an end.\n\nOn the unobstructed final stretch, Bela lengthens her walking stride while Mara walks steadily. Half a step behind, Bela matches pace; they slow and stop together, clear of obstacles."
+  },
+  "refs": [
+   "media/refs/C11.jpg",
+   "media/refs/C06.jpg"
+  ],
+  "requirements": []
+ },
+ "T12.06": {
+  "family": "T12",
+  "spec": {
+   "text": "A continuous locked full-body side view shows a fitting workshop: a rack left, a broad low platform to its right, and a sturdy workbench at the platform\u2019s far-right end. The rack stays behind the route, hiding neither man. Both men, the floor approach and entire platform remain visible throughout.\n\nIvo Sen and Kian Moss start on the floor beside the rack, facing right, Kian one pace behind Ivo. Ivo leads past the rack, steps normally onto the platform\u2019s low left edge and places both feet on it before continuing toward the bench. Kian follows past the rack but waits on the floor short of the platform.\n\nOnly after Ivo stops near the bench does Kian step up without jumping and walk a short distance rightward. He stops several paces behind Ivo, widening their initial gap. Both finish facing right, both feet securely on the platform, Ivo nearest the bench. The platform provides ample length for their separation and ample depth for comfortable footing."
+  },
+  "refs": [
+   "media/refs/C12.jpg",
+   "media/refs/C05.jpg"
   ],
   "requirements": []
  }
