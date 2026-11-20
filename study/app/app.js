@@ -5,7 +5,15 @@
  * Blinding: systems are never named; pair sides and trial order are randomized
  * with a seeded PRNG (per rater, reproducible). Results autosave to localStorage
  * after every response and are exported as results_<rater>.json.
- * Materials: ../materials/{assignment,checklists,stimuli}.json (frozen).
+ * Materials: ../materials/{assignment,checklists,stimuli,state_captions}.json (frozen).
+ *
+ * Question page (2026-11-20 meeting rework): specification at the top; small
+ * click-to-zoom character references; videos judged against the SPECIFICATION
+ * only (storyboard adherence dropped); each result's storyboard shown stacked
+ * below the videos, bigger, with the planned state captioned above each panel
+ * (composition by default, details behind a click); "?" tooltips on every
+ * criterion; play-both / pause-both; full screen per video; "Save & stop" so a
+ * rater can stop and resume anytime (every answer is recorded as it is given).
  */
 "use strict";
 
@@ -21,15 +29,22 @@ let RATER = PARAMS.get("rater") || "";
 let RATER_NAME = PARAMS.get("name") || "";
 let LS_KEY = RATER ? "vcstudy_v2_" + RATER : "";   // v2: 34-slot short-session design (2026-11-20)
 
+/* Criteria (2026-11-20 meeting): the videos are judged against the SPECIFICATION
+ * only — storyboard adherence is dropped (a weak storyboard must not be winnable
+ * by adherence). The storyboards get their own two questions in a separate
+ * section, judged on the storyboard alone. Gold pairs (no storyboards shown) ask
+ * the video questions only. [id, name, section, explanation] */
 const CRITERIA = [
-  ["identity",   "Identity fidelity",
-   "Are the characters the same people from start to end, and the same as the character pictures? Keep the two characters distinct from each other. A change the specification asks for (a stain, a rolled sleeve) is not an identity change."],
-  ["order",      "Action and event order",
+  ["identity", "Identity fidelity", "video",
+   "Are the characters the same people from start to end, and the same as the character pictures? Keep the characters distinct from each other. A change the specification asks for (a stain, a rolled sleeve) is not an identity change."],
+  ["order", "Action and event order", "video",
    "Are all the requested actions done, in the requested order? Judge only what you can see against the specification — a beautiful video may still skip the requested action."],
-  ["adherence",  "Storyboard adherence",
-   "Does the video match the storyboard shown with it — who and what is where at each panel time, and the staging? Every case is one continuous shot with a fixed camera, so a cut inside the video is a violation here, even if it hides nothing."],
-  ["motion",     "Motion plausibility",
+  ["motion", "Motion plausibility", "video",
    "Does the movement look real and steady? No morphing, no flicker, and nothing vanishing without a reason (leaving the view or passing behind something is fine)."],
+  ["sb_coherence", "Coherent set of states", "sb",
+   "Do the panels show the right moments of the specification, in a sensible order — six visual states that together tell the story?"],
+  ["sb_consistency", "Visual consistency", "sb",
+   "Across the panels, do the characters keep the same appearance (identity, clothing) and does the setting stay the same?"],
 ];
 
 const QUIZ = [
@@ -46,7 +61,7 @@ const QUIZ = [
 
 const state = {
   phase: "load",           // load | consent | quiz | trials | done
-  materials: { assignment: null, checklists: null, stimuli: null },
+  materials: { assignment: null, checklists: null, stimuli: null, state_captions: null },
   trialIx: 0,
   responses: {},           // trialId -> response object
   times: {},               // trialId -> ms on trial
@@ -214,23 +229,26 @@ function renderQuiz() {
   $("#screen").replaceChildren(
     el("div", { class: "card" },
       el("h1", {}, "Instructions"),
-      el("p", {}, "Each task shows two videos side by side. Say which video does better."),
+      el("p", {}, "Each task shows one specification and two results. Say which result does better."),
       el("ul", {},
-        el("li", {}, el("b", {}, "Specification. "), "The intended scene and actions."),
-        el("li", {}, el("b", {}, "Character pictures. "), "Labeled with the names from the specification — these are the people to look for in the panels and videos."),
-        el("li", {}, el("b", {}, "Two videos, each with its own storyboard. "), "Click a storyboard to see it full size.")),
-      el("p", {}, "Answer all four criteria on every task. The four criteria are independent — one video can win one and lose another."),
-      el("h3", {}, "The four criteria"),
-      ...CRITERIA.map(([id, name, desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
+        el("li", {}, el("b", {}, "Specification. "), "The intended scene and actions — the text both results were made from. Judge everything you see against it."),
+        el("li", {}, el("b", {}, "Characters. "), "Small pictures labeled with the names from the specification. Click one to see it full size."),
+        el("li", {}, el("b", {}, "Two videos. "), "Side by side. “Play both” starts them together and “Pause both” stops them together; ⤢ shows a video full screen."),
+        el("li", {}, el("b", {}, "Two storyboards. "), "Below the videos, stacked. Storyboard 1 belongs to Video 1, Storyboard 2 to Video 2. The text above each panel describes the planned state — click “details” for more of it, click a panel to see it full size.")),
+      el("p", {}, "You answer three questions about the videos and two about the storyboards. The questions are independent — one result can win one and lose another. Videos are judged against the specification only, not against the storyboards; the storyboard questions are about the storyboards alone."),
+      el("h3", {}, "The three video questions"),
+      ...CRITERIA.filter(([, , sec]) => sec === "video").map(([, name, , desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
+      el("h3", {}, "The two storyboard questions"),
+      ...CRITERIA.filter(([, , sec]) => sec === "sb").map(([, name, , desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
       el("h3", {}, "How to answer"),
-      el("p", {}, el("b", {}, "Prefer Video 1 / Prefer Video 2: "), "that video is clearly better on this criterion. ",
-                 el("b", {}, "Tie: "), "you cannot tell them apart. ",
-                 el("b", {}, "Unratable: "), "the criterion cannot be judged at all (for example, neither video looks like the specification)."),
+      el("p", {}, el("b", {}, "Prefer 1 / Prefer 2: "), "that result is clearly better on this question. ",
+        el("b", {}, "Tie: "), "you cannot tell them apart. ",
+        el("b", {}, "Unratable: "), "the question cannot be judged at all (for example, neither video looks like the specification)."),
       el("h3", {}, "Three examples"),
       el("ul", {},
         el("li", {}, el("b", {}, "Behind a screen. "), "A character goes behind a screen and is supposed to come back out. Check that they do come back — and are still the same character."),
         el("li", {}, el("b", {}, "A small requested change. "), "Say the specification asks for one character's cuff to turn stained. Check that only that cuff changes, the change lasts, and the other character stays the same."),
-        el("li", {}, el("b", {}, "A cut. "), "Every case is one continuous shot with a fixed camera. If the video cuts in the middle, that counts against Storyboard adherence."))),
+        el("li", {}, el("b", {}, "A weak storyboard, a good video. "), "A video can follow the specification well even when its storyboard is poor — judge the videos against the specification, and judge the storyboards on their own."))),
     form, btn);
 }
 
@@ -242,11 +260,22 @@ function renderBreak(t) {
       el("h1", {}, "Short break"),
       el("p", {}, "You are about halfway through. Feel free to stretch or rest your eyes for a minute — this screen will wait."),
       el("p", { class: "muted" }, "When you are ready, continue. The remaining tasks are the same kind as before."),
-      el("button", { class: "btn", onclick: next }, "Continue")));
+      el("div", { class: "row" },
+        el("button", { class: "btn", onclick: next }, "Continue"),
+        el("button", { class: "btn ghost", onclick: stopSession }, "Save & stop"))));
 }
 function mediaUrl(key, kind) {
   const s = state.materials.stimuli[kind === "strip" ? "strips" : kind === "filmstrip" ? "filmstrips" : "clips"][key];
   return s ? "../" + s.path : null;
+}
+
+/* small "?" button that toggles a help note (tooltips, 2026-11-20 meeting) */
+function tipBtn(text) {
+  const box = el("div", { class: "tipbox" }, text);
+  return el("span", { class: "tipwrap" },
+    el("button", { class: "tip", type: "button", "aria-label": "help", title: "help",
+      onclick: (e) => { e.stopPropagation(); box.classList.toggle("open"); } }, "?"),
+    box);
 }
 
 function specBlock(caseId) {
@@ -258,18 +287,17 @@ function specBlock(caseId) {
   const refs = (c.refs || []).map(r => typeof r === "string" ? { name: "", src: "../" + r } : { name: r.name, src: "../" + r.path });
   const srcs = refs.map(r => r.src);
   return el("div", {},
-    el("h3", {}, "Specification"),
+    el("h3", { class: "withtip" }, "Specification ",
+      tipBtn("The text both results were made from. Judge what you see against this.")),
     el("div", { class: "spec" }, body),
-    el("h3", {}, "Character references"),
+    el("h3", { class: "withtip" }, "Characters ",
+      tipBtn("The people to look for, labeled with the names the specification uses. Click a picture to see it full size.")),
     el("div", { class: "refs" }, ...refs.map((r, i) =>
       el("figure", { class: "refcard" },
         el("img", { src: r.src, alt: r.name ? `character reference: ${r.name}` : "character reference",
           title: "Click to see full size",
           onclick: () => openLightbox(srcs, i, (j, n) => refs[j].name ? `${refs[j].name} — ${j + 1} / ${n}` : `${j + 1} / ${n}`) }),
-        r.name ? el("figcaption", {}, r.name) : null))),
-    el("p", { class: "muted" },
-      "Each reference is labeled with the character name used in the specification; ",
-      "recognize those characters in the panels and videos. Click a reference to see it full size."));
+        r.name ? el("figcaption", {}, r.name) : null))));
 }
 
 /* Full-size image viewer (character references, storyboard panels).
@@ -293,7 +321,7 @@ function openLightbox(srcs, ix, fmtLabel) {
     else if (e.key === "ArrowRight") show(ix + 1);
     else if (e.key === "ArrowLeft") show(ix - 1);
   };
-  const lb = el("div", { id: "lightbox", role: "dialog", "aria-label": "Character reference, full size",
+  const lb = el("div", { id: "lightbox", role: "dialog", "aria-label": "Full-size view",
       onclick: (e) => { if (e.target === lb) close(); } },
     el("button", { class: "btn ghost lb-close", onclick: close }, "Close (Esc)"),
     srcs.length > 1 ? el("button", { class: "btn lb-nav lb-prev", onclick: (e) => { e.stopPropagation(); show(ix - 1); } }, "←") : null,
@@ -309,41 +337,26 @@ function panelUrls(key) {
   return p ? p.paths.map(x => "../" + x) : null;
 }
 
-function videoCol(label, src, stripSrc, panelSrcs) {
-  // storyboard strip: visible, permanent "click for full size" affordance —
-  // the caption is a button-like pill below the strip (never overlays the panels)
-  const openPanels = () => panelSrcs && openLightbox(panelSrcs, 0, (i, n) => `Panel ${i + 1} / ${n}`);
-  return el("div", { class: "vcol" },
-    el("div", { class: "vlabel" }, label),
-    stripSrc ? el("figure", { class: "stripcard", onclick: openPanels },
-      el("img", { class: "strip", src: stripSrc, alt: `${label} storyboard — click to see the panels full size`,
-        title: "Click to see the panels full size" }),
-      panelSrcs ? el("figcaption", {}, "⤢ Click to see the panels full size") : null) : null,
-    el("video", { src, controls: "controls", loop: "loop", playsinline: "playsinline", preload: "auto" }));
+function videoCol(label, src) {
+  const vid = el("video", { src, controls: "controls", loop: "loop", playsinline: "playsinline", preload: "auto" });
+  const root = el("div", { class: "vcol" },
+    el("div", { class: "vlabel" }, label,
+      el("button", { class: "btn ghost fsbtn", type: "button", title: "Full screen (full resolution)",
+        onclick: () => {
+          if (vid.requestFullscreen) vid.requestFullscreen().catch(() => {});
+          else if (vid.webkitEnterFullscreen) vid.webkitEnterFullscreen();
+        } }, "⤢")),
+    vid);
+  return { root, vid };
 }
 
 function renderPreference(t) {
-  // sides[0] = Video 1 (left). A repeat trial re-derives the original's sides
-  // from the original trial id and flips them (guaranteed swapped-side repeat).
+  // sides[0] = Video 1 (left; its storyboard is Storyboard 1). A repeat trial
+  // re-derives the original's sides from the original trial id and flips them
+  // (guaranteed swapped-side repeat).
   const rng = prng(hashStr(RATER + "|" + (t.repeat_of_trial || t.id)));
   let sides = rng() < 0.5 ? ["A", "B"] : ["B", "A"];
   if (t.repeat_of_trial) sides = [sides[1], sides[0]];
-  const labels = { left: `Video 1`, right: `Video 2` };
-  const stripFor = (key) => t.showStrips && state.materials.stimuli.strips[key]
-    ? mediaUrl(key, "strip") : null;
-  const mk = (slot, key) => videoCol(labels[slot], mediaUrl(t.videos[key], "clip"),
-    stripFor(t.videos[key]), panelUrls(t.videos[key]));
-
-  // criteria per trial (all 4 since the Direct contrast was dropped; the list
-  // stays per-trial in the materials schema)
-  const critIds = t.criteria || CRITERIA.map(([cid]) => cid);
-  const critRows = CRITERIA.filter(([cid]) => critIds.includes(cid)).map(([cid, name]) => {
-    const rowName = `c_${cid}`;
-    const cells = ["prefer1", "tie", "prefer2", "unratable"].map((v, j) =>
-      el("td", {}, el("input", { type: "radio", name: rowName, value: v,
-        onchange: () => { resp.criteria[cid] = v; check(); } })));
-    return el("tr", {}, el("td", {}, name), ...cells);
-  });
 
   const resp = state.responses[t.id] || (state.responses[t.id] = {
     id: t.id, type: t.type, case: t.case, contrast: t.contrast || null,
@@ -352,30 +365,91 @@ function renderPreference(t) {
     criteria: {},
   });
 
+  // criteria per trial (2026-11-20 meeting): video questions judged against
+  // the specification; storyboard questions only when storyboards are shown
+  const critIds = t.criteria || CRITERIA.map(([cid]) => cid);
+  const hasSb = !!t.showStrips && critIds.some((c) => c.startsWith("sb_"));
+
+  const mkTable = (section, head1, head2) => el("table", { class: "likert" },
+    el("tr", {}, el("th", {}, "Question"), el("th", {}, head1), el("th", {}, "Tie"),
+      el("th", {}, head2), el("th", {}, "Unratable")),
+    ...CRITERIA.filter(([cid, , sec]) => critIds.includes(cid) && sec === section)
+      .map(([cid, name, , desc]) => {
+        const rowName = `c_${cid}`;
+        const cells = ["prefer1", "tie", "prefer2", "unratable"].map((v) =>
+          el("td", {}, el("input", { type: "radio", name: rowName, value: v,
+            ...(resp.criteria[cid] === v ? { checked: "checked" } : {}),
+            onchange: () => { resp.criteria[cid] = v; check(); save(); } })));
+        return el("tr", {}, el("td", { class: "crit" }, name, " ", tipBtn(desc)), ...cells);
+      }));
+
   const btn = el("button", { class: "btn", disabled: "disabled", onclick: next }, "Next");
-  function check() {
-    btn.disabled = !critIds.every((cid) => resp.criteria[cid]);
-  }
+  function check() { btn.disabled = !critIds.every((cid) => resp.criteria[cid]); }
   check();
 
-  const nStrips = [sides[0], sides[1]].filter((k) => stripFor(t.videos[k])).length;
-  const head = nStrips === 2
-    ? "Two results, each with its own supplied storyboard. For 'Storyboard adherence', judge each video against the storyboard shown with it. Click a storyboard to see its panels full size."
-    : "Two results for the specification above.";
+  // videos — play/pause both together (2026-11-20 meeting)
+  const v1 = videoCol("Video 1", mediaUrl(t.videos[sides[0]], "clip"));
+  const v2 = videoCol("Video 2", mediaUrl(t.videos[sides[1]], "clip"));
+  const vids = [v1.vid, v2.vid];
+  const playBtn = el("button", { class: "btn", type: "button", onclick: () => {
+    if (vids.some((v) => !v.paused)) vids.forEach((v) => v.pause());
+    else vids.forEach((v) => v.play());
+  } }, "▶ Play both");
+  const syncLabel = () => {
+    playBtn.textContent = vids.some((v) => !v.paused) ? "⏸ Pause both" : "▶ Play both";
+  };
+  vids.forEach((v) => { v.addEventListener("play", syncLabel); v.addEventListener("pause", syncLabel); });
 
-  $("#screen").replaceChildren(
+  // storyboards — stacked, bigger, per-state captions above the panels
+  const caps = hasSb ? state.materials.state_captions[t.case] : null;
+  const storyboard = (n, key) => {
+    const psrcs = panelUrls(key) || [];
+    const cells = (caps || []).map((cap, i) => {
+      const det = el("div", { class: "cap-det-text" }, cap.details);
+      return el("div", { class: "sbcell" },
+        el("div", { class: "sbcap" },
+          el("div", { class: "cap-scene" }, cap.scene),
+          el("div", { class: "cap-comp" }, cap.composition),
+          el("button", { class: "cap-det", type: "button",
+            onclick: () => det.classList.toggle("open") }, "details"),
+          det),
+        el("img", { class: "sbpanel", src: psrcs[i], alt: `Storyboard ${n}, panel ${i + 1}`,
+          title: "Click to see full size",
+          onclick: () => openLightbox(psrcs, i, (j, m) => `Panel ${j + 1} / ${m}`) }));
+    });
+    return el("div", { class: "sbblock" },
+      el("div", { class: "vlabel" }, `Storyboard ${n} (Video ${n})`),
+      el("div", { class: "sbrow" }, ...cells));
+  };
+
+  const parts = [
     el("div", { class: "card" }, specBlock(t.case)),
     el("div", { class: "card" },
-      el("h2", {}, head),
-      el("div", { class: "videos" }, mk("left", sides[0]), mk("right", sides[1]))),
+      el("div", { class: "vidtools" },
+        playBtn,
+        el("button", { class: "btn ghost", type: "button", onclick: () => {
+          vids.forEach((v) => { v.currentTime = 0; v.play(); });
+        } }, "↺ Restart both")),
+      el("div", { class: "videos" }, v1.root, v2.root)),
     el("div", { class: "card" },
-      el("h2", {}, "Your judgments"),
-      el("table", { class: "likert" },
-        el("tr", {}, el("th", {}, "Criterion"), el("th", {}, "Prefer Video 1"),
-          el("th", {}, "Tie"), el("th", {}, "Prefer Video 2"), el("th", {}, "Unratable")),
-        ...critRows),
-      ),
-    btn);
+      el("h2", {}, "Judgments — the videos"),
+      mkTable("video", "Prefer Video 1", "Prefer Video 2")),
+  ];
+  if (hasSb) {
+    parts.push(
+      el("div", { class: "card" },
+        el("h2", {}, "The storyboards"),
+        el("p", { class: "muted" }, "Each storyboard belongs to the video with the same number. The text above a panel describes the planned state — “details” shows more of it, and clicking a panel shows it full size."),
+        storyboard(1, t.videos[sides[0]]),
+        storyboard(2, t.videos[sides[1]])),
+      el("div", { class: "card" },
+        el("h2", {}, "Judgments — the storyboards"),
+        mkTable("sb", "Prefer storyboard 1", "Prefer storyboard 2")));
+  }
+  parts.push(el("div", { class: "row" },
+    btn,
+    el("button", { class: "btn ghost", type: "button", onclick: stopSession }, "Save & stop")));
+  $("#screen").replaceChildren(...parts);
 }
 
 function renderChecklist(t) {
@@ -465,6 +539,28 @@ function next() {
   state.trialIx += 1;
   save();
   renderTrial();
+}
+
+/* Stop anytime (2026-11-20 meeting): every answer is already recorded; the
+ * rater can close the page and resume later (same name, any device). */
+function stopSession() {
+  const ts = trials();
+  const t = ts[state.trialIx];
+  if (t && state.lastEnter) {
+    state.times[t.id] = (state.times[t.id] || 0) + (Date.now() - state.lastEnter);
+    state.lastEnter = null;
+  }
+  save();
+  pushClaim();
+  $("#progress").textContent = "Saved";
+  $("#screen").replaceChildren(el("div", { class: "card" },
+    el("h1", {}, "Progress saved"),
+    el("p", {}, t
+      ? `You are at item ${state.trialIx + 1} of ${ts.length}. Everything so far is recorded — you can close this page now and come back later (rejoin with your name to continue where you left off).`
+      : "Everything is recorded."),
+    el("div", { class: "row" },
+      el("button", { class: "btn", onclick: renderTrial }, "Continue now"),
+      el("button", { class: "btn ghost", onclick: () => location.reload() }, "Back to the start"))));
 }
 
 function renderDone() {
@@ -593,9 +689,9 @@ async function boot() {
 
 async function enterStudy() {
   $("#screen").replaceChildren(el("p", { class: "muted" }, "Loading…"));
-  const [asg, chk, stu] = await Promise.all(["assignment", "checklists", "stimuli"].map(n =>
+  const [asg, chk, stu, caps] = await Promise.all(["assignment", "checklists", "stimuli", "state_captions"].map(n =>
     fetch(`../materials/${n}.json`).then(r => { if (!r.ok) throw new Error(n); return r.json(); })));
-  state.materials = { assignment: asg, checklists: chk, stimuli: stu };
+  state.materials = { assignment: asg, checklists: chk, stimuli: stu, state_captions: caps };
   if (!asg[RATER]) {
     $("#screen").replaceChildren(el("div", { class: "card" },
       el("h1", {}, "Unknown participant code"),

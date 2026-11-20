@@ -23,7 +23,7 @@ h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .05em;
   border-left: 3px solid #999; padding: 10px 14px; margin: 8px 0; }
 .refs { display: flex; gap: 12px; flex-wrap: wrap; }
 .refcard { margin: 0; text-align: center; }
-.refcard img { height: 220px; border: 1px solid #ccc; border-radius: 4px;
+.refcard img { height: 76px; border: 1px solid #ccc; border-radius: 4px;
   cursor: zoom-in; background: #fff; display: block; }
 .refcard img:hover { border-color: #1a1a1a; }
 .refcard figcaption { font-weight: 600; font-size: 13px; margin-top: 4px; }
@@ -87,3 +87,41 @@ table.likert input { margin: 0; }
 input[type=text] { font: inherit; padding: 6px 8px; border: 1px solid #999;
   border-radius: 4px; width: 260px; }
 .quizopt { display: block; margin: 6px 0; }
+
+/* ---- question page rework (2026-11-20 meeting) ---- */
+h3.withtip { display: flex; align-items: center; gap: 3px; }
+.tipwrap { position: relative; display: inline-block; }
+.tip { font: inherit; font-size: 11px; font-weight: 700; line-height: 1;
+  width: 16px; height: 16px; padding: 0; border-radius: 50%;
+  border: 1px solid #999; background: #fff; color: #555; cursor: help; }
+.tip:hover { border-color: #1a1a1a; }
+.tipbox { display: none; position: absolute; left: 20px; top: -6px; z-index: 40;
+  width: 300px; max-width: 70vw; background: #2b2b2b; color: #fff;
+  padding: 8px 11px; border-radius: 6px; font-size: 12.5px; line-height: 1.45;
+  font-weight: 400; text-transform: none; letter-spacing: 0; text-align: left;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .35); }
+.tipbox.open { display: block; }
+
+.vidtools { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+.vlabel { display: flex; justify-content: space-between; align-items: center; }
+.fsbtn { padding: 2px 9px; margin-left: 10px; }
+
+/* storyboards: stacked per result, 3-across so panels and captions are big */
+.sbblock { margin: 16px 0 2px; }
+.sbrow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.sbcell { min-width: 0; }
+.sbcap { font-size: 11.5px; line-height: 1.4; color: #333; margin-bottom: 5px;
+  background: #fafaf8; border-left: 2px solid #bbb; padding: 5px 8px; }
+.cap-scene { color: #777; margin-bottom: 2px; }
+.cap-comp { color: #1a1a1a; }
+.cap-det { background: none; border: none; padding: 0; margin-top: 3px;
+  color: #666; font-size: 11px; text-decoration: underline; cursor: pointer; }
+.cap-det:hover { color: #1a1a1a; }
+.cap-det-text { display: none; margin-top: 3px; color: #555; }
+.cap-det-text.open { display: block; }
+.sbpanel { display: block; width: 100%; height: auto; border: 1px solid #bbb;
+  border-radius: 4px; cursor: zoom-in; background: #fff; }
+.sbpanel:hover { border-color: #1a1a1a; }
+@media (max-width: 720px) { .sbrow { grid-template-columns: repeat(2, 1fr); } }
+
+table.likert td.crit { white-space: nowrap; }

@@ -8,8 +8,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -26,8 +27,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -44,8 +46,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -62,8 +65,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -80,8 +84,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -98,8 +103,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -117,7 +123,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -135,8 +140,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -153,8 +159,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -171,8 +178,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -189,8 +197,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -207,8 +216,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -225,8 +235,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -244,7 +255,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -267,8 +277,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -285,8 +296,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -303,8 +315,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -321,8 +334,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -339,8 +353,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -358,8 +373,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -377,8 +393,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -395,8 +412,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -413,8 +431,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -431,8 +450,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -449,8 +469,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -468,8 +489,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -489,8 +511,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -507,8 +530,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -525,8 +549,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -543,8 +568,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -561,8 +587,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -579,8 +606,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -598,7 +626,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -616,8 +643,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -634,8 +662,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -652,8 +681,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -670,8 +700,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -688,8 +719,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -706,8 +738,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -725,7 +758,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -748,8 +780,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -766,8 +799,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -784,8 +818,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -802,8 +837,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -820,8 +856,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -839,8 +876,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -858,8 +896,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -876,8 +915,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -894,8 +934,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -912,8 +953,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -930,8 +972,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -949,8 +992,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -970,8 +1014,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -988,8 +1033,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1006,8 +1052,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1024,8 +1071,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1042,8 +1090,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1060,8 +1109,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1079,7 +1129,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -1097,8 +1146,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1115,8 +1165,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1133,8 +1184,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1151,8 +1203,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1169,8 +1222,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1187,8 +1241,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1206,7 +1261,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -1229,8 +1283,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1247,8 +1302,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1265,8 +1321,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1283,8 +1340,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1301,8 +1359,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1320,8 +1379,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1339,8 +1399,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1357,8 +1418,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1375,8 +1437,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1393,8 +1456,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1411,8 +1475,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1430,8 +1495,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1451,8 +1517,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1469,8 +1536,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1487,8 +1555,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1505,8 +1574,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1523,8 +1593,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1541,8 +1612,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1560,7 +1632,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -1578,8 +1649,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1596,8 +1668,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1614,8 +1687,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1632,8 +1706,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1650,8 +1725,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1668,8 +1744,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1687,7 +1764,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -1710,8 +1786,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1728,8 +1805,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1746,8 +1824,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1764,8 +1843,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1782,8 +1862,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1801,8 +1882,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1820,8 +1902,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1838,8 +1921,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1856,8 +1940,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1874,8 +1959,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1892,8 +1978,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1911,8 +1998,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1932,8 +2020,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1950,8 +2039,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1968,8 +2058,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -1986,8 +2077,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2004,8 +2096,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2022,8 +2115,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2041,7 +2135,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -2059,8 +2152,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2077,8 +2171,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2095,8 +2190,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2113,8 +2209,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2131,8 +2228,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2149,8 +2247,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2168,7 +2267,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -2191,8 +2289,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2209,8 +2308,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2227,8 +2327,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2245,8 +2346,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2263,8 +2365,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2282,8 +2385,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2301,8 +2405,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2319,8 +2424,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2337,8 +2443,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2355,8 +2462,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2373,8 +2481,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2392,8 +2501,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2413,8 +2523,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2431,8 +2542,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2449,8 +2561,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2467,8 +2580,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2485,8 +2599,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2503,8 +2618,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2522,7 +2638,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -2540,8 +2655,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2558,8 +2674,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2576,8 +2693,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2594,8 +2712,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2612,8 +2731,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2630,8 +2750,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2649,7 +2770,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -2672,8 +2792,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2690,8 +2811,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2708,8 +2830,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2726,8 +2849,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2744,8 +2868,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2763,8 +2888,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2782,8 +2908,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2800,8 +2927,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2818,8 +2946,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2836,8 +2965,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2854,8 +2984,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2873,8 +3004,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2894,8 +3026,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2912,8 +3045,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2930,8 +3064,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2948,8 +3083,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2966,8 +3102,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -2984,8 +3121,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3003,7 +3141,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -3021,8 +3158,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3039,8 +3177,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3057,8 +3196,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3075,8 +3215,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3093,8 +3234,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3111,8 +3253,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3130,7 +3273,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -3153,8 +3295,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3171,8 +3314,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3189,8 +3333,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3207,8 +3352,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3225,8 +3371,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3244,8 +3391,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3263,8 +3411,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3281,8 +3430,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3299,8 +3449,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3317,8 +3468,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3335,8 +3487,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3354,8 +3507,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3375,8 +3529,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3393,8 +3548,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3411,8 +3567,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3429,8 +3586,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3447,8 +3605,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3465,8 +3624,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3484,7 +3644,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -3502,8 +3661,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3520,8 +3680,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3538,8 +3699,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3556,8 +3718,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3574,8 +3737,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3592,8 +3756,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3611,7 +3776,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -3634,8 +3798,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3652,8 +3817,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3670,8 +3836,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3688,8 +3855,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3706,8 +3874,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3725,8 +3894,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3744,8 +3914,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3762,8 +3933,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3780,8 +3952,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3798,8 +3971,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3816,8 +3990,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3835,8 +4010,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3856,8 +4032,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3874,8 +4051,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3892,8 +4070,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3910,8 +4089,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3928,8 +4108,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3946,8 +4127,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -3965,7 +4147,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -3983,8 +4164,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4001,8 +4183,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4019,8 +4202,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4037,8 +4221,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4055,8 +4240,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4073,8 +4259,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4092,7 +4279,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -4115,8 +4301,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4133,8 +4320,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4151,8 +4339,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4169,8 +4358,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4187,8 +4377,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4206,8 +4397,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4225,8 +4417,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4243,8 +4436,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4261,8 +4455,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4279,8 +4474,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4297,8 +4493,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4316,8 +4513,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4337,8 +4535,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4355,8 +4554,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4373,8 +4573,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4391,8 +4592,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4409,8 +4611,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4427,8 +4630,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4446,7 +4650,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -4464,8 +4667,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4482,8 +4686,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4500,8 +4705,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4518,8 +4724,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4536,8 +4743,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4554,8 +4762,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4573,7 +4782,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -4596,8 +4804,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4614,8 +4823,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4632,8 +4842,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4650,8 +4861,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4668,8 +4880,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4687,8 +4900,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4706,8 +4920,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4724,8 +4939,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4742,8 +4958,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4760,8 +4977,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4778,8 +4996,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4797,8 +5016,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4818,8 +5038,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4836,8 +5057,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4854,8 +5076,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4872,8 +5095,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4890,8 +5114,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4908,8 +5133,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4927,7 +5153,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -4945,8 +5170,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4963,8 +5189,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4981,8 +5208,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -4999,8 +5227,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5017,8 +5246,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5035,8 +5265,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5054,7 +5285,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -5077,8 +5307,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5095,8 +5326,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5113,8 +5345,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5131,8 +5364,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5149,8 +5383,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5168,8 +5403,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5187,8 +5423,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5205,8 +5442,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5223,8 +5461,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5241,8 +5480,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5259,8 +5499,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5278,8 +5519,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5299,8 +5541,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5317,8 +5560,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5335,8 +5579,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5353,8 +5598,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5371,8 +5617,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5389,8 +5636,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5408,7 +5656,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -5426,8 +5673,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5444,8 +5692,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5462,8 +5711,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5480,8 +5730,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5498,8 +5749,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5516,8 +5768,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5535,7 +5788,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -5558,8 +5810,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5576,8 +5829,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5594,8 +5848,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5612,8 +5867,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5630,8 +5886,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5649,8 +5906,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5668,8 +5926,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5686,8 +5945,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5704,8 +5964,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5722,8 +5983,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5740,8 +6002,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5759,8 +6022,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5780,8 +6044,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5798,8 +6063,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5816,8 +6082,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5834,8 +6101,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5852,8 +6120,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5870,8 +6139,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5889,7 +6159,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -5907,8 +6176,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5925,8 +6195,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5943,8 +6214,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5961,8 +6233,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5979,8 +6252,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -5997,8 +6271,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6016,7 +6291,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -6039,8 +6313,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6057,8 +6332,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6075,8 +6351,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6093,8 +6370,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6111,8 +6389,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6130,8 +6409,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6149,8 +6429,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6167,8 +6448,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6185,8 +6467,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6203,8 +6486,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6221,8 +6505,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6240,8 +6525,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6261,8 +6547,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6279,8 +6566,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6297,8 +6585,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6315,8 +6604,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6333,8 +6623,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6351,8 +6642,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6370,7 +6662,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -6388,8 +6679,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6406,8 +6698,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6424,8 +6717,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6442,8 +6736,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6460,8 +6755,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6478,8 +6774,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6497,7 +6794,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -6520,8 +6816,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6538,8 +6835,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6556,8 +6854,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6574,8 +6873,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6592,8 +6892,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6611,8 +6912,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6630,8 +6932,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6648,8 +6951,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6666,8 +6970,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6684,8 +6989,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6702,8 +7008,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6721,8 +7028,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6742,8 +7050,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6760,8 +7069,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6778,8 +7088,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6796,8 +7107,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6814,8 +7126,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6832,8 +7145,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6851,7 +7165,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -6869,8 +7182,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6887,8 +7201,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6905,8 +7220,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6923,8 +7239,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6941,8 +7258,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6959,8 +7277,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -6978,7 +7297,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -7001,8 +7319,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7019,8 +7338,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7037,8 +7357,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7055,8 +7376,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7073,8 +7395,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7092,8 +7415,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7111,8 +7435,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7129,8 +7454,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7147,8 +7473,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7165,8 +7492,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7183,8 +7511,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7202,8 +7531,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7223,8 +7553,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7241,8 +7572,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7259,8 +7591,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7277,8 +7610,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7295,8 +7629,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7313,8 +7648,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7332,7 +7668,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -7350,8 +7685,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7368,8 +7704,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7386,8 +7723,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7404,8 +7742,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7422,8 +7761,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7440,8 +7780,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7459,7 +7800,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -7482,8 +7822,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7500,8 +7841,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7518,8 +7860,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7536,8 +7879,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7554,8 +7898,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7573,8 +7918,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7592,8 +7938,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7610,8 +7957,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7628,8 +7976,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7646,8 +7995,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7664,8 +8014,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7683,8 +8034,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7704,8 +8056,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7722,8 +8075,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7740,8 +8094,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7758,8 +8113,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7776,8 +8132,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7795,7 +8152,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -7813,8 +8169,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7831,8 +8188,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7849,8 +8207,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7867,8 +8226,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7885,8 +8245,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7904,7 +8265,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -7927,8 +8287,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7945,8 +8306,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7963,8 +8325,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7981,8 +8344,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -7999,8 +8363,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8018,8 +8383,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8037,8 +8403,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8055,8 +8422,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8073,8 +8441,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8091,8 +8460,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8109,8 +8479,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8128,8 +8499,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8149,8 +8521,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8167,8 +8540,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8185,8 +8559,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8203,8 +8578,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8221,8 +8597,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8240,7 +8617,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -8258,8 +8634,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8276,8 +8653,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8294,8 +8672,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8312,8 +8691,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8330,8 +8710,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8349,7 +8730,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -8372,8 +8752,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8390,8 +8771,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8408,8 +8790,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8426,8 +8809,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8444,8 +8828,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8463,8 +8848,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8482,8 +8868,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8500,8 +8887,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8518,8 +8906,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8536,8 +8925,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8554,8 +8944,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8573,8 +8964,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8594,8 +8986,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8612,8 +9005,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8630,8 +9024,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8648,8 +9043,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8666,8 +9062,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8685,7 +9082,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -8703,8 +9099,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8721,8 +9118,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8739,8 +9137,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8757,8 +9156,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8775,8 +9175,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8794,7 +9195,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -8817,8 +9217,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8835,8 +9236,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8853,8 +9255,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8871,8 +9274,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8889,8 +9293,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8908,8 +9313,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8927,8 +9333,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8945,8 +9352,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8963,8 +9371,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8981,8 +9390,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -8999,8 +9409,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9018,8 +9429,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9039,8 +9451,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9057,8 +9470,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9075,8 +9489,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9093,8 +9508,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9111,8 +9527,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9130,7 +9547,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -9148,8 +9564,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9166,8 +9583,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9184,8 +9602,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9202,8 +9621,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9220,8 +9640,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9239,7 +9660,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -9262,8 +9682,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9280,8 +9701,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9298,8 +9720,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9316,8 +9739,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9334,8 +9758,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9353,8 +9778,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9372,8 +9798,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9390,8 +9817,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9408,8 +9836,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9426,8 +9855,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9444,8 +9874,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9463,8 +9894,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9484,8 +9916,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9502,8 +9935,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9520,8 +9954,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9538,8 +9973,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9556,8 +9992,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9574,8 +10011,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9593,7 +10031,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -9611,8 +10048,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9629,8 +10067,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9647,8 +10086,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9665,8 +10105,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9683,8 +10124,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9701,8 +10143,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9720,7 +10163,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -9743,8 +10185,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9761,8 +10204,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9779,8 +10223,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9797,8 +10242,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9815,8 +10261,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9834,8 +10281,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9853,8 +10301,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9871,8 +10320,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9889,8 +10339,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9907,8 +10358,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9925,8 +10377,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9944,8 +10397,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9965,8 +10419,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -9983,8 +10438,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10001,8 +10457,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10019,8 +10476,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10037,8 +10495,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10055,8 +10514,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10074,7 +10534,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -10092,8 +10551,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10110,8 +10570,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10128,8 +10589,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10146,8 +10608,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10164,8 +10627,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10182,8 +10646,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10201,7 +10666,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -10224,8 +10688,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10242,8 +10707,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10260,8 +10726,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10278,8 +10745,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10296,8 +10764,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10315,8 +10784,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10334,8 +10804,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10352,8 +10823,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10370,8 +10842,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10388,8 +10861,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10406,8 +10880,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10425,8 +10900,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10446,8 +10922,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10464,8 +10941,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10482,8 +10960,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10500,8 +10979,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10518,8 +10998,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10537,7 +11018,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -10555,8 +11035,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10573,8 +11054,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10591,8 +11073,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10609,8 +11092,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10627,8 +11111,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10646,7 +11131,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -10669,8 +11153,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10687,8 +11172,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10705,8 +11191,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10723,8 +11210,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10741,8 +11229,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10760,8 +11249,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10779,8 +11269,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10797,8 +11288,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10815,8 +11307,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10833,8 +11326,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10851,8 +11345,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10870,8 +11365,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10891,8 +11387,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10909,8 +11406,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10927,8 +11425,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10945,8 +11444,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10963,8 +11463,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -10982,7 +11483,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -11000,8 +11500,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11018,8 +11519,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11036,8 +11538,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11054,8 +11557,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11072,8 +11576,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11091,7 +11596,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -11114,8 +11618,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11132,8 +11637,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11150,8 +11656,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11168,8 +11675,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11186,8 +11694,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11205,8 +11714,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11224,8 +11734,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11242,8 +11753,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11260,8 +11772,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11278,8 +11791,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11296,8 +11810,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11315,8 +11830,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11336,8 +11852,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11354,8 +11871,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11372,8 +11890,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11390,8 +11909,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11408,8 +11928,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11427,7 +11948,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -11445,8 +11965,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11463,8 +11984,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11481,8 +12003,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11499,8 +12022,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11517,8 +12041,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11536,7 +12061,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -11559,8 +12083,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11577,8 +12102,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11595,8 +12121,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11613,8 +12140,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11631,8 +12159,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11650,8 +12179,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11669,8 +12199,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11687,8 +12218,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11705,8 +12237,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11723,8 +12256,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11741,8 +12275,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11760,8 +12295,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11781,8 +12317,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11799,8 +12336,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11817,8 +12355,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11835,8 +12374,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11853,8 +12393,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11872,7 +12413,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -11890,8 +12430,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11908,8 +12449,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11926,8 +12468,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11944,8 +12487,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11962,8 +12506,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -11981,7 +12526,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -12004,8 +12548,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12022,8 +12567,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12040,8 +12586,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12058,8 +12605,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12076,8 +12624,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12095,8 +12644,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12114,8 +12664,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12132,8 +12683,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12150,8 +12702,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12168,8 +12721,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12186,8 +12740,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12205,8 +12760,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12226,8 +12782,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12244,8 +12801,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12262,8 +12820,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12280,8 +12839,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12298,8 +12858,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12317,7 +12878,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -12335,8 +12895,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12353,8 +12914,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12371,8 +12933,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12389,8 +12952,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12407,8 +12971,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12426,7 +12991,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -12449,8 +13013,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12467,8 +13032,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12485,8 +13051,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12503,8 +13070,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12521,8 +13089,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12540,8 +13109,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12559,8 +13129,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12577,8 +13148,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12595,8 +13167,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12613,8 +13186,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12631,8 +13205,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12650,8 +13225,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12671,8 +13247,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12689,8 +13266,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12707,8 +13285,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12725,8 +13304,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12743,8 +13323,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12761,8 +13342,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12780,7 +13362,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -12798,8 +13379,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12816,8 +13398,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12834,8 +13417,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12852,8 +13436,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12870,8 +13455,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12888,8 +13474,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12907,7 +13494,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -12930,8 +13516,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12948,8 +13535,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12966,8 +13554,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -12984,8 +13573,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13002,8 +13592,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13021,8 +13612,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13040,8 +13632,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13058,8 +13651,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13076,8 +13670,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13094,8 +13689,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13112,8 +13708,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13131,8 +13728,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13152,8 +13750,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13170,8 +13769,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13188,8 +13788,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13206,8 +13807,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13224,8 +13826,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13242,8 +13845,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13261,7 +13865,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -13279,8 +13882,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13297,8 +13901,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13315,8 +13920,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13333,8 +13939,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13351,8 +13958,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13369,8 +13977,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13388,7 +13997,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -13411,8 +14019,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13429,8 +14038,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13447,8 +14057,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13465,8 +14076,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13483,8 +14095,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13502,8 +14115,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13521,8 +14135,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13539,8 +14154,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13557,8 +14173,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13575,8 +14192,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13593,8 +14211,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13612,8 +14231,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13633,8 +14253,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13651,8 +14272,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13669,8 +14291,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13687,8 +14310,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13705,8 +14329,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13724,7 +14349,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -13742,8 +14366,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13760,8 +14385,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13778,8 +14404,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13796,8 +14423,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13814,8 +14442,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13833,7 +14462,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -13856,8 +14484,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13874,8 +14503,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13892,8 +14522,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13910,8 +14541,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13928,8 +14560,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13947,8 +14580,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13966,8 +14600,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -13984,8 +14619,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14002,8 +14638,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14020,8 +14657,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14038,8 +14676,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14057,8 +14696,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14078,8 +14718,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14096,8 +14737,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14114,8 +14756,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14132,8 +14775,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14150,8 +14794,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14169,7 +14814,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -14187,8 +14831,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14205,8 +14850,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14223,8 +14869,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14241,8 +14888,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14259,8 +14907,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14278,7 +14927,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -14301,8 +14949,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14319,8 +14968,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14337,8 +14987,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14355,8 +15006,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14373,8 +15025,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14392,8 +15045,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14411,8 +15065,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14429,8 +15084,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14447,8 +15103,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14465,8 +15122,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14483,8 +15141,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14502,8 +15161,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14523,8 +15183,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14541,8 +15202,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14559,8 +15221,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14577,8 +15240,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14595,8 +15259,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14614,7 +15279,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -14632,8 +15296,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14650,8 +15315,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14668,8 +15334,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14686,8 +15353,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14704,8 +15372,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14723,7 +15392,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -14746,8 +15414,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14764,8 +15433,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14782,8 +15452,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14800,8 +15471,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14818,8 +15490,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14837,8 +15510,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14856,8 +15530,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14874,8 +15549,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14892,8 +15568,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14910,8 +15587,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14928,8 +15606,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14947,8 +15626,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14968,8 +15648,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -14986,8 +15667,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15004,8 +15686,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15022,8 +15705,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15040,8 +15724,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15059,7 +15744,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -15077,8 +15761,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15095,8 +15780,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15113,8 +15799,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15131,8 +15818,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15149,8 +15837,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15168,7 +15857,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -15191,8 +15879,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15209,8 +15898,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15227,8 +15917,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15245,8 +15936,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15263,8 +15955,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15282,8 +15975,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15301,8 +15995,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15319,8 +16014,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15337,8 +16033,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15355,8 +16052,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15373,8 +16071,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15392,8 +16091,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15413,8 +16113,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15431,8 +16132,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15449,8 +16151,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15467,8 +16170,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15485,8 +16189,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15504,7 +16209,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -15522,8 +16226,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15540,8 +16245,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15558,8 +16264,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15576,8 +16283,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15594,8 +16302,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15613,7 +16322,6 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
     "motion"
    ],
    "showStrips": false,
@@ -15636,8 +16344,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15654,8 +16363,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15672,8 +16382,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15690,8 +16401,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15708,8 +16420,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15727,8 +16440,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15746,8 +16460,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15764,8 +16479,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15782,8 +16498,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15800,8 +16517,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15818,8 +16536,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
@@ -15837,8 +16556,9 @@
    "criteria": [
     "identity",
     "order",
-    "adherence",
-    "motion"
+    "motion",
+    "sb_coherence",
+    "sb_consistency"
    ],
    "showStrips": true,
    "videos": {
