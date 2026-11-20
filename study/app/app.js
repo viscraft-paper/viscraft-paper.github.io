@@ -18,13 +18,13 @@ const LS_KEY = "vcstudy_v2_" + RATER;   // v2: 10-rater full-coverage design (20
 
 const CRITERIA = [
   ["identity",   "Identity fidelity",
-   "Do the characters look like the SAME individuals throughout the video — consistent within it, like the supplied character references, and distinct from each other? (A specified garment or mark change is not an identity change.)"],
+   "Are the characters the same people from start to end, and the same as the character pictures? Keep the two characters distinct from each other. A change the specification asks for (a stain, a rolled sleeve) is not an identity change."],
   ["order",      "Action and event order",
-   "Are the requested actions all carried out, and in the requested order? Judge visible content against the specification: a plausible-looking video need not execute the requested interaction."],
+   "Are all the requested actions done, in the requested order? Judge only what you can see against the specification — a beautiful video may still skip the requested action."],
   ["adherence",  "Storyboard adherence",
-   "Does the video realize the storyboard shown with it — its visual states (who and what is present, where, and in what state, at each panel time) and its staging? The shot structure counts here too: every case is one continuous shot with a fixed camera, so any unexplained internal cut is a violation even if it hides nothing."],
+   "Does the video match the storyboard shown with it — who and what is where at each panel time, and the staging? Every case is one continuous shot with a fixed camera, so a cut inside the video is a violation here, even if it hides nothing."],
   ["motion",     "Motion plausibility",
-   "Is the motion itself physically plausible and stable — no morphing or flicker, and nothing vanishing without a visible cause (leaving view or passing behind an occluder is fine)?"],
+   "Does the movement look real and steady? No morphing, no flicker, and nothing vanishing without a reason (leaving the view or passing behind something is fine)."],
 ];
 
 const QUIZ = [
@@ -144,17 +144,23 @@ function renderQuiz() {
   $("#screen").replaceChildren(
     el("div", { class: "card" },
       el("h1", {}, "Instructions"),
-      el("p", {}, "You will see short written specifications of intended visual events (scene, camera, actor roles, initial state, ordered actions), character reference images labeled with the character names used in the specification, and pairs of generated results. Each task compares two videos, each shown with the storyboard it was produced from; click a storyboard to see its panels full size. Characters in the panels and videos are the named characters from the references."),
-      el("h3", {}, "What each criterion means"),
+      el("p", {}, "Each task shows two videos side by side. Say which video does better."),
+      el("ul", {},
+        el("li", {}, el("b", {}, "Specification. "), "The intended scene and actions."),
+        el("li", {}, el("b", {}, "Character pictures. "), "Labeled with the names from the specification — these are the people to look for in the panels and videos."),
+        el("li", {}, el("b", {}, "Two videos, each with its own storyboard. "), "Click a storyboard to see it full size.")),
+      el("p", {}, "Answer all four criteria on every task. The four criteria are independent — one video can win one and lose another."),
+      el("h3", {}, "The four criteria"),
       ...CRITERIA.map(([id, name, desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
-      el("h3", {}, "Response options"),
-      el("p", {}, el("b", {}, "Prefer Video 1 / Prefer Video 2: "), "that video clearly does better on the criterion. ",
-                 el("b", {}, "Tie: "), "the two are indistinguishable on that criterion. ",
-                 el("b", {}, "Unratable: "), "the criterion cannot be judged at all — for example neither result resembles the specification."),
-      el("h3", {}, "Worked examples"),
-      el("p", {}, el("b", {}, "Concealment. "), "If a character must pass behind an occluder and re-emerge unchanged, look for the reappearance and for identity retention after it."),
-      el("p", {}, el("b", {}, "Localized state change. "), "A cuff staining event: only the specified actor's cuff changes, and the change persists while the partner remains unchanged."),
-      el("p", {}, el("b", {}, "Shot structure. "), "Every specification is one continuous shot with a fixed camera. An unexplained internal cut is a Storyboard adherence violation even if it hides nothing.")),
+      el("h3", {}, "How to answer"),
+      el("p", {}, el("b", {}, "Prefer Video 1 / Prefer Video 2: "), "that video is clearly better on this criterion. ",
+                 el("b", {}, "Tie: "), "you cannot tell them apart. ",
+                 el("b", {}, "Unratable: "), "the criterion cannot be judged at all (for example, neither video looks like the specification)."),
+      el("h3", {}, "Three traps to avoid"),
+      el("ul", {},
+        el("li", {}, el("b", {}, "Hiding behind something. "), "If a character goes behind a screen and is supposed to come back, check that they do — and are still the same character."),
+        el("li", {}, el("b", {}, "Small requested changes. "), "If only one character's cuff should turn stained, check that only that cuff changes, the change lasts, and the other character stays unchanged."),
+        el("li", {}, el("b", {}, "Cuts. "), "Every case is one continuous shot with a fixed camera. A cut inside the video counts against Storyboard adherence."))),
     form, btn);
 }
 
