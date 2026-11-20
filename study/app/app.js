@@ -16,10 +16,10 @@ const ACCESS_KEY = PARAMS.get("k") || "";   // unlisted-link token (legacy links
 const SLOTS = 34;   // R1..R20 core (each pair exactly 3 ratings), R21..R34 extra
                     // rounds (4th/5th ratings); ~30 min per session (2026-11-20)
 // Rater identity: legacy ?rater=R<n>&k=<tok> links still work; otherwise one
-// shareable link and a login screen (name + slot 1..10) assigns the session.
+// shareable link and a login screen (unique name -> next free session slot).
 let RATER = PARAMS.get("rater") || "";
 let RATER_NAME = PARAMS.get("name") || "";
-let LS_KEY = RATER ? "vcstudy_v2_" + RATER : "";   // v2: 10-rater full-coverage design (2026-11-20)
+let LS_KEY = RATER ? "vcstudy_v2_" + RATER : "";   // v2: 34-slot short-session design (2026-11-20)
 
 const CRITERIA = [
   ["identity",   "Identity fidelity",
@@ -82,12 +82,73 @@ const el = (tag, attrs = {}, ...kids) => {
   return n;
 };
 
-/* ---------------- persistence ---------------- */
+/* ---------------- session store (Google Apps Script web app) -------------
+   One row per session in a PRIVATE spreadsheet in the organizer's Google
+   account (gas/Code.gs): rater | name | started | updated | done | state.
+   The page calls it with plain fetch — there is NO credential in this file
+   (the old GitHub PAT is gone; user 2026-11-20 "tiny backend instead").
+   Slot claims and the name→slot lookup are atomic server-side (ScriptLock):
+   the typed name is the resume credential, so "name taken -> welcome back" and
+   resume from ANY device both work. There is NO endpoint that lists names; the
+   full dump needs a separate key that lives only server-side + the organizer's
+   notes (see analysis/fetch_claims.py). Requests use a simple Content-Type to
+   avoid CORS preflight (Apps Script answers none).
+   If the service is unreachable the page degrades to the manual slot picker.
+   After the study: delete the Apps Script project + its spreadsheet. */
+const GAS_URL = "https://script.google.com/macros/s/AKfycbwMqcXuRh7YqB9inBWWc5NCBSmQM5DzZU8BD7MqVtodmVvSP2-vcUAnUpT8EfU8Ccg/exec";   // /exec URL from the Apps Script deploy
+const claimsOn = () => /^https:\/\//.test(GAS_URL) && !GAS_URL.includes("__PASTE");
+
+function gasPost(body, keepalive) {
+  // text/plain: a "simple" request — no CORS preflight (Apps Script answers none)
+  return fetch(GAS_URL, { method: "POST", keepalive: !!keepalive,
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
+    body: JSON.stringify(body) });
+}
+
+async function claimStatus() {
+  const r = await fetch(GAS_URL + "?op=status");
+  if (!r.ok) throw new Error("status " + r.status);
+  return r.json();          // { taken, slots }
+}
+
+async function claimJoin(name) {
+  const r = await gasPost({ op: "claim", name });
+  if (!r.ok) throw new Error("claim " + r.status);
+  return r.json();          // { claimed } | { existing } | { error }
+}
+
+let claimTimer = null, claimBusy = false;
+function scheduleClaim() {
+  if (!claimsOn() || !RATER) return;
+  clearTimeout(claimTimer);
+  claimTimer = setTimeout(pushClaim, 8000);
+}
+async function pushClaim(opts = {}) {
+  if (!claimsOn() || !RATER || claimBusy) return;
+  claimBusy = true;
+  try {
+    await gasPost({ op: "save", rater: RATER, name: RATER_NAME,
+      started: state.started, updated: Date.now(),
+      done: state.phase === "done", state: localState() }, opts.keepalive);
+  } catch { /* offline — localStorage holds everything; retried on next save */ }
+  finally { claimBusy = false; }
+}
+window.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") pushClaim({ keepalive: true });
+});
+
+/* ---------------- persistence (localStorage + claims file) ---------------- */
+function localState() {
+  return { trialIx: state.trialIx, responses: state.responses, times: state.times,
+    quiz: state.quiz, started: state.started, name: RATER_NAME, updated: Date.now() };
+}
+function pickNewer(a, b) {
+  const t = (x) => (x && x.updated) || 0;
+  return t(a) >= t(b) ? (a || b) : (b || a);   // local wins ties
+}
 function save() {
-  localStorage.setItem(LS_KEY, JSON.stringify({
-    trialIx: state.trialIx, responses: state.responses, times: state.times,
-    quiz: state.quiz, started: state.started, name: RATER_NAME,
-  }));
+  localStorage.setItem(LS_KEY, JSON.stringify(localState()));
+  scheduleClaim();
 }
 function loadSaved() {
   try { return JSON.parse(localStorage.getItem(LS_KEY) || "null"); } catch { return null; }
@@ -121,7 +182,7 @@ function renderConsent() {
   $("#screen").replaceChildren(
     el("div", { class: "card" },
       el("h1", {}, "Consent"),
-      el("p", {}, "This study collects judgments of generated video clips. It is voluntary; you may withdraw at any time without consequence. No personal or sensitive data are collected. Your responses are recorded under a participant code together with the name you enter; files are kept private, and any released data are de-identified. The session takes about 30 minutes and includes one short break at the midpoint. Your progress is saved automatically: if you are interrupted, reopen this page in the same browser and take the same slot to continue where you left off."),
+      el("p", {}, "This study collects judgments of generated video clips. It is voluntary; you may withdraw at any time without consequence. No personal or sensitive data are collected. Your responses are recorded under a participant code together with the name you enter; files are kept private, the automatic online backup is a private record held by the researchers, and any released data are de-identified. The session takes about 30 minutes and includes one short break at the midpoint. Your progress is saved automatically: if you are interrupted, reopen this page and join again with your name to continue where you left off."),
       el("p", {}, "Purpose (neutral description): we measure how people judge the execution of requested visual events in short generated clips, and how those judgments relate to automatic evaluation."),
       el("p", {}, "If you have questions, contact the study organizer (contact details were sent with your link)."),
       el("p", { class: "warn" }, "Please take only one slot, and finish each half of the session in one sitting."),
@@ -411,7 +472,7 @@ function renderDone() {
   $("#screen").replaceChildren(
     el("div", { class: "card" },
       el("h1", {}, "Thank you — done"),
-      el("p", {}, "Download your results file and send it back as instructed. If the download does not start, use the button below."),
+      el("p", {}, "Your results are saved automatically. Download a copy and send it back as instructed — if the download does not start, use the button below."),
       el("div", { class: "row" },
         el("button", { class: "btn", onclick: downloadResults }, "Download results file"),
         el("button", { class: "btn ghost", onclick: downloadResults }, "Download again"))));
@@ -423,36 +484,105 @@ function go(phase) {
   if (phase === "consent") renderConsent();
   else if (phase === "quiz") renderQuiz();
   else if (phase === "trials") { state.started = state.started || new Date().toISOString(); save(); renderTrial(); }
-  else if (phase === "done") { save(); renderDone(); }
+  else if (phase === "done") { save(); pushClaim(); renderDone(); }
 }
 
-/* ---------------- login (one shareable link; slot N = session R<N>, 1..34) ---------------- */
+/* ---------------- login (one shared link; unique name -> next free slot) ---------------- */
+let REMOTE_STATE = null;   // claim-file state (cross-device resume), picked vs localStorage
+
+function nameMap() {
+  try { return JSON.parse(localStorage.getItem("vcstudy_v2_names") || "{}"); } catch { return {}; }
+}
+
+function startSession(r, name, remoteState) {
+  RATER = r;
+  RATER_NAME = name;
+  LS_KEY = "vcstudy_v2_" + RATER;
+  REMOTE_STATE = remoteState || null;
+  // name -> slot map in localStorage is a same-device FAST PATH (works offline);
+  // the store resolves names globally (its row is the source of truth)
+  if (name) {
+    const names = nameMap();
+    names[name.toLowerCase()] = r;
+    localStorage.setItem("vcstudy_v2_names", JSON.stringify(names));
+    localStorage.setItem("vcstudy_v2_lastname", name);
+  }
+  if (!loadSaved()) save();   // mark the slot early so rejoin finds it
+  enterStudy();
+}
+
 function renderLogin() {
   const nameIn = el("input", { type: "text", class: "namein", maxlength: "60",
     placeholder: "Your name", value: localStorage.getItem("vcstudy_v2_lastname") || "" });
-  const note = el("p", { class: "warn", hidden: "hidden" }, "Please enter your name first.");
-  const grid = el("div", { class: "slotgrid" });
-  for (let i = 1; i <= SLOTS; i++) {
-    const r = "R" + i;
-    const s = savedFor(r);
-    grid.append(el("button", { class: "slotbtn", onclick: () => {
-      if (!nameIn.value.trim()) { note.hidden = false; nameIn.focus(); return; }
-      RATER = r;
-      RATER_NAME = nameIn.value.trim();
-      LS_KEY = "vcstudy_v2_" + RATER;
-      localStorage.setItem("vcstudy_v2_lastname", RATER_NAME);
-      enterStudy();
-    } }, String(i), s ? el("span", { class: "muted" }, "in progress") : null));
+  const note = el("p", { class: "warn", hidden: "hidden" }, "");
+  const status = el("p", { class: "muted" }, claimsOn() ? "Sessions available: checking…" : "");
+  const holder = el("div", {});
+  const joinBtn = el("button", { class: "btn", onclick: tryJoin }, "Join the study");
+
+  function warn(msg) { note.textContent = msg; note.hidden = false; }
+
+  async function tryJoin() {
+    const name = nameIn.value.trim();
+    if (!name) { warn("Please enter your name first."); nameIn.focus(); return; }
+    note.hidden = true;
+    joinBtn.disabled = true;
+    status.textContent = "Checking sessions…";
+    try {
+      // same-device fast path (works offline); the store resolves names globally
+      const mine = nameMap()[name.toLowerCase()];
+      if (mine) return showWelcomeBack(mine, name, pickNewer(savedFor(mine), null), null);
+      if (!claimsOn()) throw new Error("no-store");
+      const res = await claimJoin(name);
+      if (res.error === "full") { warn("All sessions are taken — please contact the organizer."); return; }
+      if (res.error) throw new Error(res.error);
+      if (res.existing) {
+        // name already taken -> welcome back (cross-device: state comes from
+        // the store and merges with any local save via pickNewer)
+        const remote = res.existing.state || null;
+        return showWelcomeBack(res.existing.rater, name,
+          pickNewer(savedFor(res.existing.rater), remote), remote);
+      }
+      return startSession(res.claimed.rater, name, null);
+    } catch (e) {
+      manualPicker();
+      warn("Could not reach the session service — pick the lowest free slot number (ask in the group chat).");
+    } finally { joinBtn.disabled = false; }
   }
+
+  function showWelcomeBack(r, name, saved, remote) {
+    status.textContent = "";
+    holder.replaceChildren(el("div", {},
+      el("h2", {}, `Welcome back, ${name}!`),
+      el("p", {}, `Your session (slot ${r.slice(1)}) is ${saved && saved.trialIx > 0 ? "in progress" : "ready"} — continue where you left off.`),
+      el("div", { class: "row" },
+        el("button", { class: "btn", onclick: () => startSession(r, name, remote) }, "Continue"),
+        el("button", { class: "btn ghost",
+          onclick: () => { holder.replaceChildren(); nameIn.value = ""; nameIn.focus(); } },
+          "Not you? Choose a different name"))));
+  }
+
+  function manualPicker() {
+    // degraded mode (claims service off/unreachable): slot grid + localStorage marks
+    const grid = el("div", { class: "slotgrid" });
+    for (let i = 1; i <= SLOTS; i++) {
+      const r = "R" + i;
+      grid.append(el("button", { class: "slotbtn", onclick: () => {
+        const n = nameIn.value.trim();
+        if (!n) { warn("Please enter your name first."); nameIn.focus(); return; }
+        startSession(r, n, null);
+      } }, String(i), savedFor(r) ? el("span", { class: "muted" }, "in progress") : null));
+    }
+    holder.replaceChildren(grid);
+  }
+
   $("#screen").replaceChildren(el("div", { class: "card" },
     el("h1", {}, "Join the study"),
     el("p", {}, "Everyone uses this same page. Two steps:"),
     el("ul", {},
-      el("li", {}, el("b", {}, "Enter your name. "), "It stays with your results file so we know whose they are."),
-      el("li", {}, el("b", {}, "Take a slot number. "), "Each slot is its own set of tasks — about 30 minutes. Take just one, and take the lowest number nobody else has taken (ask in the group chat).")),
-    nameIn, note, grid,
-    el("p", { class: "muted" },
-      "Progress is saved in this browser. To continue later, open this page again in the same browser and take the same slot (marked “in progress”).")));
+      el("li", {}, el("b", {}, "Enter your name. "), "Pick something unique (like “Sam P.”) — typing it again on any device brings you back to where you left off."),
+      el("li", {}, el("b", {}, "Press Join. "), "You get the next free session — about 30 minutes, one short break. Take just one.")),
+    el("div", { class: "row" }, nameIn, joinBtn), note, holder, status,
+    el("p", { class: "muted" }, "Progress saves automatically. To take a break, close the page and rejoin with your name later.")));
 }
 
 /* ---------------- boot ---------------- */
@@ -472,7 +602,7 @@ async function enterStudy() {
       el("p", {}, `No assignment found for “${RATER}”.`)));
     return;
   }
-  const saved = loadSaved();
+  const saved = pickNewer(loadSaved(), REMOTE_STATE);
   if (saved && saved.trialIx > 0) {
     RATER_NAME = RATER_NAME || saved.name || "";
     Object.assign(state, { trialIx: saved.trialIx, responses: saved.responses, times: saved.times,
