@@ -12,9 +12,14 @@
 const ENABLE_QUIZ = false;   // testing round: training questionnaire off (user 2026-11-20)
 
 const PARAMS = new URLSearchParams(location.search);
-const RATER = PARAMS.get("rater") || "";
-const ACCESS_KEY = PARAMS.get("k") || "";   // unlisted-link token (anti-indexing)
-const LS_KEY = "vcstudy_v2_" + RATER;   // v2: 10-rater full-coverage design (2026-11-20)
+const ACCESS_KEY = PARAMS.get("k") || "";   // unlisted-link token (legacy links)
+const SLOTS = 34;   // R1..R20 core (each pair exactly 3 ratings), R21..R34 extra
+                    // rounds (4th/5th ratings); ~30 min per session (2026-11-20)
+// Rater identity: legacy ?rater=R<n>&k=<tok> links still work; otherwise one
+// shareable link and a login screen (name + slot 1..10) assigns the session.
+let RATER = PARAMS.get("rater") || "";
+let RATER_NAME = PARAMS.get("name") || "";
+let LS_KEY = RATER ? "vcstudy_v2_" + RATER : "";   // v2: 10-rater full-coverage design (2026-11-20)
 
 const CRITERIA = [
   ["identity",   "Identity fidelity",
@@ -81,17 +86,21 @@ const el = (tag, attrs = {}, ...kids) => {
 function save() {
   localStorage.setItem(LS_KEY, JSON.stringify({
     trialIx: state.trialIx, responses: state.responses, times: state.times,
-    quiz: state.quiz, started: state.started,
+    quiz: state.quiz, started: state.started, name: RATER_NAME,
   }));
 }
 function loadSaved() {
   try { return JSON.parse(localStorage.getItem(LS_KEY) || "null"); } catch { return null; }
+}
+function savedFor(r) {
+  try { return JSON.parse(localStorage.getItem("vcstudy_v2_" + r) || "null"); } catch { return null; }
 }
 
 function downloadResults() {
   const payload = {
     schema: "viscraftbench-human-study/v1",
     rater: RATER,
+    rater_name: RATER_NAME || null,
     access_key_present: !!ACCESS_KEY,
     started: state.started,
     finished: new Date().toISOString(),
@@ -112,10 +121,10 @@ function renderConsent() {
   $("#screen").replaceChildren(
     el("div", { class: "card" },
       el("h1", {}, "Consent"),
-      el("p", {}, "This study collects judgments of generated video clips. It is voluntary; you may withdraw at any time without consequence. No personal or sensitive data are collected. Your responses are recorded under a code, are anonymized, and any released data are de-identified. The session takes about 45–60 minutes and includes one short break at the midpoint. Your progress is saved automatically: if you are interrupted, reopen the same link to continue where you left off."),
+      el("p", {}, "This study collects judgments of generated video clips. It is voluntary; you may withdraw at any time without consequence. No personal or sensitive data are collected. Your responses are recorded under a participant code together with the name you enter; files are kept private, and any released data are de-identified. The session takes about 30 minutes and includes one short break at the midpoint. Your progress is saved automatically: if you are interrupted, reopen this page in the same browser and take the same slot to continue where you left off."),
       el("p", {}, "Purpose (neutral description): we measure how people judge the execution of requested visual events in short generated clips, and how those judgments relate to automatic evaluation."),
       el("p", {}, "If you have questions, contact the study organizer (contact details were sent with your link)."),
-      el("p", { class: "warn" }, "Do not share your link. Please finish each half of the session in one sitting."),
+      el("p", { class: "warn" }, "Please take only one slot, and finish each half of the session in one sitting."),
       el("div", { class: "row" },
         el("button", { class: "btn", onclick: () => go("quiz") }, "I agree, continue"),
       )));
@@ -417,15 +426,43 @@ function go(phase) {
   else if (phase === "done") { save(); renderDone(); }
 }
 
+/* ---------------- login (one shareable link; slot N = session R<N>, 1..34) ---------------- */
+function renderLogin() {
+  const nameIn = el("input", { type: "text", class: "namein", maxlength: "60",
+    placeholder: "Your name", value: localStorage.getItem("vcstudy_v2_lastname") || "" });
+  const note = el("p", { class: "warn", hidden: "hidden" }, "Please enter your name first.");
+  const grid = el("div", { class: "slotgrid" });
+  for (let i = 1; i <= SLOTS; i++) {
+    const r = "R" + i;
+    const s = savedFor(r);
+    grid.append(el("button", { class: "slotbtn", onclick: () => {
+      if (!nameIn.value.trim()) { note.hidden = false; nameIn.focus(); return; }
+      RATER = r;
+      RATER_NAME = nameIn.value.trim();
+      LS_KEY = "vcstudy_v2_" + RATER;
+      localStorage.setItem("vcstudy_v2_lastname", RATER_NAME);
+      enterStudy();
+    } }, String(i), s ? el("span", { class: "muted" }, "in progress") : null));
+  }
+  $("#screen").replaceChildren(el("div", { class: "card" },
+    el("h1", {}, "Join the study"),
+    el("p", {}, "Everyone uses this same page. Two steps:"),
+    el("ul", {},
+      el("li", {}, el("b", {}, "Enter your name. "), "It stays with your results file so we know whose they are."),
+      el("li", {}, el("b", {}, "Take a slot number. "), "Each slot is its own set of tasks — about 30 minutes. Take just one, and take the lowest number nobody else has taken (ask in the group chat).")),
+    nameIn, note, grid,
+    el("p", { class: "muted" },
+      "Progress is saved in this browser. To continue later, open this page again in the same browser and take the same slot (marked “in progress”).")));
+}
+
 /* ---------------- boot ---------------- */
 async function boot() {
+  if (RATER) return enterStudy();   // legacy ?rater=R<n> link
+  renderLogin();
+}
+
+async function enterStudy() {
   $("#screen").replaceChildren(el("p", { class: "muted" }, "Loading…"));
-  if (!RATER) {
-    $("#screen").replaceChildren(el("div", { class: "card" },
-      el("h1", {}, "Missing participant code"),
-      el("p", {}, "Please open the link you were given (it contains ?rater=…).")));
-    return;
-  }
   const [asg, chk, stu] = await Promise.all(["assignment", "checklists", "stimuli"].map(n =>
     fetch(`../materials/${n}.json`).then(r => { if (!r.ok) throw new Error(n); return r.json(); })));
   state.materials = { assignment: asg, checklists: chk, stimuli: stu };
@@ -437,6 +474,7 @@ async function boot() {
   }
   const saved = loadSaved();
   if (saved && saved.trialIx > 0) {
+    RATER_NAME = RATER_NAME || saved.name || "";
     Object.assign(state, { trialIx: saved.trialIx, responses: saved.responses, times: saved.times,
       quiz: saved.quiz, started: saved.started });
     if (state.trialIx >= trials().length) return go("done");
