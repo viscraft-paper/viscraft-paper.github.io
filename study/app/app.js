@@ -405,11 +405,10 @@ function renderPreference(t) {
   const storyboard = (n, key) => {
     const psrcs = panelUrls(key) || [];
     const cells = (caps || []).map((cap, i) => {
-      const det = el("div", { class: "cap-det-text" }, cap.details);
+      const det = el("div", { class: "cap-det-text" }, cap.composition + " " + cap.details);
       return el("div", { class: "sbcell" },
         el("div", { class: "sbcap" },
           el("div", { class: "cap-scene" }, cap.scene),
-          el("div", { class: "cap-comp" }, cap.composition),
           el("button", { class: "cap-det", type: "button",
             onclick: () => det.classList.toggle("open") }, "details"),
           det),
