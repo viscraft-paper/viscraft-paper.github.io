@@ -183,7 +183,7 @@ function renderConsent() {
     el("div", { class: "card" },
       el("h1", {}, "Consent"),
       el("p", {}, "This study collects judgments of generated video clips. It is voluntary; you may withdraw at any time without consequence. No personal or sensitive data are collected. Your responses are recorded under a participant code together with the name you enter; files are kept private, the automatic online backup is a private record held by the researchers, and any released data are de-identified. The session takes about 30 minutes and includes one short break at the midpoint. Your progress is saved automatically: if you are interrupted, reopen this page and join again with your name to continue where you left off."),
-      el("p", {}, "Purpose (neutral description): we measure how people judge the execution of requested visual events in short generated clips, and how those judgments relate to automatic evaluation."),
+      el("p", {}, "Purpose: we measure how people judge the execution of requested visual events in short generated clips, and how those judgments relate to automatic evaluation."),
       el("p", {}, "If you have questions, contact the study organizer (contact details were sent with your link)."),
       el("p", { class: "warn" }, "Please take only one slot, and finish each half of the session in one sitting."),
       el("div", { class: "row" },
