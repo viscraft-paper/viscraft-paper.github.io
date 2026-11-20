@@ -579,7 +579,7 @@ function renderLogin() {
     el("h1", {}, "Join the study"),
     el("p", {}, "Everyone uses this same page. Two steps:"),
     el("ul", {},
-      el("li", {}, el("b", {}, "Enter your name. "), "Pick something unique (like “Sam P.”) — typing it again on any device brings you back to where you left off."),
+      el("li", {}, el("b", {}, "Enter your name. "), "Pick something unique (like “koala”) — typing it again on any device brings you back to where you left off."),
       el("li", {}, el("b", {}, "Press Join. "), "You get the next free session — about 30 minutes, one short break. Take just one.")),
     el("div", { class: "row" }, nameIn, joinBtn), note, holder, status,
     el("p", { class: "muted" }, "Progress saves automatically. To take a break, close the page and rejoin with your name later.")));
