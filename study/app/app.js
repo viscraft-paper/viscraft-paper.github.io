@@ -241,7 +241,7 @@ function renderQuiz() {
         el("li", {}, el("b", {}, "Specification. "), "The intended scene and actions — the text both results were made from. Judge everything you see against it."),
         el("li", {}, el("b", {}, "Characters. "), "Small pictures labeled with the names from the specification. Click one to see it full size."),
         el("li", {}, el("b", {}, "Two videos. "), "Side by side. “Play both” starts them together and “Pause both” stops them together; ⤢ shows a video full screen."),
-        el("li", {}, el("b", {}, "Two storyboards. "), "Below the videos, stacked. Storyboard 1 belongs to Video 1, Storyboard 2 to Video 2. The text above each panel describes the planned state — click “details” for more of it, click a panel to see it full size.")),
+        el("li", {}, el("b", {}, "Two storyboards. "), "Below the videos, stacked. Storyboard 1 belongs to Video 1, Storyboard 2 to Video 2. The text above each panel describes the planned state — click “details” for the whole caption, click a panel to see it full size.")),
       el("p", {}, "You answer three questions about the videos and two about the storyboards. The questions are independent — one result can win one and lose another. Videos are judged against the specification only, not against the storyboards; the storyboard questions are about the storyboards alone."),
       el("h3", {}, "The three video questions"),
       ...CRITERIA.filter(([, , sec]) => sec === "video").map(([, name, , desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
@@ -412,7 +412,7 @@ function renderPreference(t) {
   const storyboard = (n, key) => {
     const psrcs = panelUrls(key) || [];
     const cells = (caps || []).map((cap, i) => {
-      const det = el("div", { class: "cap-det-text" }, cap.composition + " " + cap.details);
+      const det = el("div", { class: "cap-det-text" }, [cap.scene, cap.composition, cap.details].filter(Boolean).join(" "));
       return el("div", { class: "sbcell" },
         el("div", { class: "sbcap" },
           el("div", { class: "cap-scene" }, cap.scene),
@@ -445,7 +445,7 @@ function renderPreference(t) {
     parts.push(
       el("div", { class: "card" },
         el("h2", {}, "The storyboards"),
-        el("p", { class: "muted" }, "Each storyboard belongs to the video with the same number. The text above a panel describes the planned state — “details” shows more of it, and clicking a panel shows it full size."),
+        el("p", { class: "muted" }, "Each storyboard belongs to the video with the same number. The text above a panel describes the planned state — “details” shows the whole caption, and clicking a panel shows it full size."),
         storyboard(1, t.videos[sides[0]]),
         storyboard(2, t.videos[sides[1]])),
       el("div", { class: "card" },
