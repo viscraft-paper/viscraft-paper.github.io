@@ -43,11 +43,11 @@ let LS_KEY = RATER ? "vcstudy_v3_" + RATER : "";   // v3: 3-contrast 27-pref des
  * section, judged on the storyboard alone. [id, name, section, explanation] */
 const CRITERIA = [
   ["identity", "Identity fidelity", "video",
-   "Are the characters the same people from start to end, and the same as the character pictures? Keep the characters distinct from each other. A change the specification asks for (a stain, a rolled sleeve) is not an identity change."],
+   "Which video preserves the characters' identity better from start to end, and matches the character pictures better? Keep the characters distinct from each other. A change the specification asks for (a stain, a rolled sleeve) is not an identity change."],
   ["order", "Action and event order", "video",
-   "Are all the requested actions done, in the requested order? Judge only what you can see against the specification — a beautiful video may still skip the requested action."],
-  ["motion", "Motion plausibility", "video",
-   "Does the movement look real and steady? No morphing, no flicker, and nothing vanishing without a reason (leaving the view or passing behind something is fine)."],
+   "Which video executes the requested actions more faithfully — all of them, in the requested order? Judge only what you can see against the specification; a beautiful video may still skip the requested action."],
+  ["motion", "Motion plausibility and camera steadiness", "video",
+   "Which video has smoother, more plausible motion? No morphing, no flicker, and nothing vanishing without a reason (leaving the view or passing behind something is fine). The camera should remain fixed — penalize any jitter or camera movement."],
   ["sb_coherence", "Coherent set of states", "sb",
    "Do the panels show the right moments of the specification, in a sensible order — six visual states that together tell the story?"],
   ["sb_consistency", "Visual consistency", "sb",
