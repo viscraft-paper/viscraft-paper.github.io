@@ -1,0 +1,3026 @@
+{
+ "T01.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5c5ea708/T01.01",
+   "B": "m0bc92000/T01.01"
+  }
+ },
+ "T01.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mabe8f0be/T01.02",
+   "B": "m3d5ac229/T01.02"
+  }
+ },
+ "T01.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2f38cef5/T01.03",
+   "B": "m9aedad3f/T01.03"
+  }
+ },
+ "T01.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m888023de/T01.04",
+   "B": "m4d5fe586/T01.04"
+  }
+ },
+ "T01.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mf9050de6/T01.05",
+   "B": "md84572c3/T01.05"
+  }
+ },
+ "T01.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mb537e479/T01.06",
+   "B": "m5c131b10/T01.06"
+  }
+ },
+ "T02.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m65b21ead/T02.01",
+   "B": "m77e6e534/T02.01"
+  }
+ },
+ "T02.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m4d55ef2e/T02.02",
+   "B": "m3c60d96d/T02.02"
+  }
+ },
+ "T02.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m8ddfef56/T02.03",
+   "B": "m4610aee6/T02.03"
+  }
+ },
+ "T02.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m57ba0420/T02.04",
+   "B": "mc1b2d377/T02.04"
+  }
+ },
+ "T02.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "me093e529/T02.05",
+   "B": "m3e4e252f/T02.05"
+  }
+ },
+ "T02.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mf938348c/T02.06",
+   "B": "maccacce9/T02.06"
+  }
+ },
+ "T03.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m0b9162fd/T03.01",
+   "B": "m477b00db/T03.01"
+  }
+ },
+ "T03.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m9884b77c/T03.02",
+   "B": "m8090dfdd/T03.02"
+  }
+ },
+ "T03.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m06a123dc/T03.03",
+   "B": "mc08475b7/T03.03"
+  }
+ },
+ "T03.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mb8a23a65/T03.04",
+   "B": "m51e6053e/T03.04"
+  }
+ },
+ "T03.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m4c82e379/T03.05",
+   "B": "m10bb829d/T03.05"
+  }
+ },
+ "T03.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m314b4a66/T03.06",
+   "B": "m3ff2c631/T03.06"
+  }
+ },
+ "T04.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m21bfa98d/T04.01",
+   "B": "m27c380ef/T04.01"
+  }
+ },
+ "T04.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m35056034/T04.02",
+   "B": "mc3c69181/T04.02"
+  }
+ },
+ "T04.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mebde4bd8/T04.03",
+   "B": "mf1c34574/T04.03"
+  }
+ },
+ "T04.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m9e021d04/T04.04",
+   "B": "mbea678b7/T04.04"
+  }
+ },
+ "T04.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5148cdd7/T04.05",
+   "B": "m3eee92e9/T04.05"
+  }
+ },
+ "T04.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m72ea552e/T04.06",
+   "B": "me76bfd6e/T04.06"
+  }
+ },
+ "T05.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mf5b3b9a9/T05.01",
+   "B": "m57818306/T05.01"
+  }
+ },
+ "T05.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m886a9228/T05.02",
+   "B": "m02c0ae38/T05.02"
+  }
+ },
+ "T05.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5288ee18/T05.03",
+   "B": "m9dda0dcd/T05.03"
+  }
+ },
+ "T05.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m0a1e21e0/T05.04",
+   "B": "m749f1bd7/T05.04"
+  }
+ },
+ "T05.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mddc55dea/T05.05",
+   "B": "mea3db1bc/T05.05"
+  }
+ },
+ "T05.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2acc7852/T05.06",
+   "B": "m24bad822/T05.06"
+  }
+ },
+ "T06.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mc0a24250/T06.01",
+   "B": "m67f3e8db/T06.01"
+  }
+ },
+ "T06.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m8f42f8fd/T06.02",
+   "B": "m6dfbc4bb/T06.02"
+  }
+ },
+ "T06.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mccaeec4a/T06.03",
+   "B": "me9941eac/T06.03"
+  }
+ },
+ "T06.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mea17efca/T06.04",
+   "B": "me0e62ce5/T06.04"
+  }
+ },
+ "T06.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m7769219e/T06.05",
+   "B": "ma64dfc38/T06.05"
+  }
+ },
+ "T06.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m0fdc7400/T06.06",
+   "B": "m96c15a7c/T06.06"
+  }
+ },
+ "T07.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m83e5d633/T07.01",
+   "B": "mb58c356e/T07.01"
+  }
+ },
+ "T07.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mba9f65fc/T07.02",
+   "B": "m232f2736/T07.02"
+  }
+ },
+ "T07.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m1b37325b/T07.03",
+   "B": "ma0826724/T07.03"
+  }
+ },
+ "T07.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m334f86a0/T07.04",
+   "B": "mada670e5/T07.04"
+  }
+ },
+ "T07.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m810d9973/T07.05",
+   "B": "m1ddcc1a8/T07.05"
+  }
+ },
+ "T07.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m1638b768/T07.06",
+   "B": "me54547cb/T07.06"
+  }
+ },
+ "T08.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m8979bf47/T08.01",
+   "B": "me96fda6f/T08.01"
+  }
+ },
+ "T08.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m988eb532/T08.02",
+   "B": "m738667e8/T08.02"
+  }
+ },
+ "T08.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "ma8ad6b4e/T08.03",
+   "B": "ma699cd41/T08.03"
+  }
+ },
+ "T08.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m68b33b51/T08.04",
+   "B": "md550e5a9/T08.04"
+  }
+ },
+ "T08.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m3a988118/T08.05",
+   "B": "mf468288b/T08.05"
+  }
+ },
+ "T08.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5404a6a5/T08.06",
+   "B": "m95cc0d63/T08.06"
+  }
+ },
+ "T09.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m21edc642/T09.01",
+   "B": "m8977f304/T09.01"
+  }
+ },
+ "T09.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m61c0c970/T09.02",
+   "B": "m8f291ed0/T09.02"
+  }
+ },
+ "T09.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m013d876b/T09.03",
+   "B": "mc2ab4c5d/T09.03"
+  }
+ },
+ "T09.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m111ab288/T09.04",
+   "B": "meb2952be/T09.04"
+  }
+ },
+ "T09.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "md2c24de5/T09.05",
+   "B": "md10f8d2c/T09.05"
+  }
+ },
+ "T09.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m263d5f29/T09.06",
+   "B": "m4dc24901/T09.06"
+  }
+ },
+ "T10.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2cd247ef/T10.01",
+   "B": "m9094624c/T10.01"
+  }
+ },
+ "T10.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m6ff37ef5/T10.02",
+   "B": "m76b40d99/T10.02"
+  }
+ },
+ "T10.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "meb9c1a2c/T10.03",
+   "B": "me9ca4bff/T10.03"
+  }
+ },
+ "T10.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mbe13b875/T10.04",
+   "B": "m5d697542/T10.04"
+  }
+ },
+ "T10.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mcdae844c/T10.05",
+   "B": "m66e5463d/T10.05"
+  }
+ },
+ "T10.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m70ac813c/T10.06",
+   "B": "m654fad66/T10.06"
+  }
+ },
+ "T11.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m88d4eab4/T11.01",
+   "B": "m73914a9e/T11.01"
+  }
+ },
+ "T11.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m0e141531/T11.02",
+   "B": "m2d57487f/T11.02"
+  }
+ },
+ "T11.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m163ea4f2/T11.03",
+   "B": "mf0bac715/T11.03"
+  }
+ },
+ "T11.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mebfe663a/T11.04",
+   "B": "m04dfa5c6/T11.04"
+  }
+ },
+ "T11.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2cc0f453/T11.05",
+   "B": "mcf757d28/T11.05"
+  }
+ },
+ "T11.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mefb11438/T11.06",
+   "B": "m715f4910/T11.06"
+  }
+ },
+ "T12.01|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m682a20e9/T12.01",
+   "B": "m2098a4db/T12.01"
+  }
+ },
+ "T12.02|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m1d086f1d/T12.02",
+   "B": "md4aa4ddf/T12.02"
+  }
+ },
+ "T12.03|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2c092c9c/T12.03",
+   "B": "mb4cfab69/T12.03"
+  }
+ },
+ "T12.04|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5d2c677e/T12.04",
+   "B": "mf10964ce/T12.04"
+  }
+ },
+ "T12.05|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m87b12cf0/T12.05",
+   "B": "m7b70fa3e/T12.05"
+  }
+ },
+ "T12.06|k1": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m369b622c/T12.06",
+   "B": "mb0c47ea3/T12.06"
+  }
+ },
+ "T01.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5c5ea708/T01.01",
+   "B": "me579b33f/T01.01"
+  }
+ },
+ "T01.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mabe8f0be/T01.02",
+   "B": "m87cd6b99/T01.02"
+  }
+ },
+ "T01.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2f38cef5/T01.03",
+   "B": "md8120b3b/T01.03"
+  }
+ },
+ "T01.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m888023de/T01.04",
+   "B": "ma9a6809b/T01.04"
+  }
+ },
+ "T01.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mf9050de6/T01.05",
+   "B": "mce6f912c/T01.05"
+  }
+ },
+ "T01.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mb537e479/T01.06",
+   "B": "mef1b75b5/T01.06"
+  }
+ },
+ "T02.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m65b21ead/T02.01",
+   "B": "m54765e32/T02.01"
+  }
+ },
+ "T02.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m4d55ef2e/T02.02",
+   "B": "mc80f45c3/T02.02"
+  }
+ },
+ "T02.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m8ddfef56/T02.03",
+   "B": "m5ad27f57/T02.03"
+  }
+ },
+ "T02.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m57ba0420/T02.04",
+   "B": "m92faee59/T02.04"
+  }
+ },
+ "T02.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "me093e529/T02.05",
+   "B": "m0ef9472c/T02.05"
+  }
+ },
+ "T02.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mf938348c/T02.06",
+   "B": "m67864a3d/T02.06"
+  }
+ },
+ "T03.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m0b9162fd/T03.01",
+   "B": "ma906f14f/T03.01"
+  }
+ },
+ "T03.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m9884b77c/T03.02",
+   "B": "m2b823e0a/T03.02"
+  }
+ },
+ "T03.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m06a123dc/T03.03",
+   "B": "mc4458f3e/T03.03"
+  }
+ },
+ "T03.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mb8a23a65/T03.04",
+   "B": "m5cde2fb5/T03.04"
+  }
+ },
+ "T03.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m4c82e379/T03.05",
+   "B": "m3bc761b5/T03.05"
+  }
+ },
+ "T03.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m314b4a66/T03.06",
+   "B": "m6c371c45/T03.06"
+  }
+ },
+ "T04.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m21bfa98d/T04.01",
+   "B": "m96e2071c/T04.01"
+  }
+ },
+ "T04.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m35056034/T04.02",
+   "B": "m228d12d8/T04.02"
+  }
+ },
+ "T04.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mebde4bd8/T04.03",
+   "B": "m23192548/T04.03"
+  }
+ },
+ "T04.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m9e021d04/T04.04",
+   "B": "m8ed0f111/T04.04"
+  }
+ },
+ "T04.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5148cdd7/T04.05",
+   "B": "m6387727f/T04.05"
+  }
+ },
+ "T04.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m72ea552e/T04.06",
+   "B": "mb5bb8cd2/T04.06"
+  }
+ },
+ "T05.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mf5b3b9a9/T05.01",
+   "B": "mcbf01e90/T05.01"
+  }
+ },
+ "T05.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m886a9228/T05.02",
+   "B": "m572abd59/T05.02"
+  }
+ },
+ "T05.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5288ee18/T05.03",
+   "B": "m51eb4a89/T05.03"
+  }
+ },
+ "T05.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m0a1e21e0/T05.04",
+   "B": "m3f8ffafb/T05.04"
+  }
+ },
+ "T05.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mddc55dea/T05.05",
+   "B": "m2cd034f4/T05.05"
+  }
+ },
+ "T05.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2acc7852/T05.06",
+   "B": "m4a34004a/T05.06"
+  }
+ },
+ "T06.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mc0a24250/T06.01",
+   "B": "m813ac979/T06.01"
+  }
+ },
+ "T06.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m8f42f8fd/T06.02",
+   "B": "m0f2f675c/T06.02"
+  }
+ },
+ "T06.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mccaeec4a/T06.03",
+   "B": "mbfd36cef/T06.03"
+  }
+ },
+ "T06.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mea17efca/T06.04",
+   "B": "mb6a488a7/T06.04"
+  }
+ },
+ "T06.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m7769219e/T06.05",
+   "B": "m76145361/T06.05"
+  }
+ },
+ "T06.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m0fdc7400/T06.06",
+   "B": "m119ad548/T06.06"
+  }
+ },
+ "T07.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m83e5d633/T07.01",
+   "B": "md51f413f/T07.01"
+  }
+ },
+ "T07.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mba9f65fc/T07.02",
+   "B": "mdf6e9c73/T07.02"
+  }
+ },
+ "T07.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m1b37325b/T07.03",
+   "B": "m622b6360/T07.03"
+  }
+ },
+ "T07.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m334f86a0/T07.04",
+   "B": "md7426b0e/T07.04"
+  }
+ },
+ "T07.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m810d9973/T07.05",
+   "B": "m8c5e0a6f/T07.05"
+  }
+ },
+ "T07.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m1638b768/T07.06",
+   "B": "mf7ba96b5/T07.06"
+  }
+ },
+ "T08.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m8979bf47/T08.01",
+   "B": "mbf002183/T08.01"
+  }
+ },
+ "T08.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m988eb532/T08.02",
+   "B": "m8a0a9119/T08.02"
+  }
+ },
+ "T08.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "ma8ad6b4e/T08.03",
+   "B": "m582413ae/T08.03"
+  }
+ },
+ "T08.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m68b33b51/T08.04",
+   "B": "me8f58f6f/T08.04"
+  }
+ },
+ "T08.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m3a988118/T08.05",
+   "B": "m50369bc3/T08.05"
+  }
+ },
+ "T08.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5404a6a5/T08.06",
+   "B": "m73bdd590/T08.06"
+  }
+ },
+ "T09.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m21edc642/T09.01",
+   "B": "ma5cfb010/T09.01"
+  }
+ },
+ "T09.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m61c0c970/T09.02",
+   "B": "m8c3dea26/T09.02"
+  }
+ },
+ "T09.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m013d876b/T09.03",
+   "B": "m71bf541f/T09.03"
+  }
+ },
+ "T09.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m111ab288/T09.04",
+   "B": "m99086bf5/T09.04"
+  }
+ },
+ "T09.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "md2c24de5/T09.05",
+   "B": "me8e06cdd/T09.05"
+  }
+ },
+ "T09.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m263d5f29/T09.06",
+   "B": "mf7a663db/T09.06"
+  }
+ },
+ "T10.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2cd247ef/T10.01",
+   "B": "m5488c2cd/T10.01"
+  }
+ },
+ "T10.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m6ff37ef5/T10.02",
+   "B": "m6e24768c/T10.02"
+  }
+ },
+ "T10.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "meb9c1a2c/T10.03",
+   "B": "m54ec5d36/T10.03"
+  }
+ },
+ "T10.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mbe13b875/T10.04",
+   "B": "m595ded18/T10.04"
+  }
+ },
+ "T10.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mcdae844c/T10.05",
+   "B": "medaed281/T10.05"
+  }
+ },
+ "T10.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m70ac813c/T10.06",
+   "B": "m20ce44dc/T10.06"
+  }
+ },
+ "T11.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m88d4eab4/T11.01",
+   "B": "m9d46e63d/T11.01"
+  }
+ },
+ "T11.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m0e141531/T11.02",
+   "B": "m3f0d2e23/T11.02"
+  }
+ },
+ "T11.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m163ea4f2/T11.03",
+   "B": "m70275acd/T11.03"
+  }
+ },
+ "T11.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mebfe663a/T11.04",
+   "B": "m796c7878/T11.04"
+  }
+ },
+ "T11.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2cc0f453/T11.05",
+   "B": "m5aafcea9/T11.05"
+  }
+ },
+ "T11.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mefb11438/T11.06",
+   "B": "m8f31387a/T11.06"
+  }
+ },
+ "T12.01|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m682a20e9/T12.01",
+   "B": "m017e561c/T12.01"
+  }
+ },
+ "T12.02|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m1d086f1d/T12.02",
+   "B": "mf92092bb/T12.02"
+  }
+ },
+ "T12.03|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2c092c9c/T12.03",
+   "B": "m729c3250/T12.03"
+  }
+ },
+ "T12.04|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5d2c677e/T12.04",
+   "B": "m6b1a9f01/T12.04"
+  }
+ },
+ "T12.05|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m87b12cf0/T12.05",
+   "B": "m1fbdd17c/T12.05"
+  }
+ },
+ "T12.06|k2": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m369b622c/T12.06",
+   "B": "m75d05d2c/T12.06"
+  }
+ },
+ "T01.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m0bc92000/T01.01",
+   "B": "me579b33f/T01.01"
+  }
+ },
+ "T01.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m3d5ac229/T01.02",
+   "B": "m87cd6b99/T01.02"
+  }
+ },
+ "T01.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m9aedad3f/T01.03",
+   "B": "md8120b3b/T01.03"
+  }
+ },
+ "T01.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m4d5fe586/T01.04",
+   "B": "ma9a6809b/T01.04"
+  }
+ },
+ "T01.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "md84572c3/T01.05",
+   "B": "mce6f912c/T01.05"
+  }
+ },
+ "T01.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5c131b10/T01.06",
+   "B": "mef1b75b5/T01.06"
+  }
+ },
+ "T02.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m77e6e534/T02.01",
+   "B": "m54765e32/T02.01"
+  }
+ },
+ "T02.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m3c60d96d/T02.02",
+   "B": "mc80f45c3/T02.02"
+  }
+ },
+ "T02.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m4610aee6/T02.03",
+   "B": "m5ad27f57/T02.03"
+  }
+ },
+ "T02.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mc1b2d377/T02.04",
+   "B": "m92faee59/T02.04"
+  }
+ },
+ "T02.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m3e4e252f/T02.05",
+   "B": "m0ef9472c/T02.05"
+  }
+ },
+ "T02.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "maccacce9/T02.06",
+   "B": "m67864a3d/T02.06"
+  }
+ },
+ "T03.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m477b00db/T03.01",
+   "B": "ma906f14f/T03.01"
+  }
+ },
+ "T03.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m8090dfdd/T03.02",
+   "B": "m2b823e0a/T03.02"
+  }
+ },
+ "T03.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mc08475b7/T03.03",
+   "B": "mc4458f3e/T03.03"
+  }
+ },
+ "T03.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m51e6053e/T03.04",
+   "B": "m5cde2fb5/T03.04"
+  }
+ },
+ "T03.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m10bb829d/T03.05",
+   "B": "m3bc761b5/T03.05"
+  }
+ },
+ "T03.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m3ff2c631/T03.06",
+   "B": "m6c371c45/T03.06"
+  }
+ },
+ "T04.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m27c380ef/T04.01",
+   "B": "m96e2071c/T04.01"
+  }
+ },
+ "T04.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mc3c69181/T04.02",
+   "B": "m228d12d8/T04.02"
+  }
+ },
+ "T04.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mf1c34574/T04.03",
+   "B": "m23192548/T04.03"
+  }
+ },
+ "T04.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mbea678b7/T04.04",
+   "B": "m8ed0f111/T04.04"
+  }
+ },
+ "T04.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m3eee92e9/T04.05",
+   "B": "m6387727f/T04.05"
+  }
+ },
+ "T04.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "me76bfd6e/T04.06",
+   "B": "mb5bb8cd2/T04.06"
+  }
+ },
+ "T05.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m57818306/T05.01",
+   "B": "mcbf01e90/T05.01"
+  }
+ },
+ "T05.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m02c0ae38/T05.02",
+   "B": "m572abd59/T05.02"
+  }
+ },
+ "T05.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m9dda0dcd/T05.03",
+   "B": "m51eb4a89/T05.03"
+  }
+ },
+ "T05.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m749f1bd7/T05.04",
+   "B": "m3f8ffafb/T05.04"
+  }
+ },
+ "T05.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mea3db1bc/T05.05",
+   "B": "m2cd034f4/T05.05"
+  }
+ },
+ "T05.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m24bad822/T05.06",
+   "B": "m4a34004a/T05.06"
+  }
+ },
+ "T06.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m67f3e8db/T06.01",
+   "B": "m813ac979/T06.01"
+  }
+ },
+ "T06.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m6dfbc4bb/T06.02",
+   "B": "m0f2f675c/T06.02"
+  }
+ },
+ "T06.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "me9941eac/T06.03",
+   "B": "mbfd36cef/T06.03"
+  }
+ },
+ "T06.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "me0e62ce5/T06.04",
+   "B": "mb6a488a7/T06.04"
+  }
+ },
+ "T06.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "ma64dfc38/T06.05",
+   "B": "m76145361/T06.05"
+  }
+ },
+ "T06.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m96c15a7c/T06.06",
+   "B": "m119ad548/T06.06"
+  }
+ },
+ "T07.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mb58c356e/T07.01",
+   "B": "md51f413f/T07.01"
+  }
+ },
+ "T07.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m232f2736/T07.02",
+   "B": "mdf6e9c73/T07.02"
+  }
+ },
+ "T07.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "ma0826724/T07.03",
+   "B": "m622b6360/T07.03"
+  }
+ },
+ "T07.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mada670e5/T07.04",
+   "B": "md7426b0e/T07.04"
+  }
+ },
+ "T07.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m1ddcc1a8/T07.05",
+   "B": "m8c5e0a6f/T07.05"
+  }
+ },
+ "T07.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "me54547cb/T07.06",
+   "B": "mf7ba96b5/T07.06"
+  }
+ },
+ "T08.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "me96fda6f/T08.01",
+   "B": "mbf002183/T08.01"
+  }
+ },
+ "T08.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m738667e8/T08.02",
+   "B": "m8a0a9119/T08.02"
+  }
+ },
+ "T08.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "ma699cd41/T08.03",
+   "B": "m582413ae/T08.03"
+  }
+ },
+ "T08.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "md550e5a9/T08.04",
+   "B": "me8f58f6f/T08.04"
+  }
+ },
+ "T08.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mf468288b/T08.05",
+   "B": "m50369bc3/T08.05"
+  }
+ },
+ "T08.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m95cc0d63/T08.06",
+   "B": "m73bdd590/T08.06"
+  }
+ },
+ "T09.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m8977f304/T09.01",
+   "B": "ma5cfb010/T09.01"
+  }
+ },
+ "T09.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m8f291ed0/T09.02",
+   "B": "m8c3dea26/T09.02"
+  }
+ },
+ "T09.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mc2ab4c5d/T09.03",
+   "B": "m71bf541f/T09.03"
+  }
+ },
+ "T09.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "meb2952be/T09.04",
+   "B": "m99086bf5/T09.04"
+  }
+ },
+ "T09.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "md10f8d2c/T09.05",
+   "B": "me8e06cdd/T09.05"
+  }
+ },
+ "T09.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m4dc24901/T09.06",
+   "B": "mf7a663db/T09.06"
+  }
+ },
+ "T10.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m9094624c/T10.01",
+   "B": "m5488c2cd/T10.01"
+  }
+ },
+ "T10.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m76b40d99/T10.02",
+   "B": "m6e24768c/T10.02"
+  }
+ },
+ "T10.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "me9ca4bff/T10.03",
+   "B": "m54ec5d36/T10.03"
+  }
+ },
+ "T10.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m5d697542/T10.04",
+   "B": "m595ded18/T10.04"
+  }
+ },
+ "T10.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m66e5463d/T10.05",
+   "B": "medaed281/T10.05"
+  }
+ },
+ "T10.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m654fad66/T10.06",
+   "B": "m20ce44dc/T10.06"
+  }
+ },
+ "T11.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m73914a9e/T11.01",
+   "B": "m9d46e63d/T11.01"
+  }
+ },
+ "T11.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2d57487f/T11.02",
+   "B": "m3f0d2e23/T11.02"
+  }
+ },
+ "T11.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mf0bac715/T11.03",
+   "B": "m70275acd/T11.03"
+  }
+ },
+ "T11.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m04dfa5c6/T11.04",
+   "B": "m796c7878/T11.04"
+  }
+ },
+ "T11.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mcf757d28/T11.05",
+   "B": "m5aafcea9/T11.05"
+  }
+ },
+ "T11.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m715f4910/T11.06",
+   "B": "m8f31387a/T11.06"
+  }
+ },
+ "T12.01|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m2098a4db/T12.01",
+   "B": "m017e561c/T12.01"
+  }
+ },
+ "T12.02|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "md4aa4ddf/T12.02",
+   "B": "mf92092bb/T12.02"
+  }
+ },
+ "T12.03|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mb4cfab69/T12.03",
+   "B": "m729c3250/T12.03"
+  }
+ },
+ "T12.04|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mf10964ce/T12.04",
+   "B": "m6b1a9f01/T12.04"
+  }
+ },
+ "T12.05|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "m7b70fa3e/T12.05",
+   "B": "m1fbdd17c/T12.05"
+  }
+ },
+ "T12.06|k3": {
+  "criteria": [
+   "identity",
+   "order",
+   "motion",
+   "sb_coherence",
+   "sb_consistency"
+  ],
+  "showStrips": true,
+  "videos": {
+   "A": "mb0c47ea3/T12.06",
+   "B": "m75d05d2c/T12.06"
+  }
+ }
+}
