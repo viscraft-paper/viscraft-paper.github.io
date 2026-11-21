@@ -5,12 +5,14 @@
  * Blinding: systems are never named; pair sides and trial order are randomized
  * with a seeded PRNG (per rater, reproducible). Results autosave to localStorage
  * after every response and are exported as results_<rater>.json.
- * Materials: ../materials/{assignment,checklists,stimuli,state_captions}.json (frozen).
- * Serving (2026-11-21): the claim response carries per-pair committed
- * coverage; a fresh session deals its queue from the least-covered pairs
- * (deal.js, frozen session shape) and persists it as state.manifest — resume
- * always walks the saved manifest. No coverage in the response (old backend)
- * -> the frozen static manifest for that slot.
+ * Materials: ../materials/{pairs,checklists,stimuli,state_captions}.json (frozen).
+ * Serving (2026-11-21): the claim response carries per-pair coverage
+ * (ANSWERED preference trials); a fresh session deals its queue from the
+ * least-covered pairs (deal.js: 27 preference trials, 9 per contrast, each
+ * case at most once, + one break at the midpoint) and persists it as
+ * state.manifest — resume always walks the saved manifest. No coverage in
+ * the response (old backend / offline) -> the same deal with empty
+ * coverage. No gold checks, no repeats (removed 2026-11-21).
  *
  * Question page (2026-11-20 meeting rework): specification at the top; small
  * click-to-zoom character references; videos judged against the SPECIFICATION
@@ -26,19 +28,19 @@ const ENABLE_QUIZ = false;   // testing round: training questionnaire off (user 
 
 const PARAMS = new URLSearchParams(location.search);
 const ACCESS_KEY = PARAMS.get("k") || "";   // unlisted-link token (legacy links)
-const SLOTS = 34;   // R1..R20 core (each pair exactly 3 ratings), R21..R34 extra
-                    // rounds (4th/5th ratings); ~30 min per session (2026-11-20)
+const MAX_SESSIONS = 999;   // session-number cap R1..R999 — a runaway brake only;
+                             // the store hands out the next free number (2026-11-21)
 // Rater identity: legacy ?rater=R<n>&k=<tok> links still work; otherwise one
-// shareable link and a login screen (unique name -> next free session slot).
+// shareable link and a login screen (unique name -> next free session number).
 let RATER = PARAMS.get("rater") || "";
 let RATER_NAME = PARAMS.get("name") || "";
-let LS_KEY = RATER ? "vcstudy_v2_" + RATER : "";   // v2: 34-slot short-session design (2026-11-20)
+let LS_KEY = RATER ? "vcstudy_v3_" + RATER : "";   // v3: 3-contrast 27-pref design (2026-11-21);
+                                                   // v2 saves (2-contrast gold/repeat manifests) are stale
 
 /* Criteria (2026-11-20 meeting): the videos are judged against the SPECIFICATION
  * only — storyboard adherence is dropped (a weak storyboard must not be winnable
  * by adherence). The storyboards get their own two questions in a separate
- * section, judged on the storyboard alone. Gold pairs (no storyboards shown) ask
- * the video questions only. [id, name, section, explanation] */
+ * section, judged on the storyboard alone. [id, name, section, explanation] */
 const CRITERIA = [
   ["identity", "Identity fidelity", "video",
    "Are the characters the same people from start to end, and the same as the character pictures? Keep the characters distinct from each other. A change the specification asks for (a stain, a rolled sleeve) is not an identity change."],
@@ -66,7 +68,7 @@ const QUIZ = [
 
 const state = {
   phase: "load",           // load | consent | quiz | trials | done
-  materials: { assignment: null, checklists: null, stimuli: null, state_captions: null },
+  materials: { pairs: null, checklists: null, stimuli: null, state_captions: null },
   manifest: null,          // THIS session's trial list (dealt or static; see enterStudy)
   trialIx: 0,
   responses: {},           // trialId -> response object
@@ -108,13 +110,13 @@ const el = (tag, attrs = {}, ...kids) => {
    account (gas/Code.gs): rater | name | started | updated | done | state.
    The page calls it with plain fetch — there is NO credential in this file
    (the old GitHub PAT is gone; user 2026-11-20 "tiny backend instead").
-   Slot claims and the name→slot lookup are atomic server-side (ScriptLock):
+   Session-number claims and the name→session lookup are atomic server-side (ScriptLock):
    the typed name is the resume credential, so "name taken -> welcome back" and
    resume from ANY device both work. There is NO endpoint that lists names; the
    full dump needs a separate key that lives only server-side + the organizer's
    notes (see analysis/fetch_claims.py). Requests use a simple Content-Type to
    avoid CORS preflight (Apps Script answers none).
-   If the service is unreachable the page degrades to the manual slot picker.
+   If the service is unreachable the page degrades to manual session-number entry.
    After the study: delete the Apps Script project + its spreadsheet. */
 const GAS_URL = "https://script.google.com/macros/s/AKfycbxz8KEVy3qB5hZDPEeNAP9_mTr9PNaP0qVxqudNxFwkLr8hRKqrqsVXLat2EED_T34/exec";   // /exec URL from the Apps Script deploy
 const claimsOn = () => /^https:\/\//.test(GAS_URL) && !GAS_URL.includes("__PASTE");
@@ -124,12 +126,6 @@ function gasPost(body, keepalive) {
   return fetch(GAS_URL, { method: "POST", keepalive: !!keepalive,
     headers: { "Content-Type": "text/plain;charset=utf-8" },
     body: JSON.stringify(body) });
-}
-
-async function claimStatus() {
-  const r = await fetch(GAS_URL + "?op=status");
-  if (!r.ok) throw new Error("status " + r.status);
-  return r.json();          // { taken, slots }
 }
 
 async function claimJoin(name) {
@@ -176,7 +172,7 @@ function loadSaved() {
   try { return JSON.parse(localStorage.getItem(LS_KEY) || "null"); } catch { return null; }
 }
 function savedFor(r) {
-  try { return JSON.parse(localStorage.getItem("vcstudy_v2_" + r) || "null"); } catch { return null; }
+  try { return JSON.parse(localStorage.getItem("vcstudy_v3_" + r) || "null"); } catch { return null; }
 }
 
 function downloadResults() {
@@ -207,7 +203,7 @@ function renderConsent() {
       el("p", {}, "This study collects judgments of generated video clips. It is voluntary; you may withdraw at any time without consequence. No personal or sensitive data are collected. Your responses are recorded under a participant code together with the name you enter; files are kept private, the automatic online backup is a private record held by the researchers, and any released data are de-identified. The session takes about 30 minutes and includes one short break at the midpoint. Your progress is saved automatically: if you are interrupted, reopen this page and join again with your name to continue where you left off."),
       el("p", {}, "Purpose: we measure how people judge the execution of requested visual events in short generated clips, and how those judgments relate to automatic evaluation."),
       el("p", {}, "If you have questions, contact the study organizer (contact details were sent with your link)."),
-      el("p", { class: "warn" }, "Please take only one slot, and finish each half of the session in one sitting."),
+      el("p", { class: "warn" }, "Please take only one session, and try to finish it in one sitting."),
       el("div", { class: "row" },
         el("button", { class: "btn", onclick: () => go("quiz") }, "I agree, continue"),
       )));
@@ -272,7 +268,7 @@ function renderBreak(t) {
         el("button", { class: "btn ghost", onclick: stopSession }, "Save & stop"))));
 }
 function mediaUrl(key, kind) {
-  const s = state.materials.stimuli[kind === "strip" ? "strips" : kind === "filmstrip" ? "filmstrips" : "clips"][key];
+  const s = state.materials.stimuli[kind === "strip" ? "strips" : "clips"][key];
   return s ? "../" + s.path : null;
 }
 
@@ -358,23 +354,25 @@ function videoCol(label, src) {
 }
 
 function renderPreference(t) {
-  // sides[0] = Video 1 (left; its storyboard is Storyboard 1). A repeat trial
-  // re-derives the original's sides from the original trial id and flips them
-  // (guaranteed swapped-side repeat).
-  const rng = prng(hashStr(RATER + "|" + (t.repeat_of_trial || t.id)));
-  let sides = rng() < 0.5 ? ["A", "B"] : ["B", "A"];
-  if (t.repeat_of_trial) sides = [sides[1], sides[0]];
+  // sides[0] = Video 1 (left; its storyboard is Storyboard 1). Sides are
+  // randomized per trial with a PRNG seeded by (rater, trial id) —
+  // reproducible for a given session, different across sessions.
+  const rng = prng(hashStr(RATER + "|" + t.id));
+  const sides = rng() < 0.5 ? ["A", "B"] : ["B", "A"];
+
+  // criteria per trial (2026-11-20 meeting): video questions judged against
+  // the specification; storyboard questions only when storyboards are shown.
+  // Every expected criterion is seeded as null so the SAVED response is
+  // self-describing: the backend counts a pair as covered only when no null
+  // is left (fully answered) — reserved-but-unanswered pairs never count.
+  const critIds = t.criteria || CRITERIA.map(([cid]) => cid);
 
   const resp = state.responses[t.id] || (state.responses[t.id] = {
     id: t.id, type: t.type, case: t.case, contrast: t.contrast || null,
-    gold: !!t.gold, repeat_of: t.repeat_of || null,
     side_map: { "Video 1": sides[0], "Video 2": sides[1] },
-    criteria: {},
+    criteria: Object.fromEntries(critIds.map((cid) => [cid, null])),
   });
-
-  // criteria per trial (2026-11-20 meeting): video questions judged against
-  // the specification; storyboard questions only when storyboards are shown
-  const critIds = t.criteria || CRITERIA.map(([cid]) => cid);
+  for (const cid of critIds) if (!(cid in resp.criteria)) resp.criteria[cid] = null;
   const hasSb = !!t.showStrips && critIds.some((c) => c.startsWith("sb_"));
 
   const mkTable = (section, head1, head2) => el("table", { class: "likert" },
@@ -458,75 +456,8 @@ function renderPreference(t) {
   $("#screen").replaceChildren(...parts);
 }
 
-function renderChecklist(t) {
-  const c = state.materials.checklists[t.case];
-  const req = c.requirements.find(r => r.id === t.reqId);
-  const resp = state.responses[t.id] || (state.responses[t.id] = {
-    id: t.id, type: t.type, case: t.case, reqId: t.reqId, stage: req.stage,
-    dim: req.dim, output: t.output, evidence_mode: t.evidence ? t.evidence.mode : null,
-    answer: null, evidence_loc: "",
-  });
-
-  const ansBtns = el("div", { class: "ynu" }, ...["yes", "no", "unresolved"].map(v =>
-    el("label", {}, el("input", { type: "radio", name: "ynu", value: v,
-      onchange: (e) => { resp.answer = e.target.value; btn.disabled = !(resp.answer && resp.evidence_loc.trim()); } }),
-    v[0].toUpperCase() + v.slice(1))));
-
-  const evInput = el("input", { type: "text", placeholder: req.stage === "plan" ? "panel number(s), e.g. 3 or 2–4" : "timestamp, e.g. 2.4s or 1.8–2.6s",
-    onchange: (e) => { resp.evidence_loc = e.target.value; btn.disabled = !(resp.answer && resp.evidence_loc.trim()); } });
-  evInput.value = resp.evidence_loc;
-  const setEv = (v) => { evInput.value = v; resp.evidence_loc = v; btn.disabled = !(resp.answer && resp.evidence_loc.trim()); };
-
-  // one-click evidence capture (no typing): video = current playback position,
-  // plan = panel number buttons
-  let capture = null;
-  if (req.stage === "plan") {
-    capture = el("span", {}, "Panel: ",
-      ...[1, 2, 3, 4, 5, 6].map(n => el("button", { class: "btn ghost", style: "padding:4px 10px;margin:0 3px",
-        onclick: () => setEv(String(n)) }, n)));
-  }
-
-  let evidence;
-  if (req.stage === "plan") {
-    evidence = el("img", { class: "filmstrip", src: mediaUrl(`${t.output}/${t.case}`, "strip"), alt: "six-panel output" });
-  } else if (t.evidence && t.evidence.mode === "filmstrip") {
-    evidence = el("div", {},
-      el("img", { class: "filmstrip", src: mediaUrl(`${t.output}/${t.case}|${t.reqId}`, "filmstrip"), alt: "sampled frames" }),
-      el("p", { class: "muted" }, "Only the frames sampled by the automatic evaluation are available for this item."));
-    capture = el("span", {}, "Sampled frame: ",
-      ...[1, 2, 3, 4, 5].map(n => el("button", { class: "btn ghost", style: "padding:4px 10px;margin:0 3px",
-        onclick: () => setEv("frame " + n) }, n)));
-  } else {
-    const vid = el("video", { src: mediaUrl(`${t.output}/${t.case}`, "clip"), controls: "controls", loop: "loop",
-      playsinline: "playsinline", preload: "auto" });
-    evidence = el("div", {}, vid,
-      el("div", { class: "row" },
-        el("button", { class: "btn ghost", onclick: () => setEv(vid.currentTime.toFixed(1) + "s") },
-          "Use current time")));
-    capture = null;   // capture lives next to the video
-  }
-
-  const btn = el("button", { class: "btn", disabled: "disabled", onclick: next }, "Next");
-
-  $("#screen").replaceChildren(
-    el("div", { class: "card" },
-      el("h2", {}, "Requirement"),
-      el("div", { class: "spec" }, req.text),
-      el("p", { class: "muted" }, `Context: ${req.source}`)),
-    el("div", { class: "card" },
-      el("h3", {}, "Evidence"),
-      el("div", { class: "evidence" }, evidence)),
-    el("div", { class: "card" },
-      el("h3", {}, "Your judgment"),
-      el("p", {}, el("b", {}, "Yes: "), "visibly satisfied. ", el("b", {}, "No: "), "demonstrated violation. ",
-        el("b", {}, "Unresolved: "), "insufficient visible evidence to decide."),
-      ansBtns,
-      el("p", {}, "Evidence location: ", evInput, " ", capture)),
-    btn);
-}
-
 /* ---------------- flow ---------------- */
-function trials() { return state.manifest || (state.materials.assignment[RATER] || []); }
+function trials() { return state.manifest || []; }
 
 function renderTrial() {
   const ts = trials();
@@ -534,9 +465,11 @@ function renderTrial() {
   const t = ts[state.trialIx];
   state.lastEnter = Date.now();
   $("#progress").textContent = `Item ${state.trialIx + 1} of ${ts.length}`;
-  if (t.type === "preference" || t.type === "gold" || t.type === "repeat") renderPreference(t);
+  if (t.type === "preference") renderPreference(t);
   else if (t.type === "break") renderBreak(t);
-  else renderChecklist(t);
+  else $("#screen").replaceChildren(el("div", { class: "card" },
+    el("h1", {}, "Session error"),
+    el("p", {}, `Unknown item type “${t.type}” — please rejoin with your name to resume.`)));
 }
 
 function next() {
@@ -589,36 +522,36 @@ function go(phase) {
   else if (phase === "done") { save(); pushClaim(); renderDone(); }
 }
 
-/* ---------------- login (one shared link; unique name -> next free slot) ---------------- */
+/* ---------------- login (one shared link; unique name -> next free session) ---------------- */
 let REMOTE_STATE = null;   // claim-file state (cross-device resume), picked vs localStorage
 let CLAIM_INFO = null;     // last claim response (carries per-pair coverage for the deal)
 
 function nameMap() {
-  try { return JSON.parse(localStorage.getItem("vcstudy_v2_names") || "{}"); } catch { return {}; }
+  try { return JSON.parse(localStorage.getItem("vcstudy_v3_names") || "{}"); } catch { return {}; }
 }
 
 function startSession(r, name, remoteState) {
   RATER = r;
   RATER_NAME = name;
-  LS_KEY = "vcstudy_v2_" + RATER;
+  LS_KEY = "vcstudy_v3_" + RATER;
   REMOTE_STATE = remoteState || null;
-  // name -> slot map in localStorage is a same-device FAST PATH (works offline);
+  // name -> session map in localStorage is a same-device FAST PATH (works offline);
   // the store resolves names globally (its row is the source of truth)
   if (name) {
     const names = nameMap();
     names[name.toLowerCase()] = r;
-    localStorage.setItem("vcstudy_v2_names", JSON.stringify(names));
-    localStorage.setItem("vcstudy_v2_lastname", name);
+    localStorage.setItem("vcstudy_v3_names", JSON.stringify(names));
+    localStorage.setItem("vcstudy_v3_lastname", name);
   }
-  if (!loadSaved()) save();   // mark the slot early so rejoin finds it
+  if (!loadSaved()) save();   // mark the session early so rejoin finds it
   enterStudy();
 }
 
 function renderLogin() {
   const nameIn = el("input", { type: "text", class: "namein", maxlength: "60",
-    placeholder: "Your name", value: localStorage.getItem("vcstudy_v2_lastname") || "" });
+    placeholder: "Your name", value: localStorage.getItem("vcstudy_v3_lastname") || "" });
   const note = el("p", { class: "warn", hidden: "hidden" }, "");
-  const status = el("p", { class: "muted" }, claimsOn() ? "Sessions available: checking…" : "");
+  const status = el("p", { class: "muted" }, "");   // feedback line during Join (no idle status poll)
   const holder = el("div", {});
   const joinBtn = el("button", { class: "btn", onclick: tryJoin }, "Join the study");
 
@@ -648,8 +581,9 @@ function renderLogin() {
       }
       return startSession(res.claimed.rater, name, null);
     } catch (e) {
+      status.textContent = "";
       manualPicker();
-      warn("Could not reach the session service — pick the lowest free slot number (ask in the group chat).");
+      warn("Could not reach the session service — enter the lowest free session number (ask in the group chat).");
     } finally { joinBtn.disabled = false; }
   }
 
@@ -657,7 +591,7 @@ function renderLogin() {
     status.textContent = "";
     holder.replaceChildren(el("div", {},
       el("h2", {}, `Welcome back, ${name}!`),
-      el("p", {}, `Your session (slot ${r.slice(1)}) is ${saved && saved.trialIx > 0 ? "in progress" : "ready"} — continue where you left off.`),
+      el("p", {}, `Your session (${r}) is ${saved && saved.trialIx > 0 ? "in progress" : "ready"} — continue where you left off.`),
       el("div", { class: "row" },
         el("button", { class: "btn", onclick: () => startSession(r, name, remote) }, "Continue"),
         el("button", { class: "btn ghost",
@@ -666,17 +600,19 @@ function renderLogin() {
   }
 
   function manualPicker() {
-    // degraded mode (claims service off/unreachable): slot grid + localStorage marks
-    const grid = el("div", { class: "slotgrid" });
-    for (let i = 1; i <= SLOTS; i++) {
-      const r = "R" + i;
-      grid.append(el("button", { class: "slotbtn", onclick: () => {
-        const n = nameIn.value.trim();
-        if (!n) { warn("Please enter your name first."); nameIn.focus(); return; }
-        startSession(r, n, null);
-      } }, String(i), savedFor(r) ? el("span", { class: "muted" }, "in progress") : null));
-    }
-    holder.replaceChildren(grid);
+    // degraded mode (claims service off/unreachable): enter a session number
+    // directly (1..999); localStorage marks show same-device progress
+    const numIn = el("input", { type: "number", class: "namein", min: "1", max: String(MAX_SESSIONS),
+      placeholder: "Session number" });
+    const go2 = el("button", { class: "btn", onclick: () => {
+      const n = parseInt(numIn.value, 10);
+      if (!(n >= 1 && n <= MAX_SESSIONS)) { warn(`Enter a session number between 1 and ${MAX_SESSIONS}.`); numIn.focus(); return; }
+      const nm = nameIn.value.trim();
+      if (!nm) { warn("Please enter your name first."); nameIn.focus(); return; }
+      startSession("R" + n, nm, null);
+    } }, "Use this session");
+    holder.replaceChildren(el("div", { class: "row" }, numIn, go2),
+      el("p", { class: "muted" }, "Offline mode — your progress still saves on this device."));
   }
 
   $("#screen").replaceChildren(el("div", { class: "card" },
@@ -696,59 +632,43 @@ async function boot() {
 }
 
 /* Deal this session's queue from the least-covered pairs (dynamic serving,
- * user 2026-11-21): the claim response carries per-pair committed coverage;
- * deal.js rebuilds the frozen session shape around the least-covered pairs.
- * Templates (criteria, opaque media keys) come from the static manifests, so
- * nothing new is served and blinding is unchanged. */
-function dealManifest_(asg) {
-  const pairIndex = VCDEAL.pairIndexFromAssignment(asg);
+ * user 2026-11-21): the claim response carries per-pair coverage (ANSWERED
+ * preference trials); deal.js builds the 27-trial session (9 per contrast,
+ * each case at most once) + midpoint break around the least-covered pairs.
+ * Templates (criteria, opaque media keys) come from the flat pairs pool, so
+ * nothing new is served and blinding is unchanged. No coverage in the claim
+ * response (old backend / offline / legacy link) -> the same deal with
+ * empty coverage — one code path, no static fallback. */
+function dealManifest_() {
+  const pairIndex = VCDEAL.pairIndexFromPairs(state.materials.pairs);
   const keys = Object.keys(pairIndex);
   const cases = [...new Set(keys.map(k => k.split("|")[0]))];
   const contrasts = [...new Set(keys.map(k => k.split("|")[1]))].sort();
-  let goldCriteria = null;
-  for (const slot of Object.keys(asg)) {
-    for (const t of asg[slot] || []) {
-      if (t && t.type === "gold") { goldCriteria = t.criteria; break; }
-    }
-    if (goldCriteria) break;
-  }
-  return VCDEAL.dealSession({ rater: RATER, coverage: CLAIM_INFO.coverage,
-    pairIndex, cases, contrasts, goldCriteria });
+  return VCDEAL.dealSession({ rater: RATER,
+    coverage: (CLAIM_INFO && CLAIM_INFO.coverage) || {},
+    pairIndex, cases, contrasts });
 }
 
 async function enterStudy() {
   $("#screen").replaceChildren(el("p", { class: "muted" }, "Loading…"));
-  const [asg, chk, stu, caps] = await Promise.all(["assignment", "checklists", "stimuli", "state_captions"].map(n =>
+  const [pairs, chk, stu, caps] = await Promise.all(["pairs", "checklists", "stimuli", "state_captions"].map(n =>
     fetch(`../materials/${n}.json`).then(r => { if (!r.ok) throw new Error(n); return r.json(); })));
-  state.materials = { assignment: asg, checklists: chk, stimuli: stu, state_captions: caps };
-  if (!asg[RATER]) {
-    $("#screen").replaceChildren(el("div", { class: "card" },
-      el("h1", {}, "Unknown participant code"),
-      el("p", {}, `No assignment found for “${RATER}”.`)));
-    return;
-  }
+  state.materials = { pairs, checklists: chk, stimuli: stu, state_captions: caps };
+  if (!window.VCDEAL) throw new Error("deal.js failed to load");
   const saved = pickNewer(loadSaved(), REMOTE_STATE);
-  const answered = saved && (saved.trialIx > 0 ||
-    (saved.responses && Object.keys(saved.responses).length > 0));
 
-  /* Session manifest (dynamic deal, 2026-11-21): a resumed session walks its
-   * saved manifest (never a re-deal); a pre-deal session with progress keeps
-   * its static trials (a re-deal would orphan those responses); a fresh
-   * session with coverage from the claim deals the least-covered pairs in the
-   * frozen session shape; otherwise the frozen static manifest. Whichever
-   * manifest a fresh session gets is persisted immediately, so later claims
-   * count its pairs. */
+  /* Session manifest: a resumed session ALWAYS walks its saved manifest
+   * (never a re-deal — that would orphan already-given answers); a fresh
+   * session deals from the claim's coverage (or empty coverage offline)
+   * and persists the manifest immediately, so later claims count its
+   * answered trials. A saved session without a manifest (claimed but died
+   * before the first save completed) simply deals fresh — it has no
+   * answered trials to orphan. */
   if (saved && Array.isArray(saved.manifest) && saved.manifest.length) {
     state.manifest = saved.manifest;
-  } else if (answered) {
-    state.manifest = asg[RATER];
-    save();
-  } else if (CLAIM_INFO && CLAIM_INFO.coverage && window.VCDEAL) {
-    state.manifest = dealManifest_(asg);
-    save(); pushClaim();
   } else {
-    state.manifest = asg[RATER];
-    save();
+    state.manifest = dealManifest_();
+    save(); pushClaim();
   }
 
   if (saved && saved.trialIx > 0) {

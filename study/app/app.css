@@ -71,11 +71,6 @@ table.likert input { margin: 0; }
 .row { display: flex; gap: 12px; align-items: center; margin-top: 16px; flex-wrap: wrap; }
 .warn { color: #a00; font-weight: 600; }
 .namein { width: 100%; max-width: 340px; }
-.slotgrid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin: 16px 0; }
-.slotbtn { font: inherit; font-weight: 700; padding: 14px 0; border: 1px solid #999;
-  border-radius: 5px; background: #fff; cursor: pointer; }
-.slotbtn:hover { border-color: #1a1a1a; background: #f0efec; }
-.slotbtn .muted { display: block; font-weight: 400; font-size: 11px; }
 .evidence { display: flex; gap: 18px; flex-wrap: wrap; align-items: flex-start; }
 .evidence video { width: 560px; max-width: 100%; border: 1px solid #bbb;
   border-radius: 4px; background: #000; }
