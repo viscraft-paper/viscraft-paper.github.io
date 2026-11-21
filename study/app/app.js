@@ -6,6 +6,11 @@
  * with a seeded PRNG (per rater, reproducible). Results autosave to localStorage
  * after every response and are exported as results_<rater>.json.
  * Materials: ../materials/{assignment,checklists,stimuli,state_captions}.json (frozen).
+ * Serving (2026-11-21): the claim response carries per-pair committed
+ * coverage; a fresh session deals its queue from the least-covered pairs
+ * (deal.js, frozen session shape) and persists it as state.manifest — resume
+ * always walks the saved manifest. No coverage in the response (old backend)
+ * -> the frozen static manifest for that slot.
  *
  * Question page (2026-11-20 meeting rework): specification at the top; small
  * click-to-zoom character references; videos judged against the SPECIFICATION
@@ -62,6 +67,7 @@ const QUIZ = [
 const state = {
   phase: "load",           // load | consent | quiz | trials | done
   materials: { assignment: null, checklists: null, stimuli: null, state_captions: null },
+  manifest: null,          // THIS session's trial list (dealt or static; see enterStudy)
   trialIx: 0,
   responses: {},           // trialId -> response object
   times: {},               // trialId -> ms on trial
@@ -155,7 +161,8 @@ window.addEventListener("visibilitychange", () => {
 /* ---------------- persistence (localStorage + claims file) ---------------- */
 function localState() {
   return { trialIx: state.trialIx, responses: state.responses, times: state.times,
-    quiz: state.quiz, started: state.started, name: RATER_NAME, updated: Date.now() };
+    quiz: state.quiz, started: state.started, name: RATER_NAME,
+    manifest: state.manifest || null, updated: Date.now() };
 }
 function pickNewer(a, b) {
   const t = (x) => (x && x.updated) || 0;
@@ -182,7 +189,7 @@ function downloadResults() {
     finished: new Date().toISOString(),
     quiz: state.quiz,
     exclusions: { quiz_pass: state.quiz ? state.quiz.score >= 3 : null },
-    trial_order: state.materials.assignment ? state.materials.assignment[RATER].map(t => t.id) : [],
+    trial_order: trials().map(t => t.id),
     responses: Object.values(state.responses),
     trial_ms: state.times,
   };
@@ -519,7 +526,7 @@ function renderChecklist(t) {
 }
 
 /* ---------------- flow ---------------- */
-function trials() { return state.materials.assignment[RATER] || []; }
+function trials() { return state.manifest || (state.materials.assignment[RATER] || []); }
 
 function renderTrial() {
   const ts = trials();
@@ -584,6 +591,7 @@ function go(phase) {
 
 /* ---------------- login (one shared link; unique name -> next free slot) ---------------- */
 let REMOTE_STATE = null;   // claim-file state (cross-device resume), picked vs localStorage
+let CLAIM_INFO = null;     // last claim response (carries per-pair coverage for the deal)
 
 function nameMap() {
   try { return JSON.parse(localStorage.getItem("vcstudy_v2_names") || "{}"); } catch { return {}; }
@@ -630,6 +638,7 @@ function renderLogin() {
       const res = await claimJoin(name);
       if (res.error === "full") { warn("All sessions are taken — please contact the organizer."); return; }
       if (res.error) throw new Error(res.error);
+      CLAIM_INFO = res;    // {claimed|existing, coverage?} — coverage feeds the deal
       if (res.existing) {
         // name already taken -> welcome back (cross-device: state comes from
         // the store and merges with any local save via pickNewer)
@@ -686,6 +695,27 @@ async function boot() {
   renderLogin();
 }
 
+/* Deal this session's queue from the least-covered pairs (dynamic serving,
+ * user 2026-11-21): the claim response carries per-pair committed coverage;
+ * deal.js rebuilds the frozen session shape around the least-covered pairs.
+ * Templates (criteria, opaque media keys) come from the static manifests, so
+ * nothing new is served and blinding is unchanged. */
+function dealManifest_(asg) {
+  const pairIndex = VCDEAL.pairIndexFromAssignment(asg);
+  const keys = Object.keys(pairIndex);
+  const cases = [...new Set(keys.map(k => k.split("|")[0]))];
+  const contrasts = [...new Set(keys.map(k => k.split("|")[1]))].sort();
+  let goldCriteria = null;
+  for (const slot of Object.keys(asg)) {
+    for (const t of asg[slot] || []) {
+      if (t && t.type === "gold") { goldCriteria = t.criteria; break; }
+    }
+    if (goldCriteria) break;
+  }
+  return VCDEAL.dealSession({ rater: RATER, coverage: CLAIM_INFO.coverage,
+    pairIndex, cases, contrasts, goldCriteria });
+}
+
 async function enterStudy() {
   $("#screen").replaceChildren(el("p", { class: "muted" }, "Loading…"));
   const [asg, chk, stu, caps] = await Promise.all(["assignment", "checklists", "stimuli", "state_captions"].map(n =>
@@ -698,6 +728,29 @@ async function enterStudy() {
     return;
   }
   const saved = pickNewer(loadSaved(), REMOTE_STATE);
+  const answered = saved && (saved.trialIx > 0 ||
+    (saved.responses && Object.keys(saved.responses).length > 0));
+
+  /* Session manifest (dynamic deal, 2026-11-21): a resumed session walks its
+   * saved manifest (never a re-deal); a pre-deal session with progress keeps
+   * its static trials (a re-deal would orphan those responses); a fresh
+   * session with coverage from the claim deals the least-covered pairs in the
+   * frozen session shape; otherwise the frozen static manifest. Whichever
+   * manifest a fresh session gets is persisted immediately, so later claims
+   * count its pairs. */
+  if (saved && Array.isArray(saved.manifest) && saved.manifest.length) {
+    state.manifest = saved.manifest;
+  } else if (answered) {
+    state.manifest = asg[RATER];
+    save();
+  } else if (CLAIM_INFO && CLAIM_INFO.coverage && window.VCDEAL) {
+    state.manifest = dealManifest_(asg);
+    save(); pushClaim();
+  } else {
+    state.manifest = asg[RATER];
+    save();
+  }
+
   if (saved && saved.trialIx > 0) {
     RATER_NAME = RATER_NAME || saved.name || "";
     Object.assign(state, { trialIx: saved.trialIx, responses: saved.responses, times: saved.times,
