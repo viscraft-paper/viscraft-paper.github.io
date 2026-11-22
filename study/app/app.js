@@ -1,10 +1,11 @@
 /* VisCraftBench human study app — vanilla JS, fully client-side.
  * Flow: consent -> instructions (-> training questionnaire) -> trials -> done
- * (download results). ENABLE_QUIZ=false skips the questionnaire (testing round,
+ * (optional backup download). ENABLE_QUIZ=false skips the questionnaire (testing round,
  * user 2026-11-20); the frozen instrument is kept for the real run.
  * Blinding: systems are never named; pair sides and trial order are randomized
  * with a seeded PRNG (per rater, reproducible). Results autosave to localStorage
- * after every response and are exported as results_<rater>.json.
+ * after every response and push to the claim store; results_<rater>.json is an
+ * optional backup download on the done screen (store is the collection channel).
  * Materials: ../materials/{pairs,checklists,stimuli,state_captions}.json (frozen).
  * Serving (2026-11-21): the claim response carries per-pair coverage
  * (ANSWERED preference trials); a fresh session deals its queue from the
@@ -36,6 +37,32 @@ let RATER = PARAMS.get("rater") || "";
 let RATER_NAME = PARAMS.get("name") || "";
 let LS_KEY = RATER ? "vcstudy_v3_" + RATER : "";   // v3: 3-contrast 27-pref design (2026-11-21);
                                                    // v2 saves (2-contrast gold/repeat manifests) are stale
+
+/* Device classes (mobile support, 2026-11-22): body.narrow / body.xnarrow /
+ * body.touch are the ONE source of truth for the mobile layout — set from
+ * matchMedia and kept live on change. app.css keys off the classes; the JS
+ * behaviors below (hover-zoom, video preload, instruction wording) read the
+ * same queries. Class-driven rather than pure CSS media queries so both
+ * layouts can be force-tested on a desktop by toggling a class. */
+const NARROW_MQ = matchMedia("(max-width: 744px)");   // below this the two videos stack
+const XNARROW_MQ = matchMedia("(max-width: 480px)");  // phones: storyboard 2 columns
+const FINE_MQ = matchMedia("(hover: hover) and (pointer: fine)");
+function syncDeviceClasses() {
+  document.body.classList.toggle("narrow", NARROW_MQ.matches);
+  document.body.classList.toggle("xnarrow", XNARROW_MQ.matches);
+  document.body.classList.toggle("touch", !FINE_MQ.matches);
+}
+[NARROW_MQ, XNARROW_MQ, FINE_MQ].forEach((mq) => mq.addEventListener("change", syncDeviceClasses));
+syncDeviceClasses();   // script runs at the end of <body>
+
+/* Touch: popovers and tip boxes open on their own button — tap anywhere else
+ * to dismiss them (the ? button stops propagation, so its toggle wins). */
+document.addEventListener("click", (e) => {
+  if (FINE_MQ.matches) return;
+  document.querySelectorAll(".cap-det-text.open, .tipbox.open").forEach((n) => {
+    if (!n.parentElement.contains(e.target)) n.classList.remove("open");
+  });
+});
 
 /* Criteria (2026-11-20 meeting): the videos are judged against the SPECIFICATION
  * only — storyboard adherence is dropped (a weak storyboard must not be winnable
@@ -235,9 +262,9 @@ function renderQuiz() {
       el("p", {}, "Each task shows one specification and two results. Say which result does better."),
       el("ul", {},
         el("li", {}, el("b", {}, "Specification. "), "The intended scene and actions — the text both results were made from. Judge everything you see against it."),
-        el("li", {}, el("b", {}, "Characters. "), "Small pictures labeled with the names from the specification. Click one to see it full size."),
-        el("li", {}, el("b", {}, "Two videos. "), "Side by side. “Play both” starts them together and “Pause both” stops them together; ⤢ shows a video full screen. They play muted — sound is not part of the study."),
-        el("li", {}, el("b", {}, "Two storyboards. "), "Below the videos, as two rows of six panels — Storyboard 1 belongs to Video 1, Storyboard 2 to Video 2. The captions are shown once, above the panels, one per column; “details” expands a caption. Hover a panel to zoom in; click it to see it full size.")),
+        el("li", {}, el("b", {}, "Characters. "), `Small pictures labeled with the names from the specification. ${FINE_MQ.matches ? "Click" : "Tap"} one to see it full size.`),
+        el("li", {}, el("b", {}, "Two videos. "), `${NARROW_MQ.matches ? "Stacked one above the other" : "Side by side"}. “Play both” starts them together and “Pause both” stops them together; ⤢ shows a video full screen. They play muted — sound is not part of the study.`),
+        el("li", {}, el("b", {}, "Two storyboards. "), `Below the videos, as two rows of six panels — Storyboard 1 belongs to Video 1, Storyboard 2 to Video 2. The captions are shown once, above the panels, one per column; “details” expands a caption. ${FINE_MQ.matches ? "Hover a panel to zoom in; click it to see it full size." : "Tap a panel to see it full size."}`)),
       el("p", {}, "You answer three questions about the videos and two about the storyboards. The questions are independent — one result can win one and lose another. Videos are judged against the specification only, not against the storyboards; the storyboard questions are about the storyboards alone."),
       el("h3", {}, "The three video questions"),
       ...CRITERIA.filter(([, , sec]) => sec === "video").map(([, name, , desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
@@ -344,7 +371,9 @@ function videoCol(label, src) {
   // muted: sound is not part of any question (clips carry a soundtrack).
   // The content attribute alone does not mute a createElement'd video
   // (it only sets defaultMuted) — set the property too.
-  const vid = el("video", { src, controls: "controls", loop: "loop", playsinline: "playsinline", preload: "auto", muted: "muted" });
+  const vid = el("video", { src, controls: "controls", loop: "loop", playsinline: "playsinline",
+    preload: NARROW_MQ.matches ? "metadata" : "auto",   // narrow: don't prefetch both clips (cellular)
+    muted: "muted" });
   vid.muted = true;
   const root = el("div", { class: "vcol" },
     el("div", { class: "vlabel" }, label,
@@ -380,15 +409,23 @@ function renderPreference(t) {
   const hasSb = !!t.showStrips && critIds.some((c) => c.startsWith("sb_"));
 
   const mkTable = (section, head1, head2) => el("table", { class: "likert" },
-    el("tr", {}, el("th", {}, "Question"), el("th", {}, head1), el("th", {}, "Tie"),
+    el("tr", { class: "lhead" }, el("th", {}, "Question"), el("th", {}, head1), el("th", {}, "Tie"),
       el("th", {}, head2), el("th", {}, "Unratable")),
     ...CRITERIA.filter(([cid, , sec]) => critIds.includes(cid) && sec === section)
       .map(([cid, name, , desc]) => {
         const rowName = `c_${cid}`;
-        const cells = ["prefer1", "tie", "prefer2", "unratable"].map((v) =>
-          el("td", {}, el("input", { type: "radio", name: rowName, value: v,
-            ...(resp.criteria[cid] === v ? { checked: "checked" } : {}),
-            onchange: () => { resp.criteria[cid] = v; check(); save(); } })));
+        // .optlab = the column label, hidden on desktop (the header row
+        // labels the columns) and shown beside each radio on narrow screens
+        // (app.css); the .opt label wrapper makes the whole line a tap
+        // target there. Same radios, same name/value, so answers are
+        // identical across devices.
+        const optLabels = [head1, "Tie", head2, "Unratable"];
+        const cells = ["prefer1", "tie", "prefer2", "unratable"].map((v, i) =>
+          el("td", {}, el("label", { class: "opt" },
+            el("input", { type: "radio", name: rowName, value: v,
+              ...(resp.criteria[cid] === v ? { checked: "checked" } : {}),
+              onchange: () => { resp.criteria[cid] = v; check(); save(); } }),
+            el("span", { class: "optlab" }, optLabels[i]))));
         return el("tr", {}, el("td", { class: "crit" }, name, " ", tipBtn(desc)), ...cells);
       }));
 
@@ -430,21 +467,26 @@ function renderPreference(t) {
     return [
       el("div", { class: "sblab" }, `Storyboard ${n} (Video ${n})`),
       ...psrcs.map((src, i) => el("img", { class: "sbpanel", src,
-        alt: `Storyboard ${n}, panel ${i + 1}`,
-        title: "Hover to zoom in — click to see full size",
-        onmouseenter: (e) => { // scale to ~native resolution from the ~158px column
-          const img = e.currentTarget, r = img.getBoundingClientRect();
-          const s = Math.max(2, Math.min(6, (img.naturalWidth || 832) / Math.max(1, r.width)));
-          img.style.transform = "scale(" + s.toFixed(2) + ")";
-          img.classList.add("zoom");
-        },
-        onmousemove: (e) => { // keep the point under the cursor fixed while zoomed
-          const r = e.currentTarget.getBoundingClientRect();
-          e.currentTarget.style.transformOrigin =
-            `${((e.clientX - r.left) / r.width * 100).toFixed(1)}% ${((e.clientY - r.top) / r.height * 100).toFixed(1)}%`;
-        },
-        onmouseleave: (e) => { const img = e.currentTarget;
-          img.classList.remove("zoom"); img.style.transform = ""; img.style.transformOrigin = ""; },
+        alt: `Storyboard ${n}, panel ${i + 1}`, loading: "lazy", decoding: "async",
+        title: FINE_MQ.matches ? "Hover to zoom in — click to see full size" : "Tap to see full size",
+        // hover-zoom is a fine-pointer affordance; on touch a tap first fires
+        // the emulated mouseenter and would stick a 2-6x zoom behind the
+        // lightbox — skip the handlers there, the lightbox IS the zoom.
+        ...(FINE_MQ.matches ? {
+          onmouseenter: (e) => { // scale to ~native resolution from the ~158px column
+            const img = e.currentTarget, r = img.getBoundingClientRect();
+            const s = Math.max(2, Math.min(6, (img.naturalWidth || 832) / Math.max(1, r.width)));
+            img.style.transform = "scale(" + s.toFixed(2) + ")";
+            img.classList.add("zoom");
+          },
+          onmousemove: (e) => { // keep the point under the cursor fixed while zoomed
+            const r = e.currentTarget.getBoundingClientRect();
+            e.currentTarget.style.transformOrigin =
+              `${((e.clientX - r.left) / r.width * 100).toFixed(1)}% ${((e.clientY - r.top) / r.height * 100).toFixed(1)}%`;
+          },
+          onmouseleave: (e) => { const img = e.currentTarget;
+            img.classList.remove("zoom"); img.style.transform = ""; img.style.transformOrigin = ""; },
+        } : {}),
         onclick: () => openLightbox(psrcs, i, (j, m) => `Panel ${j + 1} / ${m}`) })),
     ];
   };
@@ -470,7 +512,7 @@ function renderPreference(t) {
     parts.push(
       el("div", { class: "card" },
         el("h2", {}, "The storyboards"),
-        el("p", { class: "muted" }, "Both storyboards show the same six planned states, so the captions are shown once, above the panels. Storyboard 1 belongs to Video 1 and Storyboard 2 to Video 2 — compare them column by column. The gray caption line gives the planned state (“details” expands it); hover a panel to zoom in, click it to see it full size."),
+        el("p", { class: "muted" }, `Both storyboards show the same six planned states, so the captions are shown once, above the panels. Storyboard 1 belongs to Video 1 and Storyboard 2 to Video 2 — compare them column by column. The gray caption line gives the planned state (“details” expands it); ${FINE_MQ.matches ? "hover a panel to zoom in, click it to see it full size" : "tap a panel to see it full size"}.`),
         storyboardGrid),
       el("div", { class: "card" },
         el("h2", {}, "Judgments — the storyboards"),
@@ -530,14 +572,16 @@ function stopSession() {
 
 function renderDone() {
   $("#progress").textContent = "Complete";
+  // Backup only (2026-11-22): the claim store is the collection channel
+  // (every answer pushes there); the download is a passive extra copy in
+  // case both the final push and localStorage are lost (e.g. private
+  // mode). Reachable later by rejoining with the same name.
   $("#screen").replaceChildren(
     el("div", { class: "card" },
       el("h1", {}, "Thank you — done"),
-      el("p", {}, "Your results are saved automatically. Download a copy and send it back as instructed — if the download does not start, use the button below."),
+      el("p", {}, "Your results are saved automatically — there is nothing to send back. If you would like a copy of your answers for yourself, you can download one."),
       el("div", { class: "row" },
-        el("button", { class: "btn", onclick: downloadResults }, "Download results file"),
-        el("button", { class: "btn ghost", onclick: downloadResults }, "Download again"))));
-  downloadResults();
+        el("button", { class: "btn ghost", onclick: downloadResults }, "Download a backup copy"))));
 }
 
 function go(phase) {

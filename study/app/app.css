@@ -133,3 +133,53 @@ h3.withtip { display: flex; align-items: center; gap: 3px; }
 @media (max-width: 720px) { .sbrow { grid-template-columns: repeat(3, 1fr); } }
 
 table.likert td.crit { white-space: nowrap; }
+
+/* ---- mobile / touch support (2026-11-22) ----
+   body.narrow / body.xnarrow / body.touch are set from matchMedia in app.js
+   (one source of truth — toggle the classes to test either layout on a
+   desktop). Every rule here is class-scoped, so wide-screen rendering is
+   unchanged. .optlab / .opt arrive with the mkTable markup above. */
+.opt { display: inline-flex; align-items: center; gap: 7px; cursor: pointer; }
+.optlab { display: none; }
+
+body.touch { touch-action: manipulation; }  /* no double-tap-zoom on taps */
+body.touch input[type=text] { font-size: 16px; }  /* stops iOS focus auto-zoom */
+body.touch #wrap {
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+  padding-bottom: max(60px, env(safe-area-inset-bottom, 0px)); }
+
+/* small controls get touch-sized hit areas */
+body.touch .tip { width: 22px; height: 22px; font-size: 13px; }
+body.touch .fsbtn { padding: 5px 11px; }
+body.touch .cap-det { font-size: 12px; padding: 4px 2px; }
+body.touch table.likert input[type=radio] { width: 18px; height: 18px; }
+
+/* popovers become bottom sheets on touch — the absolutely-positioned
+   originals clip past the viewport edge on phones */
+body.touch .tipbox.open, body.touch .cap-det-text.open {
+  position: fixed; top: auto; left: 10px; right: 10px; bottom: 10px;
+  width: auto; max-width: none; z-index: 60; }
+
+/* videos stack full-width below 744px (the 340px vcol min-width would
+   overflow a phone viewport; above it the flex-wrap already stacks) */
+body.narrow .vcol { flex-basis: 100%; min-width: 0; }
+
+/* storyboards: phones get 2 columns (<=720px already drops 6 -> 3) */
+body.xnarrow .sbrow { grid-template-columns: repeat(2, 1fr); }
+
+/* question table: one card per question, options as labeled full-width
+   lines; the header row is meaningless without columns */
+body.narrow table.likert .lhead { display: none; }
+body.narrow table.likert { display: block; }
+body.narrow table.likert tr { display: block; border: 1px solid #ddd;
+  border-radius: 6px; margin: 10px 0; padding: 8px 10px 4px; }
+body.narrow table.likert td { display: block; border: 0; text-align: left;
+  padding: 3px 0; }
+body.narrow table.likert td.crit { font-weight: 600; white-space: normal; }
+body.narrow .optlab { display: inline; }
+body.narrow .opt { display: flex; padding: 7px 2px; }
+
+/* lightbox: dvh tracks the collapsing iOS toolbar; the vh rules above stay
+   as the fallback where dvh is unsupported */
+body.touch #lightbox .lb-stage, body.touch #lightbox img { max-height: 88dvh; }
