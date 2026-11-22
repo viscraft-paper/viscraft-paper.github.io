@@ -23,7 +23,7 @@ h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .05em;
   border-left: 3px solid #999; padding: 10px 14px; margin: 8px 0; }
 .refs { display: flex; gap: 12px; flex-wrap: wrap; }
 .refcard { margin: 0; text-align: center; }
-.refcard img { height: 76px; border: 1px solid #ccc; border-radius: 4px;
+.refcard img { height: 100px; border: 1px solid #ccc; border-radius: 4px;
   cursor: zoom-in; background: #fff; display: block; }
 .refcard img:hover { border-color: #1a1a1a; }
 .refcard figcaption { font-weight: 600; font-size: 13px; margin-top: 4px; }
