@@ -569,7 +569,17 @@ function startSession(r, name, remoteState) {
     localStorage.setItem("vcstudy_v3_names", JSON.stringify(names));
     localStorage.setItem("vcstudy_v3_lastname", name);
   }
-  if (!loadSaved()) save();   // mark the session early so rejoin finds it
+  if (!loadSaved()) {
+    if (REMOTE_STATE) {
+      // Cross-device resume: adopt the remote state as the local save. A bare
+      // save() here would write an EMPTY state stamped now, which pickNewer
+      // (in enterStudy) would rank above the remote progress — re-dealing a
+      // fresh manifest AND clobbering the store row's banked answers.
+      localStorage.setItem(LS_KEY, JSON.stringify(REMOTE_STATE));
+    } else {
+      save();   // mark the session early so rejoin finds it
+    }
+  }
   enterStudy();
 }
 
@@ -590,9 +600,21 @@ function renderLogin() {
     joinBtn.disabled = true;
     status.textContent = "Checking sessions…";
     try {
-      // same-device fast path (works offline); the store resolves names globally
+      // same-device fast path (works offline); the store resolves names
+      // globally. When the store is reachable, still merge the remote state —
+      // the rater may have progressed on another device, and a local-only
+      // pickNewer would resurrect this device's stale progress over it.
       const mine = nameMap()[name.toLowerCase()];
-      if (mine) return showWelcomeBack(mine, name, pickNewer(savedFor(mine), null), null);
+      if (mine) {
+        let remote = null;
+        if (claimsOn()) {
+          try {
+            const res = await claimJoin(name);
+            if (res && res.existing) { CLAIM_INFO = res; remote = res.existing.state || null; }
+          } catch { /* store unreachable: local-only resume */ }
+        }
+        return showWelcomeBack(mine, name, pickNewer(savedFor(mine), remote), remote);
+      }
       if (!claimsOn()) throw new Error("no-store");
       const res = await claimJoin(name);
       if (res.error === "full") { warn("All sessions are taken — please contact the organizer."); return; }
