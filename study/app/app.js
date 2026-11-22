@@ -48,8 +48,8 @@ const CRITERIA = [
    "Which video executes the requested actions more faithfully — all of them, in the requested order? Judge only what you can see against the specification; a beautiful video may still skip the requested action."],
   ["motion", "Motion plausibility and camera steadiness", "video",
    "Which video has smoother, more plausible motion? No morphing, no flicker, and nothing vanishing without a reason (leaving the view or passing behind something is fine). The camera should remain fixed — penalize any jitter or camera movement."],
-  ["sb_coherence", "Coherent set of states", "sb",
-   "Do the panels show the right moments of the specification, in a sensible order — six visual states that together tell the story?"],
+  ["sb_coherence", "Caption adherence", "sb",
+   "Does each panel show what its caption says? Together, the six panels should cover the right moments of the story, in a sensible order."],
   ["sb_consistency", "Visual consistency", "sb",
    "Across the panels, do the characters keep the same appearance (identity, clothing) and does the setting stay the same?"],
 ];
@@ -236,8 +236,8 @@ function renderQuiz() {
       el("ul", {},
         el("li", {}, el("b", {}, "Specification. "), "The intended scene and actions — the text both results were made from. Judge everything you see against it."),
         el("li", {}, el("b", {}, "Characters. "), "Small pictures labeled with the names from the specification. Click one to see it full size."),
-        el("li", {}, el("b", {}, "Two videos. "), "Side by side. “Play both” starts them together and “Pause both” stops them together; ⤢ shows a video full screen."),
-        el("li", {}, el("b", {}, "Two storyboards. "), "Below the videos, stacked. Storyboard 1 belongs to Video 1, Storyboard 2 to Video 2. The text above each panel describes the planned state — click “details” for the whole caption, click a panel to see it full size.")),
+        el("li", {}, el("b", {}, "Two videos. "), "Side by side. “Play both” starts them together and “Pause both” stops them together; ⤢ shows a video full screen. They play muted — sound is not part of the study."),
+        el("li", {}, el("b", {}, "Two storyboards. "), "Below the videos, stacked. Storyboard 1 belongs to Video 1, Storyboard 2 to Video 2. The text above each panel describes the planned state — click “details” for the whole caption. Hover a panel to zoom in; click it to see it full size.")),
       el("p", {}, "You answer three questions about the videos and two about the storyboards. The questions are independent — one result can win one and lose another. Videos are judged against the specification only, not against the storyboards; the storyboard questions are about the storyboards alone."),
       el("h3", {}, "The three video questions"),
       ...CRITERIA.filter(([, , sec]) => sec === "video").map(([, name, , desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
@@ -341,7 +341,8 @@ function panelUrls(key) {
 }
 
 function videoCol(label, src) {
-  const vid = el("video", { src, controls: "controls", loop: "loop", playsinline: "playsinline", preload: "auto" });
+  // muted: sound is not part of any question (clips carry a soundtrack)
+  const vid = el("video", { src, controls: "controls", loop: "loop", playsinline: "playsinline", preload: "auto", muted: "muted" });
   const root = el("div", { class: "vcol" },
     el("div", { class: "vlabel" }, label,
       el("button", { class: "btn ghost fsbtn", type: "button", title: "Full screen (full resolution)",
@@ -418,7 +419,14 @@ function renderPreference(t) {
             onclick: () => det.classList.toggle("open") }, "details"),
           det),
         el("img", { class: "sbpanel", src: psrcs[i], alt: `Storyboard ${n}, panel ${i + 1}`,
-          title: "Click to see full size",
+          title: "Hover to zoom in — click to see full size",
+          onmouseenter: (e) => e.currentTarget.classList.add("zoom"),
+          onmousemove: (e) => { // keep the point under the cursor fixed while zoomed
+            const r = e.currentTarget.getBoundingClientRect();
+            e.currentTarget.style.transformOrigin =
+              `${((e.clientX - r.left) / r.width * 100).toFixed(1)}% ${((e.clientY - r.top) / r.height * 100).toFixed(1)}%`;
+          },
+          onmouseleave: (e) => { e.currentTarget.classList.remove("zoom"); e.currentTarget.style.transformOrigin = ""; },
           onclick: () => openLightbox(psrcs, i, (j, m) => `Panel ${j + 1} / ${m}`) }));
     });
     return el("div", { class: "sbblock" },
