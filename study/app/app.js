@@ -237,7 +237,7 @@ function renderQuiz() {
         el("li", {}, el("b", {}, "Specification. "), "The intended scene and actions — the text both results were made from. Judge everything you see against it."),
         el("li", {}, el("b", {}, "Characters. "), "Small pictures labeled with the names from the specification. Click one to see it full size."),
         el("li", {}, el("b", {}, "Two videos. "), "Side by side. “Play both” starts them together and “Pause both” stops them together; ⤢ shows a video full screen. They play muted — sound is not part of the study."),
-        el("li", {}, el("b", {}, "Two storyboards. "), "Below the videos, stacked. Storyboard 1 belongs to Video 1, Storyboard 2 to Video 2. The text above each panel describes the planned state — click “details” to expand it. Hover a panel to zoom in; click it to see it full size.")),
+        el("li", {}, el("b", {}, "Two storyboards. "), "Below the videos, as two rows of six panels — Storyboard 1 belongs to Video 1, Storyboard 2 to Video 2. The captions are shown once, above the panels, one per column; “details” expands a caption. Hover a panel to zoom in; click it to see it full size.")),
       el("p", {}, "You answer three questions about the videos and two about the storyboards. The questions are independent — one result can win one and lose another. Videos are judged against the specification only, not against the storyboards; the storyboard questions are about the storyboards alone."),
       el("h3", {}, "The three video questions"),
       ...CRITERIA.filter(([, , sec]) => sec === "video").map(([, name, , desc]) => el("p", {}, el("b", {}, `${name}. `), desc)),
@@ -409,34 +409,49 @@ function renderPreference(t) {
   };
   vids.forEach((v) => { v.addEventListener("play", syncLabel); v.addEventListener("pause", syncLabel); });
 
-  // storyboards — stacked, bigger, per-state captions above the panels
+  // storyboards — the captions are the same planned states for both results,
+  // so they are shown ONCE; each storyboard is a single row of six panels,
+  // aligned in columns under the captions so panel i of one result sits
+  // directly above panel i of the other.
   const caps = hasSb ? state.materials.state_captions[t.case] : null;
-  const storyboard = (n, key) => {
+  const capCells = (caps || []).map((cap, i) => {
+    // the gray scene line is the visible caption — "details" opens a popover
+    // with the rest (composition + details), anchored under the caption
+    const det = el("div", { class: "cap-det-text" }, [cap.composition, cap.details].filter(Boolean).join(" "));
+    return el("div", { class: i >= 3 ? "sbcell cap-right" : "sbcell" },
+      el("div", { class: "sbcap" },
+        el("div", { class: "cap-scene" }, cap.scene),
+        el("button", { class: "cap-det", type: "button",
+          onclick: () => det.classList.toggle("open") }, "details"),
+        det));
+  });
+  const panelRow = (n, key) => {
     const psrcs = panelUrls(key) || [];
-    const cells = (caps || []).map((cap, i) => {
-      // scene is already the visible gray line above — don't repeat it in details
-      const det = el("div", { class: "cap-det-text" }, [cap.composition, cap.details].filter(Boolean).join(" "));
-      return el("div", { class: "sbcell" },
-        el("div", { class: "sbcap" },
-          el("div", { class: "cap-scene" }, cap.scene),
-          el("button", { class: "cap-det", type: "button",
-            onclick: () => det.classList.toggle("open") }, "details"),
-          det),
-        el("img", { class: "sbpanel", src: psrcs[i], alt: `Storyboard ${n}, panel ${i + 1}`,
-          title: "Hover to zoom in — click to see full size",
-          onmouseenter: (e) => e.currentTarget.classList.add("zoom"),
-          onmousemove: (e) => { // keep the point under the cursor fixed while zoomed
-            const r = e.currentTarget.getBoundingClientRect();
-            e.currentTarget.style.transformOrigin =
-              `${((e.clientX - r.left) / r.width * 100).toFixed(1)}% ${((e.clientY - r.top) / r.height * 100).toFixed(1)}%`;
-          },
-          onmouseleave: (e) => { e.currentTarget.classList.remove("zoom"); e.currentTarget.style.transformOrigin = ""; },
-          onclick: () => openLightbox(psrcs, i, (j, m) => `Panel ${j + 1} / ${m}`) }));
-    });
-    return el("div", { class: "sbblock" },
-      el("div", { class: "vlabel" }, `Storyboard ${n} (Video ${n})`),
-      el("div", { class: "sbrow" }, ...cells));
+    return [
+      el("div", { class: "sblab" }, `Storyboard ${n} (Video ${n})`),
+      ...psrcs.map((src, i) => el("img", { class: "sbpanel", src,
+        alt: `Storyboard ${n}, panel ${i + 1}`,
+        title: "Hover to zoom in — click to see full size",
+        onmouseenter: (e) => { // scale to ~native resolution from the ~158px column
+          const img = e.currentTarget, r = img.getBoundingClientRect();
+          const s = Math.max(2, Math.min(6, (img.naturalWidth || 832) / Math.max(1, r.width)));
+          img.style.transform = "scale(" + s.toFixed(2) + ")";
+          img.classList.add("zoom");
+        },
+        onmousemove: (e) => { // keep the point under the cursor fixed while zoomed
+          const r = e.currentTarget.getBoundingClientRect();
+          e.currentTarget.style.transformOrigin =
+            `${((e.clientX - r.left) / r.width * 100).toFixed(1)}% ${((e.clientY - r.top) / r.height * 100).toFixed(1)}%`;
+        },
+        onmouseleave: (e) => { const img = e.currentTarget;
+          img.classList.remove("zoom"); img.style.transform = ""; img.style.transformOrigin = ""; },
+        onclick: () => openLightbox(psrcs, i, (j, m) => `Panel ${j + 1} / ${m}`) })),
+    ];
   };
+  const storyboardGrid = el("div", { class: "sbrow" },
+    ...capCells,
+    ...panelRow(1, t.videos[sides[0]]),
+    ...panelRow(2, t.videos[sides[1]]));
 
   const parts = [
     el("div", { class: "card" }, specBlock(t.case)),
@@ -455,9 +470,8 @@ function renderPreference(t) {
     parts.push(
       el("div", { class: "card" },
         el("h2", {}, "The storyboards"),
-        el("p", { class: "muted" }, "Each storyboard belongs to the video with the same number. The text above a panel describes the planned state — “details” shows the whole caption, and clicking a panel shows it full size."),
-        storyboard(1, t.videos[sides[0]]),
-        storyboard(2, t.videos[sides[1]])),
+        el("p", { class: "muted" }, "Both storyboards show the same six planned states, so the captions are shown once, above the panels. Storyboard 1 belongs to Video 1 and Storyboard 2 to Video 2 — compare them column by column. The gray caption line gives the planned state (“details” expands it); hover a panel to zoom in, click it to see it full size."),
+        storyboardGrid),
       el("div", { class: "card" },
         el("h2", {}, "Judgments — the storyboards"),
         mkTable("sb", "Prefer storyboard 1", "Prefer storyboard 2")));

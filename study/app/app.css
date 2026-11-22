@@ -3,7 +3,7 @@
 html, body { margin: 0; padding: 0; }
 body {
   font: 15px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #1a1a1a; background: #f6f6f4;
+  color: #1a1a1a; background: #f6f6f4; overflow-x: hidden;
 }
 #wrap { max-width: 1080px; margin: 0 auto; padding: 16px 20px 60px; }
 header { display: flex; justify-content: space-between; align-items: baseline;
@@ -101,25 +101,35 @@ h3.withtip { display: flex; align-items: center; gap: 3px; }
 .vlabel { display: flex; justify-content: space-between; align-items: center; }
 .fsbtn { padding: 2px 9px; margin-left: 10px; }
 
-/* storyboards: stacked per result, 3-across so panels and captions are big */
-.sbblock { margin: 16px 0 2px; }
-.sbrow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+/* storyboards: one 6-column grid — the shared captions once on top, then
+   one row of panels per result; columns align so panel i can be compared */
+.sbrow { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
 .sbcell { min-width: 0; }
+.sblab { grid-column: 1 / -1; font-weight: 700; margin: 8px 0 0; }
 .sbcap { font-size: 11.5px; line-height: 1.4; color: #333; margin-bottom: 5px;
-  background: #fafaf8; border-left: 2px solid #bbb; padding: 5px 8px; }
+  background: #fafaf8; border-left: 2px solid #bbb; padding: 5px 8px;
+  position: relative; }
 .cap-scene { color: #777; margin-bottom: 2px; }
 .cap-det { background: none; border: none; padding: 0; margin-top: 3px;
   color: #666; font-size: 11px; text-decoration: underline; cursor: pointer; }
 .cap-det:hover { color: #1a1a1a; }
-.cap-det-text { display: none; margin-top: 3px; color: #555; }
-.cap-det-text.open { display: block; }
+/* "details" opens as a popover over the panels below — the narrow column
+   must not stretch when the full caption text is shown */
+.cap-det-text { display: none; }
+.cap-det-text.open { display: block; position: absolute; top: calc(100% + 6px);
+  left: 0; width: 300px; max-width: 78vw; z-index: 40; color: #555;
+  background: #fff; border: 1px solid #ccc; border-radius: 4px;
+  padding: 6px 9px; box-shadow: 0 6px 18px rgba(0, 0, 0, .16); }
+.sbcell.cap-right .cap-det-text.open { left: auto; right: 0; }
 .sbpanel { display: block; width: 100%; height: auto; border: 1px solid #bbb;
   border-radius: 4px; cursor: zoom-in; background: #fff;
   transition: transform .12s ease-out; }
 .sbpanel:hover { border-color: #1a1a1a; }
-/* hover-to-zoom: magnifies around the cursor (2.5x ~ native 832px). Click still opens full size. */
-.sbpanel.zoom { position: relative; z-index: 30; transform: scale(2.5);
+/* hover-to-zoom: JS sets the transform scale per image to reach ~native
+   resolution (832px) from the ~158px column, origin following the cursor.
+   Click still opens full size. */
+.sbpanel.zoom { position: relative; z-index: 30;
   box-shadow: 0 10px 28px rgba(0, 0, 0, .35); }
-@media (max-width: 720px) { .sbrow { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px) { .sbrow { grid-template-columns: repeat(3, 1fr); } }
 
 table.likert td.crit { white-space: nowrap; }
