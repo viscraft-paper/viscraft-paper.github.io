@@ -341,8 +341,11 @@ function panelUrls(key) {
 }
 
 function videoCol(label, src) {
-  // muted: sound is not part of any question (clips carry a soundtrack)
+  // muted: sound is not part of any question (clips carry a soundtrack).
+  // The content attribute alone does not mute a createElement'd video
+  // (it only sets defaultMuted) — set the property too.
   const vid = el("video", { src, controls: "controls", loop: "loop", playsinline: "playsinline", preload: "auto", muted: "muted" });
+  vid.muted = true;
   const root = el("div", { class: "vcol" },
     el("div", { class: "vlabel" }, label,
       el("button", { class: "btn ghost fsbtn", type: "button", title: "Full screen (full resolution)",
