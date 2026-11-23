@@ -10,7 +10,10 @@
  * re-deal; answered trials are pushed to the store as they happen.
  *
  * Session shape (user, 2026-11-21): 27 preference trials — 9 per contrast —
- * plus 1 break at the midpoint = 28 items, ~30 min. NO gold attention
+ * plus 1 break at the midpoint = 28 items, ~30 min. AMENDMENT 2026-11-23:
+ * callers pass nPer: 6 -> 18 prefs + break = 19 items (~30 min) after
+ * "study is too long" feedback; the 9 default is kept for the original
+ * design record. NO gold attention
  * checks and NO swapped-side repeats (removed 2026-11-21); quality signals
  * live in cross-rater consistency, tie/unratable rates and timing.
  *
@@ -66,7 +69,8 @@
    * opts: { rater: "R5", coverage: {"case|contrast": n}, pairIndex,
    *         cases: [all case ids], contrasts: ["k1","k2","k3"],
    *         nPer?: 9 (preference trials per contrast), rng?: () => [0,1) }
-   * Returns the item list (27 preference trials + 1 break at the midpoint).
+   * Returns the item list (nPer x #contrasts preference trials + 1 break at
+   * the midpoint; default nPer=9 -> 28 items, app passes 6 -> 19).
    * If the case pool is exhausted mid-deal (only possible with tiny test
    * pools), the session simply gets fewer preference trials.             */
   function dealSession(opts) {
@@ -109,7 +113,7 @@
     }
 
     // flatten to the interleaved preference sequence, then one break at the
-    // midpoint (14 prefs, break, 13 prefs = 28 items)
+    // midpoint (default: 14 prefs, break, 13 prefs = 28 items; nPer=6: 9/8 = 19)
     const prefs = [].concat.apply([], rounds);
     const half = Math.ceil(prefs.length / 2);
     const items = prefs.slice(0, half)

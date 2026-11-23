@@ -9,9 +9,11 @@
  * Materials: ../materials/{pairs,checklists,stimuli,state_captions}.json (frozen).
  * Serving (2026-11-21): the claim response carries per-pair coverage
  * (ANSWERED preference trials); a fresh session deals its queue from the
- * least-covered pairs (deal.js: 27 preference trials, 9 per contrast, each
+ * least-covered pairs (deal.js: 18 preference trials, 6 per contrast, each
  * case at most once, + one break at the midpoint) and persists it as
- * state.manifest — resume always walks the saved manifest. No coverage in
+ * state.manifest — resume always walks the saved manifest. Session length
+ * amendment 2026-11-23: 27 -> 18 prefs after rater feedback ("too long");
+ * in-flight sessions keep their saved 27-item manifests. No coverage in
  * the response (old backend / offline) -> the same deal with empty
  * coverage. No gold checks, no repeats (removed 2026-11-21).
  *
@@ -725,8 +727,10 @@ async function boot() {
 
 /* Deal this session's queue from the least-covered pairs (dynamic serving,
  * user 2026-11-21): the claim response carries per-pair coverage (ANSWERED
- * preference trials); deal.js builds the 27-trial session (9 per contrast,
+ * preference trials); deal.js builds the session (6 per contrast,
  * each case at most once) + midpoint break around the least-covered pairs.
+ * AMENDMENT 2026-11-23: nPer 9 -> 6 (18 prefs, ~30 min) after "study is too
+ * long" feedback; sessions claimed before this keep their saved manifests.
  * Templates (criteria, opaque media keys) come from the flat pairs pool, so
  * nothing new is served and blinding is unchanged. No coverage in the claim
  * response (old backend / offline / legacy link) -> the same deal with
@@ -736,7 +740,7 @@ function dealManifest_() {
   const keys = Object.keys(pairIndex);
   const cases = [...new Set(keys.map(k => k.split("|")[0]))];
   const contrasts = [...new Set(keys.map(k => k.split("|")[1]))].sort();
-  return VCDEAL.dealSession({ rater: RATER,
+  return VCDEAL.dealSession({ rater: RATER, nPer: 6,
     coverage: (CLAIM_INFO && CLAIM_INFO.coverage) || {},
     pairIndex, cases, contrasts });
 }
