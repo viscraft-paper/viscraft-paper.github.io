@@ -19,8 +19,12 @@ h2 { font-size: 17px; margin: 4px 0 10px; }
 h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .05em;
   color: #555; margin: 14px 0 6px; }
 
-.spec { white-space: pre-wrap; font-size: 14px; background: #fafaf8;
-  border-left: 3px solid #999; padding: 10px 14px; margin: 8px 0; }
+/* Spec readability (2026-11-23): 14px pre-wrap wall -> 16px, 1.6 line
+ * height, ~62ch measure, roomier padding; paragraph gaps come from the
+ * \n\n already in spec.text (pre-wrap preserves them). */
+.spec { white-space: pre-wrap; font-size: 16px; line-height: 1.6;
+  max-width: 62ch; background: #fafaf8;
+  border-left: 3px solid #999; padding: 12px 16px; margin: 8px 0 12px; }
 .refs { display: flex; gap: 12px; flex-wrap: wrap; }
 .refcard { margin: 0; text-align: center; }
 .refcard img { height: 100px; border: 1px solid #ccc; border-radius: 4px;

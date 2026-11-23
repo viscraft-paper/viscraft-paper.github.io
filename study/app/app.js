@@ -310,6 +310,35 @@ function tipBtn(text) {
     box);
 }
 
+/* Bold character-name mentions in a spec string at RENDER time (readability
+ * amendment 2026-11-23, user call: "screenplays oddly written, hard to
+ * parse"). Served materials stay frozen — this touches display only and is
+ * arm-symmetric by construction (both sides of every pair show the same
+ * spec). Longest-first alternation keeps "Noor Hale" whole ahead of the
+ * short form "Noor"; possessives ("Noor's jacket") bold the name only.
+ * Returns a mix of plain strings and <b> nodes for el() to flatten. */
+function boldNames_(text, refList) {
+  const names = [...new Set((refList || []).flatMap(r => {
+    const n = typeof r === "string" ? "" : (r.name || "");
+    if (!n) return [];
+    const first = n.split(/\s+/)[0];
+    return first && first !== n ? [n, first] : [n];
+  }))];
+  if (!names.length) return [text];
+  names.sort((a, b) => b.length - a.length);
+  const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const re = new RegExp("\\b(" + names.map(esc).join("|") + ")\\b", "g");
+  const out = [];
+  let last = 0, m;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    out.push(el("b", {}, m[0]));
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
 function specBlock(caseId) {
   const c = state.materials.checklists[caseId];
   const s = c.spec;
@@ -321,7 +350,7 @@ function specBlock(caseId) {
   return el("div", {},
     el("h3", { class: "withtip" }, "Specification ",
       tipBtn("The text both results were made from. Judge what you see against this.")),
-    el("div", { class: "spec" }, body),
+    el("div", { class: "spec" }, boldNames_(body, c.refs)),
     el("h3", { class: "withtip" }, "Characters ",
       tipBtn("The people to look for, labeled with the names the specification uses. Click a picture to see it full size.")),
     el("div", { class: "refs" }, ...refs.map((r, i) =>
